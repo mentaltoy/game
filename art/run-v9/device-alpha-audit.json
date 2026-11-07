@@ -1,0 +1,86 @@
+[
+  {
+    "id": "run-0",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 3426
+  },
+  {
+    "id": "run-1",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 1911
+  },
+  {
+    "id": "run-2",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 3265
+  },
+  {
+    "id": "run-3",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 3476
+  },
+  {
+    "id": "run-4",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 3524
+  },
+  {
+    "id": "run-5",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 3469
+  },
+  {
+    "id": "run-6",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 3467
+  },
+  {
+    "id": "run-7",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 3285
+  },
+  {
+    "id": "run-8",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 3158
+  },
+  {
+    "id": "run-9",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 3408
+  },
+  {
+    "id": "run-10",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 3461
+  },
+  {
+    "id": "run-11",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 3449
+  },
+  {
+    "id": "run-transition-0",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 1760
+  },
+  {
+    "id": "run-transition-1",
+    "alphaDifferences": 0,
+    "changedOutsidePatch": 0,
+    "changedPixels": 1939
+  }
+]

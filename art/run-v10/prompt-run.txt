@@ -1,0 +1,26 @@
+Use case: stylized-concept. Production game animation painting, not concept variations.
+Create ONE transparent PNG sprite atlas with EXACTLY TWELVE complete figures, four columns by three rows, chronological row-major order. Large square canvas with enough pixels to preserve the small painted texture; identical cell size, generous transparent margins, all hands and boots fully inside each cell. No text, labels, separators, shadows, scenery or ground.
+
+INPUT ROLES:
+Image 1 is the ONLY identity, proportions, costume, face, palette and painting-style reference: our original adult scientist/explorer, dark wavy hair, grey-blue rolled-sleeve button shirt, khaki trousers, light brown leather boots, small yellow-screen instrument on the visible anatomical right hip. Preserve his exact design and fine matte painted brushwork. He is lean and realistically proportioned, not bulky, not glossy, not pixel art. Keep the same size head, hair silhouette, boots and trouser volume in every cell. Do not copy the walking pose.
+Image 2 is a PRIVATE MOTION STUDY ONLY: twelve chronological captures of a running cycle, mirrored to travel right. Study the bodily action, low economical knees, heel recovery, weight and alternate arm motion. Do NOT reproduce its pixels, old-game character, jacket, white T-shirt, blue trousers, background, lettering, scanline, resolution, or rendering style.
+
+ALL TWELVE figures run RIGHT, fixed side-view camera, same physical scale and the same imaginary floor height in every cell. A genuine forward-running cycle about 0.8 seconds long, not walking faster and not high-knee skipping. Torso leans forward slightly, with subtle opposing shoulder/pelvis rotation; the head remains recognizably in right profile, gaze ahead. Restrained natural body rise/fall only. Keep recovery knees LOW, under or only modestly ahead of the pelvis; swing thighs slope DOWN from the hip, never almost horizontal. Knees remain at least about one-sixth of a standing character height below the hip. Fold the recovering heel behind, then reach the foot forward low. Clear brief airborne phases, never every pose airborne. Stance soles contact the common imaginary floor; flight soles remain slightly above it.
+
+CRITICAL ARM CONTINUITY: BOTH anatomical arms must perform a complete reciprocal forward/back swing. Elbows remain naturally flexed roughly 80–110 degrees, including the rear arm; do not leave one arm hanging straight or one fist pinned in front for the entire atlas. The near/right arm is the arm on the viewer-facing side, identified consistently with the right hip device. Its hand must visibly move from chest height in front to behind/alongside the waist and back over the full cycle. The far/left arm does the opposite, half a cycle apart. Keep exactly two arms and two hands, with coherent near/far occlusion. Do not swap arm identities just to keep the same foreground silhouette.
+
+TWELVE COHERENT KEY POSES (follow the physical progression visible in motion reference; frames 6–11 reverse the near/far action of 0–5, not duplicate it):
+0: Far/left leg forward low at contact, near/right leg extended behind. Near/right arm forward at chest, far/left elbow back with hand by waist.
+1: Far leg takes weight and moves under the body, near heel starts folding behind. Near hand moves down/back toward lower chest; far hand begins its forward return.
+2: Far leg supporting under body, near knee low under hip and heel folded behind. Both arms pass through lowered middle positions, moving in opposite directions.
+3: Far leg pushes backward, near knee travels modestly forward while staying low. Near elbow and hand move behind the torso/waist; far hand rises forward.
+4: Brief flight toward near-leg landing: near foot reaches forward low, far leg extends back. Near arm clearly BACK, flexed elbow behind; far arm clearly FORWARD.
+5: Near foot descends to landing, far heel starts recovery. Near arm still behind waist and far arm in front at chest; clear opposition.
+6: Near/right leg forward low at contact, far/left leg extended behind. Near/right arm BACK, far/left arm FORWARD: opposite anatomical limbs to frame 0.
+7: Near leg takes weight under body, far heel folds behind. Near hand travels forward from waist, far hand travels down/back.
+8: Near leg supporting under body, far knee low under hip and heel folded behind. Arms cross their lower middle positions, opposite to frame 2.
+9: Near leg pushes backward, far knee passes modestly forward low. Near hand rises forward, far elbow goes behind torso.
+10: Brief flight toward far-leg landing: far foot forward low, near leg extends back. Near arm clearly FORWARD, far arm clearly BACK.
+11: Far foot descends toward contact, near heel begins recovery. Near arm in front, far arm behind, leading smoothly back to frame 0.
+
+Maintain identical natural body proportions and painted anatomy across all cells. These are whole new original painted figures of image 1, animated using the motion logic of image 2. No cut-out limb collage, no duplicated first-half poses for the second half, no frozen front arm, no exaggerated raised knees, no giant boots. Transparent background with real alpha.

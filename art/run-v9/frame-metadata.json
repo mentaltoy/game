@@ -1,0 +1,218 @@
+[
+  {
+    "id": "run-0",
+    "cell": 0,
+    "cap": 73,
+    "floor": 519,
+    "root": 210,
+    "baseline": 519,
+    "sole": [
+      218.5,
+      519
+    ],
+    "flight": false,
+    "devicePatch": [
+      124,
+      221,
+      112,
+      112
+    ]
+  },
+  {
+    "id": "run-1",
+    "cell": 1,
+    "cap": 73,
+    "floor": 519,
+    "root": 210,
+    "baseline": 519,
+    "sole": [
+      164.0,
+      519
+    ],
+    "flight": false,
+    "devicePatch": [
+      122,
+      214,
+      112,
+      112
+    ]
+  },
+  {
+    "id": "run-2",
+    "cell": 2,
+    "cap": 72,
+    "floor": 520,
+    "root": 210,
+    "baseline": 520,
+    "sole": [
+      123.5,
+      520
+    ],
+    "flight": false,
+    "devicePatch": [
+      123,
+      220,
+      112,
+      112
+    ]
+  },
+  {
+    "id": "run-3",
+    "cell": 3,
+    "cap": 72,
+    "floor": 522,
+    "root": 210,
+    "baseline": 522,
+    "sole": [
+      84.5,
+      522
+    ],
+    "flight": false,
+    "devicePatch": [
+      123,
+      220,
+      112,
+      112
+    ]
+  },
+  {
+    "id": "run-4",
+    "cell": 4,
+    "cap": 71,
+    "floor": 470,
+    "root": 210,
+    "baseline": 520,
+    "sole": null,
+    "flight": true,
+    "devicePatch": [
+      125,
+      220,
+      112,
+      112
+    ]
+  },
+  {
+    "id": "run-5",
+    "cell": 5,
+    "cap": 73,
+    "floor": 509,
+    "root": 210,
+    "baseline": 520,
+    "sole": null,
+    "flight": true,
+    "devicePatch": [
+      126,
+      220,
+      112,
+      112
+    ]
+  },
+  {
+    "id": "run-6",
+    "cell": 6,
+    "cap": 74,
+    "floor": 520,
+    "root": 210,
+    "baseline": 520,
+    "sole": [
+      240.5,
+      520
+    ],
+    "flight": false,
+    "devicePatch": [
+      124,
+      222,
+      112,
+      112
+    ]
+  },
+  {
+    "id": "run-7",
+    "cell": 7,
+    "cap": 75,
+    "floor": 520,
+    "root": 210,
+    "baseline": 520,
+    "sole": [
+      158.0,
+      520
+    ],
+    "flight": false,
+    "devicePatch": [
+      121,
+      222,
+      112,
+      112
+    ]
+  },
+  {
+    "id": "run-8",
+    "cell": 8,
+    "cap": 76,
+    "floor": 518,
+    "root": 210,
+    "baseline": 518,
+    "sole": [
+      169.0,
+      518
+    ],
+    "flight": false,
+    "devicePatch": [
+      117,
+      222,
+      112,
+      112
+    ]
+  },
+  {
+    "id": "run-9",
+    "cell": 9,
+    "cap": 73,
+    "floor": 519,
+    "root": 210,
+    "baseline": 519,
+    "sole": [
+      86.5,
+      519
+    ],
+    "flight": false,
+    "devicePatch": [
+      122,
+      222,
+      112,
+      112
+    ]
+  },
+  {
+    "id": "run-10",
+    "cell": 10,
+    "cap": 72,
+    "floor": 484,
+    "root": 210,
+    "baseline": 520,
+    "sole": null,
+    "flight": true,
+    "devicePatch": [
+      123,
+      217,
+      112,
+      112
+    ]
+  },
+  {
+    "id": "run-11",
+    "cell": 11,
+    "cap": 75,
+    "floor": 511,
+    "root": 210,
+    "baseline": 520,
+    "sole": null,
+    "flight": true,
+    "devicePatch": [
+      127,
+      222,
+      112,
+      112
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "run": {
+    "source": "generated-device-hidden-raw.png",
+    "columns": 4,
+    "rows": 3,
+    "tile": 112
+  },
+  "transitions": {
+    "source": "transitions/device-patches-restored-raw.png",
+    "columns": 2,
+    "rows": 1,
+    "tile": 136
+  },
+  "notes": "One fixed downsample for runtime patch resolution; originals retained. Renderer composites masked RGB only; figure alpha is unchanged."
+}

@@ -1,0 +1,11 @@
+First16-pose ascent candidate, 7 November2026.
+
+Whole paintings only. Existing key cells0/4/8/12 come from contacts-candidate-01.png and passing-candidate-02.png, without regeneration or anatomical editing. They use one uniform scale0.565. Their raw source PNGs and hashes are preserved in metadata.
+
+Twelve new images were generated with the built-in image_gen tool in two batches of six, following curved-sixteen-targets.json from the independent motion audit. Exact prompts and guide inputs are saved alongside the candidates. BatchA fills1/2/3/5/6/7; batchB fills9/10/11/13/14/15.
+
+Packing:4×4 cells,500×620, overall2000×2480. One physical scale per new batch, measured from median skull width: A0.9367105263, B0.9555704698. No per-frame bounding-height normalization. Atlas-layout translation aligns the crown to(250,83); generated paintings remain intact. Final measured skull widths69–71px using the packed-image inspection band; original raw calibration target71.19px.
+
+Do not treat the source guides as measured feet. Metadata includes measured soles for the four keys; new feet are intentionally null until the motion agent measures the actual boots. Existing pose order is provisional until contact-path QA. Several soles differ from targets, especially the first new contact and later stance extensions. A constant head size or sixteen frames does not certify a continuous ascent.
+
+No production code, deployed game, approved walk asset or V9 stair asset was modified. The candidate is ready for independent ground-contact and visual-motion review in the room, not publication.

@@ -1,0 +1,185 @@
+{
+  "status": "Initial descending pose guides, not an accepted motion sequence. Allow a plausible continuous pelvis path if the drawings require it.",
+  "cellSize": [
+    500,
+    620
+  ],
+  "referenceHeight": 500,
+  "headCrown": [
+    250,
+    83
+  ],
+  "cranialWidth": 71.2,
+  "hipGuide": [
+    260,
+    312
+  ],
+  "view": "left side; anatomical left leg and arm nearest camera; right-side belt device hidden",
+  "nearLeg": "L",
+  "farLeg": "R",
+  "bodyHalfCycleTranslation": [
+    -57,
+    40
+  ],
+  "bodyFullCycleTranslation": [
+    -114,
+    80
+  ],
+  "frames": [
+    {
+      "phase": 0,
+      "support": "L",
+      "L": [
+        228,
+        560
+      ],
+      "R": [
+        285,
+        520
+      ],
+      "description": "Double contact: near left leg reaches the lower tread in front (screen-left), far right leg remains on the higher tread behind. Transfer weight smoothly onto the new lower support.",
+      "RHip": [
+        264,
+        312
+      ],
+      "RKnee": [
+        197.63399813660283,
+        416.7451850762963
+      ],
+      "RAnkle": [
+        293,
+        496
+      ],
+      "LHip": [
+        256,
+        312
+      ],
+      "LKnee": [
+        193.93856596639958,
+        419.3516576755714
+      ],
+      "LAnkle": [
+        236,
+        536
+      ]
+    },
+    {
+      "phase": 0.25,
+      "support": "L",
+      "L": [
+        256.5,
+        540
+      ],
+      "R": [
+        256.5,
+        500
+      ],
+      "description": "Near left stance knee bends to control lowering the pelvis; far right foot swings through, clearing the support leg, then descends toward the following lower tread. Do not reuse the ascent extension pose.",
+      "RHip": [
+        264,
+        312
+      ],
+      "RKnee": [
+        171.23464062076619,
+        394.28358341274156
+      ],
+      "RAnkle": [
+        264.5,
+        476
+      ],
+      "LHip": [
+        256,
+        312
+      ],
+      "LKnee": [
+        189.92680453963027,
+        416.9301331441821
+      ],
+      "LAnkle": [
+        264.5,
+        516
+      ]
+    },
+    {
+      "phase": 0.5,
+      "support": "R",
+      "R": [
+        228,
+        560
+      ],
+      "L": [
+        285,
+        520
+      ],
+      "description": "Double contact with anatomical roles swapped. Far right foot lands on the next lower tread in front; near left foot is now behind and one tread higher. Arms counter-swing with real near/far alternation.",
+      "RHip": [
+        264,
+        312
+      ],
+      "RKnee": [
+        199.05447856929766,
+        417.6318098211622
+      ],
+      "RAnkle": [
+        236,
+        536
+      ],
+      "LHip": [
+        256,
+        312
+      ],
+      "LKnee": [
+        195.03667307195929,
+        419.97903856705165
+      ],
+      "LAnkle": [
+        293,
+        496
+      ]
+    },
+    {
+      "phase": 0.75,
+      "support": "R",
+      "R": [
+        256.5,
+        540
+      ],
+      "L": [
+        256.5,
+        500
+      ],
+      "description": "Far right stance knee controls lowering; near left foot swings through toward a lower tread. Same figure size and light, no device visible on the left side.",
+      "RHip": [
+        264,
+        312
+      ],
+      "RKnee": [
+        193.73824472306052,
+        414.17282292960033
+      ],
+      "RAnkle": [
+        264.5,
+        516
+      ],
+      "LHip": [
+        256,
+        312
+      ],
+      "LKnee": [
+        167.4555684726461,
+        398.8094674876982
+      ],
+      "LAnkle": [
+        264.5,
+        476
+      ]
+    }
+  ],
+  "notes": [
+    "The free foot travels from tread i+1 to tread i-1 while the body advances one tread; do not repeat a one-tread same-leg step.",
+    "Foot points are sole centers, not ankle joints. Account for boot geometry when constructing the offline pose guide.",
+    "The head and hip are registration guides, not runtime joints or a required perfectly linear trajectory.",
+    "Preserve the actual anatomy of the reference. Report conflicts before compensating with per-frame resizing or deformations.",
+    "Actual room treads differ slightly from nominal 57x40 source units. First and last transfers require separate review."
+  ]
+}

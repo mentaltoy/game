@@ -1,0 +1,134 @@
+:root {
+  color-scheme: dark;
+  --background: #101615;
+  --surface: #19201e;
+  --line: #35403a;
+  --text: #e2e4dc;
+  --muted: #98a199;
+  --accent: #d5b77e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+html, body { width: 100%; height: 100%; margin: 0; }
+body { background: var(--background); color: var(--text); overflow: hidden; }
+button { font: inherit; -webkit-tap-highlight-color: transparent; }
+button, canvas { touch-action: none; -webkit-user-select: none; user-select: none; }
+button { cursor: pointer; }
+button:focus-visible, canvas:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+p { margin: 0; }
+
+.experience {
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  width: 100%;
+  height: 100%;
+  height: 100svh;
+  margin: 0 auto;
+  padding: max(18px, env(safe-area-inset-top)) max(26px, env(safe-area-inset-right)) max(14px, env(safe-area-inset-bottom)) max(26px, env(safe-area-inset-left));
+  display: flex;
+  flex-direction: column;
+}
+.masthead { min-height: 40px; display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.eyebrow { color: var(--muted); font-size: 10px; letter-spacing: .18em; line-height: 1.5; font-weight: 500; }
+.scene-name { color: #bbc2b9; font-size: 11px; letter-spacing: .04em; line-height: 1.5; }
+.scene-name span { padding: 0 5px; color: var(--accent); }
+.scene-area { flex: 1 1 auto; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.stage {
+  position: relative;
+  width: min(100%, calc((100svh - 174px) * 1.718676));
+  aspect-ratio: 1454 / 846;
+  overflow: hidden;
+  background: #101615;
+  box-shadow: 0 0 0 1px #ffffff0a;
+}
+canvas { width: 100%; height: 100%; display: block; }
+.loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 12px; background: #101615; color: var(--muted); font-size: 12px; letter-spacing: .03em; transition: opacity 280ms ease; }
+.loading[hidden], .loading.is-hidden { display: none; }
+.loading-dot { width: 5px; height: 5px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 10px #d5b77e35; }
+.controls-bar { flex: 0 0 auto; min-height: 90px; display: flex; align-items: center; gap: 24px; }
+.movement-controls { display: flex; flex: 0 0 auto; gap: 10px; }
+.direction-button, .fullscreen-button, .walk-button { display: grid; place-items: center; padding: 0; border: 1px solid var(--line); border-radius: 9px; background: var(--surface); color: #c4cbbf; transition: background 120ms ease, border-color 120ms ease, color 120ms ease; }
+.walk-button { flex: 0 0 auto; min-width: 76px; height: 44px; padding: 0 12px; font-size: 11px; }
+.walk-button[aria-pressed="true"] { border-color: #b0996d; background: #35372b; color: #f4dab0; }
+.direction-button { width: 60px; height: 60px; }
+.direction-button:active, .direction-button.is-active, .direction-button.active, .direction-button[aria-pressed="true"] { border-color: #b0996d; background: #35372b; color: #f4dab0; }
+.fullscreen-button { width: 44px; height: 44px; margin-left: auto; flex: 0 0 auto; border-color: transparent; background: transparent; color: var(--muted); }
+.instructions { min-width: 0; }
+#hint { font-size: 11px; color: #a3ada3; line-height: 1.6; }
+.notice { font-size: 11px; color: var(--accent); line-height: 1.5; }
+.notice:empty { display: none; }
+.rotate-hint { display: none; font-size: 10px; color: #7f8a80; line-height: 1.8; }
+
+@media (hover: hover) {
+  .direction-button:hover, .walk-button:hover { background: #232c26; border-color: #586252; }
+  .fullscreen-button:hover { color: var(--text); background: #ffffff08; }
+}
+@media (pointer: coarse) {
+  .keyboard-hint { display: none; }
+}
+@media (max-width: 640px) {
+  .experience { padding-left: max(14px, env(safe-area-inset-left)); padding-right: max(14px, env(safe-area-inset-right)); }
+  .controls-bar { gap: 14px; flex-wrap: wrap; justify-content: center; padding-top: 18px; padding-bottom: 8px; }
+  .movement-controls { gap: 12px; }
+  .direction-button { width: 64px; height: 60px; }
+  .instructions { order: 3; flex-basis: 100%; text-align: center; }
+  .fullscreen-button { margin-left: 10px; }
+  .stage { width: 100%; }
+}
+@media (orientation: portrait) and (pointer: coarse) {
+  .rotate-hint { display: block; }
+  .scene-area { align-items: center; }
+  .controls-bar { padding-bottom: 28px; }
+}
+@media (orientation: landscape) and (max-height: 540px) {
+  .experience { padding-top: max(8px, env(safe-area-inset-top)); padding-bottom: max(6px, env(safe-area-inset-bottom)); padding-left: max(14px, env(safe-area-inset-left)); padding-right: max(14px, env(safe-area-inset-right)); }
+  .masthead { display: none; }
+  .stage { width: min(100%, calc((100svh - 88px) * 1.718676)); }
+  .controls-bar { min-height: 72px; padding: 8px 0 0; gap: 18px; flex-wrap: nowrap; }
+  .direction-button { width: 62px; height: 56px; }
+  .instructions { order: initial; flex-basis: auto; text-align: left; }
+  #hint { font-size: 10px; }
+  .fullscreen-button { margin-left: auto; }
+}
+
+:is(:fullscreen, :-webkit-full-screen) { background: var(--background); }
+.experience:is(:fullscreen, :-webkit-full-screen) { width: 100%; max-width: none; }
+body.fullscreen .masthead, body.is-fullscreen .masthead, .experience:is(:fullscreen, :-webkit-full-screen) .masthead { display: none; }
+body.fullscreen .stage, body.is-fullscreen .stage, .experience:is(:fullscreen, :-webkit-full-screen) .stage { width: min(100%, calc((100svh - 124px) * 1.718676)); }
+@media (orientation: landscape) and (max-height: 540px) {
+  body.fullscreen .stage, body.is-fullscreen .stage, .experience:is(:fullscreen, :-webkit-full-screen) .stage { width: min(100%, calc((100svh - 88px) * 1.718676)); }
+}
+
+/* Wide phone screens give the painting the full height and reserve dark
+   gutters for the thumbs. Narrower landscape screens retain the lower bar. */
+@media (orientation: landscape) and (max-height: 540px) and (min-aspect-ratio: 2/1) {
+  .experience {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    padding: max(8px, env(safe-area-inset-top)) max(8px, env(safe-area-inset-right)) max(8px, env(safe-area-inset-bottom)) max(8px, env(safe-area-inset-left));
+    --scene-landscape-width: min(calc(100% - 160px), calc((100svh - max(8px, env(safe-area-inset-top)) - max(8px, env(safe-area-inset-bottom))) * 1.718676));
+  }
+  .scene-area { flex: 1 1 100%; }
+  .stage,
+  body.fullscreen .stage,
+  body.is-fullscreen .stage,
+  .experience:is(:fullscreen, :-webkit-full-screen) .stage {
+    width: var(--scene-landscape-width);
+  }
+  .controls-bar { position: absolute; inset: 0; min-height: 0; padding: 0; margin: 0; display: block; pointer-events: none; }
+  .movement-controls { display: contents; }
+  .direction-button { position: absolute; top: calc(65% - 30px); width: 60px; height: 60px; pointer-events: auto; }
+  #move-left { left: max(12px, calc(env(safe-area-inset-left) + 8px)); }
+  #move-right { right: max(12px, calc(env(safe-area-inset-right) + 8px)); }
+  .fullscreen-button { position: absolute; top: max(12px, env(safe-area-inset-top)); right: max(14px, calc(env(safe-area-inset-right) + 10px)); width: 56px; height: 56px; margin: 0; pointer-events: auto; }
+  .walk-button { position: absolute; left: max(8px, env(safe-area-inset-left)); bottom: max(20px, env(safe-area-inset-bottom)); width: 76px; min-width: 0; padding: 0 4px; pointer-events: auto; }
+  .instructions { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
+}

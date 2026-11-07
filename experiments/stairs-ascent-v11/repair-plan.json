@@ -1,0 +1,961 @@
+{
+  "status": "All twelve newly generated intermediates remain unaccepted. Preserve the four original keys and this rejected candidate for traceability.",
+  "preserveCells": [
+    0,
+    4,
+    8,
+    12
+  ],
+  "repairCells": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15
+  ],
+  "priorityOrder": [
+    11,
+    15,
+    10,
+    13,
+    14,
+    9,
+    1,
+    5,
+    6,
+    7,
+    3,
+    2
+  ],
+  "commonCell": [
+    500,
+    620
+  ],
+  "sourceReferenceHeight": 500,
+  "head": {
+    "x": 250,
+    "y": 83
+  },
+  "cranialWidth": 71.2,
+  "hipGuide": {
+    "x": 240,
+    "y": 312
+  },
+  "runtimeScaleAtH266": 0.532,
+  "scope": "Whole painted figures only. Preserve head, costume, light and anatomy. No per-frame rescaling or runtime limb warp.",
+  "frames": [
+    {
+      "cell": 1,
+      "phase": 0.0625,
+      "stance": "R",
+      "bracketingKeys": [
+        0,
+        4
+      ],
+      "actualFeet": {
+        "R": {
+          "x": 264,
+          "y": 509,
+          "floor": 510,
+          "roi": [
+            230,
+            302,
+            493,
+            521
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 203,
+          "y": 544,
+          "floor": 545,
+          "roi": [
+            160,
+            245,
+            530,
+            551
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "targetFeet": {
+        "R": {
+          "x": 249.91356819700323,
+          "y": 524.6359952105018
+        },
+        "L": {
+          "x": 199.4733217650495,
+          "y": 556.1314346636268
+        }
+      },
+      "correctionSource": {
+        "R": {
+          "x": -14.08643180299677,
+          "y": 15.635995210501846
+        },
+        "L": {
+          "x": -3.5266782349505092,
+          "y": 12.131434663626806
+        }
+      },
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        0,
+        0,
+        460,
+        570
+      ],
+      "sourceScale": 0.9367105263157894,
+      "sourcePackingTranslation": [
+        43,
+        25
+      ],
+      "worldHead": {
+        "x": 975.6662028617724,
+        "y": 514.0432392589506
+      }
+    },
+    {
+      "cell": 2,
+      "phase": 0.125,
+      "stance": "R",
+      "bracketingKeys": [
+        0,
+        4
+      ],
+      "actualFeet": {
+        "R": {
+          "x": 254.5,
+          "y": 543,
+          "floor": 543,
+          "roi": [
+            220,
+            309,
+            530,
+            551
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 194,
+          "y": 484,
+          "floor": 488,
+          "roi": [
+            162,
+            244,
+            465,
+            494
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "targetFeet": {
+        "R": {
+          "x": 244.31189262971256,
+          "y": 536.3761955302896
+        },
+        "L": {
+          "x": 205.25986824138602,
+          "y": 519.7086955302896
+        }
+      },
+      "correctionSource": {
+        "R": {
+          "x": -10.18810737028744,
+          "y": -6.6238044697104215
+        },
+        "L": {
+          "x": 11.259868241386016,
+          "y": 35.70869553028956
+        }
+      },
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        460,
+        0,
+        920,
+        570
+      ],
+      "sourceScale": 0.9367105263157894,
+      "sourcePackingTranslation": [
+        45,
+        25
+      ],
+      "worldHead": {
+        "x": 978.9027106209929,
+        "y": 508.24255397788596
+      }
+    },
+    {
+      "cell": 3,
+      "phase": 0.1875,
+      "stance": "R",
+      "bracketingKeys": [
+        0,
+        4
+      ],
+      "actualFeet": {
+        "R": {
+          "x": 251,
+          "y": 543,
+          "floor": 543,
+          "roi": [
+            224,
+            312,
+            530,
+            551
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 208.5,
+          "y": 456,
+          "floor": 460,
+          "roi": [
+            175,
+            238,
+            430,
+            466
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "targetFeet": {
+        "R": {
+          "x": 238.51739574756553,
+          "y": 547.9932980849325
+        },
+        "L": {
+          "x": 214.27710559702936,
+          "y": 483.16285863180735
+        }
+      },
+      "correctionSource": {
+        "R": {
+          "x": -12.48260425243447,
+          "y": 4.993298084932462
+        },
+        "L": {
+          "x": 5.777105597029362,
+          "y": 27.162858631807353
+        }
+      },
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        920,
+        0,
+        1380,
+        570
+      ],
+      "sourceScale": 0.9367105263157894,
+      "sourcePackingTranslation": [
+        49,
+        25
+      ],
+      "worldHead": {
+        "x": 982.241799319717,
+        "y": 502.50735670787844
+      }
+    },
+    {
+      "cell": 5,
+      "phase": 0.3125,
+      "stance": "R",
+      "bracketingKeys": [
+        4,
+        8
+      ],
+      "actualFeet": {
+        "R": {
+          "x": 216,
+          "y": 569,
+          "floor": 570,
+          "roi": [
+            170,
+            260,
+            556,
+            577
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 248.5,
+          "y": 483.5,
+          "floor": 487,
+          "roi": [
+            242,
+            310,
+            464,
+            489
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "targetFeet": {
+        "R": {
+          "x": 224.51262414999238,
+          "y": 556.047903834771
+        },
+        "L": {
+          "x": 233.11144628111467,
+          "y": 482.09359719414596
+        }
+      },
+      "correctionSource": {
+        "R": {
+          "x": 8.512624149992376,
+          "y": -12.952096165229023
+        },
+        "L": {
+          "x": -15.388553718885333,
+          "y": -1.406402805854043
+        }
+      },
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        0,
+        570,
+        460,
+        1140
+      ],
+      "sourceScale": 0.9367105263157894,
+      "sourcePackingTranslation": [
+        43,
+        53
+      ],
+      "worldHead": {
+        "x": 989.7821909248603,
+        "y": 498.5168332458393
+      }
+    },
+    {
+      "cell": 6,
+      "phase": 0.375,
+      "stance": "R",
+      "bracketingKeys": [
+        4,
+        8
+      ],
+      "actualFeet": {
+        "R": {
+          "x": 218,
+          "y": 569,
+          "floor": 570,
+          "roi": [
+            170,
+            265,
+            556,
+            577
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 282,
+          "y": 498,
+          "floor": 499,
+          "roi": [
+            246,
+            325,
+            485,
+            508
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "targetFeet": {
+        "R": {
+          "x": 216.6436207120055,
+          "y": 558.171442546314
+        },
+        "L": {
+          "x": 246.79689510033174,
+          "y": 497.433942546314
+        }
+      },
+      "correctionSource": {
+        "R": {
+          "x": -1.356379287994514,
+          "y": -10.828557453686017
+        },
+        "L": {
+          "x": -35.20310489966826,
+          "y": -0.5660574536860281
+        }
+      },
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        460,
+        570,
+        920,
+        1140
+      ],
+      "sourceScale": 0.9367105263157894,
+      "sourcePackingTranslation": [
+        45,
+        53
+      ],
+      "worldHead": {
+        "x": 994.0562387812131,
+        "y": 498.0701025653609
+      }
+    },
+    {
+      "cell": 7,
+      "phase": 0.4375,
+      "stance": "R",
+      "bracketingKeys": [
+        4,
+        8
+      ],
+      "actualFeet": {
+        "R": {
+          "x": 214.5,
+          "y": 570,
+          "floor": 571,
+          "roi": [
+            168,
+            260,
+            557,
+            578
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 291,
+          "y": 514,
+          "floor": 515,
+          "roi": [
+            246,
+            333,
+            506,
+            530
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "targetFeet": {
+        "R": {
+          "x": 208.57343191801598,
+          "y": 560.2917599846999
+        },
+        "L": {
+          "x": 256.85764636938325,
+          "y": 512.7710666253247
+        }
+      },
+      "correctionSource": {
+        "R": {
+          "x": -5.926568081984016,
+          "y": -9.708240015300134
+        },
+        "L": {
+          "x": -34.14235363061675,
+          "y": -1.2289333746753073
+        }
+      },
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        920,
+        570,
+        1380,
+        1140
+      ],
+      "sourceScale": 0.9367105263157894,
+      "sourcePackingTranslation": [
+        49,
+        54
+      ],
+      "worldHead": {
+        "x": 998.4373172469592,
+        "y": 497.6250856022022
+      }
+    },
+    {
+      "cell": 9,
+      "phase": 0.5625,
+      "stance": "L",
+      "bracketingKeys": [
+        8,
+        12
+      ],
+      "actualFeet": {
+        "R": {
+          "x": 191.5,
+          "y": 578,
+          "floor": 579,
+          "roi": [
+            148,
+            243,
+            563,
+            584
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 268.5,
+          "y": 534,
+          "floor": 535,
+          "roi": [
+            234,
+            322,
+            519,
+            541
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "targetFeet": {
+        "R": {
+          "x": 200.5043019315218,
+          "y": 556.3711670964954
+        },
+        "L": {
+          "x": 248.59249246285376,
+          "y": 524.1154053777452
+        }
+      },
+      "correctionSource": {
+        "R": {
+          "x": 9.004301931521809,
+          "y": -21.628832903504644
+        },
+        "L": {
+          "x": -19.907507537146245,
+          "y": -9.884594622254781
+        }
+      },
+      "source": "intermediates-B-candidate-01.png",
+      "sourceCrop": [
+        0,
+        0,
+        459,
+        570
+      ],
+      "sourceScale": 0.9555704697986577,
+      "sourcePackingTranslation": [
+        24,
+        57
+      ],
+      "worldHead": {
+        "x": 1006.9504109824181,
+        "y": 493.782302424977
+      }
+    },
+    {
+      "cell": 10,
+      "phase": 0.625,
+      "stance": "L",
+      "bracketingKeys": [
+        8,
+        12
+      ],
+      "actualFeet": {
+        "R": {
+          "x": 199,
+          "y": 531,
+          "floor": 535,
+          "roi": [
+            162,
+            260,
+            522,
+            548
+          ],
+          "uncertaintyX": 4,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 261,
+          "y": 555,
+          "floor": 556,
+          "roi": [
+            231,
+            311,
+            539,
+            562
+          ],
+          "uncertaintyX": 4,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "targetFeet": {
+        "R": {
+          "x": 211.20955036874946,
+          "y": 522.6097484202065
+        },
+        "L": {
+          "x": 240.76946930364755,
+          "y": 535.6047484202064
+        }
+      },
+      "correctionSource": {
+        "R": {
+          "x": 12.209550368749461,
+          "y": -8.390251579793471
+        },
+        "L": {
+          "x": -20.230530696352446,
+          "y": -19.39525157979358
+        }
+      },
+      "source": "intermediates-B-candidate-01.png",
+      "sourceCrop": [
+        459,
+        0,
+        918,
+        570
+      ],
+      "sourceScale": 0.9555704697986577,
+      "sourcePackingTranslation": [
+        40,
+        57
+      ],
+      "worldHead": {
+        "x": 1011.1999973304595,
+        "y": 488.3529638404502
+      }
+    },
+    {
+      "cell": 11,
+      "phase": 0.6875,
+      "stance": "L",
+      "bracketingKeys": [
+        8,
+        12
+      ],
+      "actualFeet": {
+        "R": {
+          "x": 268,
+          "y": 494,
+          "floor": 500,
+          "roi": [
+            228,
+            326,
+            470,
+            502
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 251,
+          "y": 573,
+          "floor": 574,
+          "roi": [
+            221,
+            310,
+            558,
+            580
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "targetFeet": {
+        "R": {
+          "x": 225.4900236216018,
+          "y": 488.96970553381436
+        },
+        "L": {
+          "x": 233.18296149261727,
+          "y": 547.2154672525644
+        }
+      },
+      "correctionSource": {
+        "R": {
+          "x": -42.50997637839819,
+          "y": -5.030294466185637
+        },
+        "L": {
+          "x": -17.817038507382733,
+          "y": -25.784532747435605
+        }
+      },
+      "source": "intermediates-B-candidate-01.png",
+      "sourceCrop": [
+        918,
+        0,
+        1377,
+        570
+      ],
+      "sourceScale": 0.9555704697986577,
+      "sourcePackingTranslation": [
+        57,
+        58
+      ],
+      "worldHead": {
+        "x": 1015.3237575132713,
+        "y": 482.85905333569826
+      }
+    },
+    {
+      "cell": 13,
+      "phase": 0.8125,
+      "stance": "L",
+      "bracketingKeys": [
+        12,
+        0
+      ],
+      "actualFeet": {
+        "R": {
+          "x": 235,
+          "y": 502,
+          "floor": 505,
+          "roi": [
+            198,
+            294,
+            474,
+            506
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 214,
+          "y": 575,
+          "floor": 577,
+          "roi": [
+            167,
+            260,
+            562,
+            583
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "targetFeet": {
+        "R": {
+          "x": 244.05759637525435,
+          "y": 488.41231446847416
+        },
+        "L": {
+          "x": 219.3723340468551,
+          "y": 555.781943374724
+        }
+      },
+      "correctionSource": {
+        "R": {
+          "x": 9.057596375254349,
+          "y": -13.587685531525835
+        },
+        "L": {
+          "x": 5.372334046855087,
+          "y": -19.21805662527595
+        }
+      },
+      "source": "intermediates-B-candidate-01.png",
+      "sourceCrop": [
+        0,
+        570,
+        459,
+        1140
+      ],
+      "sourceScale": 0.9555704697986577,
+      "sourcePackingTranslation": [
+        23,
+        56
+      ],
+      "worldHead": {
+        "x": 1022.6780519296512,
+        "y": 478.6169179605843
+      }
+    },
+    {
+      "cell": 14,
+      "phase": 0.875,
+      "stance": "L",
+      "bracketingKeys": [
+        12,
+        0
+      ],
+      "actualFeet": {
+        "R": {
+          "x": 229,
+          "y": 509,
+          "floor": 512,
+          "roi": [
+            200,
+            301,
+            479,
+            513
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 209,
+          "y": 577,
+          "floor": 579,
+          "roi": [
+            166,
+            260,
+            563,
+            584
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "targetFeet": {
+        "R": {
+          "x": 252.40743628953248,
+          "y": 500.80761350318966
+        },
+        "L": {
+          "x": 213.1012673546345,
+          "y": 557.8726135031895
+        }
+      },
+      "correctionSource": {
+        "R": {
+          "x": 23.407436289532484,
+          "y": -8.192386496810343
+        },
+        "L": {
+          "x": 4.101267354634501,
+          "y": -19.12738649681046
+        }
+      },
+      "source": "intermediates-B-candidate-01.png",
+      "sourceCrop": [
+        459,
+        570,
+        918,
+        1140
+      ],
+      "sourceScale": 0.9555704697986577,
+      "sourcePackingTranslation": [
+        40,
+        55
+      ],
+      "worldHead": {
+        "x": 1025.9534882673345,
+        "y": 478.0290796163032
+      }
+    },
+    {
+      "cell": 15,
+      "phase": 0.9375,
+      "stance": "L",
+      "bracketingKeys": [
+        12,
+        0
+      ],
+      "actualFeet": {
+        "R": {
+          "x": 288.5,
+          "y": 524,
+          "floor": 525,
+          "roi": [
+            245,
+            340,
+            507,
+            535
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 204.5,
+          "y": 583,
+          "floor": 583,
+          "roi": [
+            157,
+            253,
+            567,
+            588
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "targetFeet": {
+        "R": {
+          "x": 257.5760580590449,
+          "y": 513.2078557863105
+        },
+        "L": {
+          "x": 206.98769198509683,
+          "y": 559.9682268800603
+        }
+      },
+      "correctionSource": {
+        "R": {
+          "x": -30.923941940955103,
+          "y": -10.79214421368954
+        },
+        "L": {
+          "x": 2.4876919850968306,
+          "y": -23.031773119939658
+        }
+      },
+      "source": "intermediates-B-candidate-01.png",
+      "sourceCrop": [
+        918,
+        570,
+        1377,
+        1140
+      ],
+      "sourceScale": 0.9555704697986577,
+      "sourcePackingTranslation": [
+        57,
+        56
+      ],
+      "worldHead": {
+        "x": 1029.1451392213503,
+        "y": 477.4386114638705
+      }
+    }
+  ],
+  "notes": [
+    "These targets follow the measured four-key curved body path, not the rejected linear guide.",
+    "A target is a drawing guide, not evidence the resulting PNG meets it. Measure the actual sole after every short trial.",
+    "If anatomy cannot satisfy the target, review the full adjacent sequence before adjusting the body path; do not chase an isolated outlier with a new discontinuity.",
+    "The first high rise and end transitions are separate cases; this repair plan covers the repeating ascent cycle only."
+  ]
+}

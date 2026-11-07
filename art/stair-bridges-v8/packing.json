@@ -1,0 +1,90 @@
+[
+  {
+    "cell": 0,
+    "factor": 0.82,
+    "rawBounds": [
+      0,
+      0,
+      609,
+      646
+    ],
+    "rawRoot": 330,
+    "rawCap": 16,
+    "targetRoot": 169,
+    "targetCap": 18,
+    "offset": [
+      -102,
+      5
+    ],
+    "renderedSourceSize": [
+      499,
+      530
+    ]
+  },
+  {
+    "cell": 1,
+    "factor": 0.82,
+    "rawBounds": [
+      609,
+      0,
+      609,
+      646
+    ],
+    "rawRoot": 256,
+    "rawCap": 19,
+    "targetRoot": 169,
+    "targetCap": 18,
+    "offset": [
+      -41,
+      2
+    ],
+    "renderedSourceSize": [
+      499,
+      530
+    ]
+  },
+  {
+    "cell": 2,
+    "factor": 0.82,
+    "rawBounds": [
+      0,
+      646,
+      609,
+      646
+    ],
+    "rawRoot": 349,
+    "rawCap": 23,
+    "targetRoot": 195,
+    "targetCap": 21,
+    "offset": [
+      -91,
+      2
+    ],
+    "renderedSourceSize": [
+      499,
+      530
+    ]
+  },
+  {
+    "cell": 3,
+    "factor": 0.82,
+    "rawBounds": [
+      609,
+      646,
+      609,
+      646
+    ],
+    "rawRoot": 276,
+    "rawCap": 32,
+    "targetRoot": 195,
+    "targetCap": 24,
+    "offset": [
+      -31,
+      -2
+    ],
+    "renderedSourceSize": [
+      499,
+      530
+    ]
+  }
+]

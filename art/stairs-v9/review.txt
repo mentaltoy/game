@@ -1,0 +1,40 @@
+STAIRS V9 — implementation review
+
+Runtime asset: dist/assets/stair-refined-v9.png, 4 by 4 cells of 362 by 543 pixels.
+Renderer option: refinementImage. Existing V8 inputs remain supported unchanged.
+No body rig, body-part transforms, frame crossfade, or per-pose scale normalization.
+New raw drawings are uniformly packed at nominal scale 0.96. The renderer uses
+one common 500-source-pixel reference height for old and new paintings.
+
+Source files and prompts are preserved here. The first generated atlas copied
+the old poses and was rejected; it is never loaded by the runtime. Guide images
+are references for ImageGen only and are not used as a procedural skeleton.
+
+Accepted up sequence combines V8 cells 6, 1, 5 and new cells 2, 3, 4, 5.
+The taller first riser additionally uses V8 cell 2. Up placements pin the painted
+heel to a fixed point on each tread. Accepted down sequence uses new cells
+0, 1, 2, 3, 5, 7. The taller final descent additionally uses V8 cell 3.
+The selected down contact remains fixed throughout each drawing; the painted
+roll/contact shape still varies between drawings and is not certified foot lock
+for the entire visible sole.
+
+Measured at character height 266 over all five real treads:
+maximum vertical head change: up 6.66 px, down 8.66 px;
+maximum horizontal head change: up 7.43 px, down 9.96 px;
+no backward movement of the registered head through either sequence;
+no movement of the selected contact during a held drawing.
+Comparable V8 vertical maxima: up 7.03 px, down 11.95 px.
+
+Release preserves the last stair painting through the beginning of collection,
+then switches through the existing gathered/idle paintings. The controller
+exposes lastStep for this registration; movement rules are unchanged.
+
+Verification: 16 stair tests pass. All 19 V8 graded cell outputs are byte-identical
+to the saved V8 grader. New grading preserves alpha in all 16 cells. Every selected
+contact overlaps solid painted shoe pixels. Contact review is included at H266.
+
+Remaining artistic limits: discrete whole-body frame changes remain visible;
+the source poses do not establish convincing alternating near/far leg mechanics
+on successive treads. The old up bridge poses also have a stronger arm change
+than the compact new drawings. This is a measured improvement of the playable
+stair prototype, not a final rotoscoped staircase animation.

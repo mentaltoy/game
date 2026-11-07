@@ -1,0 +1,73 @@
+{
+  "referenceHeight": 495,
+  "strideHeightRatio": 1.1,
+  "periodSeconds": 0.8,
+  "times": [
+    [
+      0.0,
+      6
+    ],
+    [
+      0.036731,
+      7
+    ],
+    [
+      0.07989,
+      8
+    ],
+    [
+      0.195592,
+      9
+    ],
+    [
+      0.296235,
+      10
+    ],
+    [
+      0.396235,
+      0
+    ],
+    [
+      0.471534,
+      11
+    ],
+    [
+      0.546832,
+      1
+    ],
+    [
+      0.596419,
+      2
+    ],
+    [
+      0.687328,
+      3
+    ],
+    [
+      0.796235,
+      4
+    ],
+    [
+      0.896235,
+      5
+    ]
+  ],
+  "contactCells": [
+    5,
+    0
+  ],
+  "contactPhases": [
+    0.896235,
+    0.396235
+  ],
+  "flightCells": [
+    4,
+    10
+  ],
+  "reason": "Cell11 is post-contact loading after0; cell5 is landing before6. Both arms and forward-foot progression now advance continuously. Phase0 remains the loaded near-arm-back pose6 to match startup.",
+  "footTravelByHalfSourcePx": [
+    158.5,
+    163
+  ],
+  "limitation": "Reference travel is approximately1.9H/cycle, while this candidate remains1.1H to validate its painted stride before increasing travel."
+}

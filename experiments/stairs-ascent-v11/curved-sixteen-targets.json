@@ -1,0 +1,684 @@
+{
+  "status": "Authored in-between targets following the measured four-key anatomy; new drawings still require visual and pixel-contact validation.",
+  "sourceReferenceHeight": 500,
+  "cellSize": [
+    500,
+    620
+  ],
+  "existingKeyRawScale": 0.565,
+  "worldRenderHeight": 266,
+  "sourceHead": {
+    "x": 250,
+    "y": 83
+  },
+  "sourceHipGuide": {
+    "x": 240,
+    "y": 312
+  },
+  "nearLeg": "R anatomical right",
+  "farLeg": "L anatomical left",
+  "placement": "Use one anatomical size. Existing four keys are preserved. The display crown follows worldHead continuously. Intermediates move the stance shoe back/down in the cell to keep it on the same world tread.",
+  "unchangedKeyCells": [
+    0,
+    4,
+    8,
+    12
+  ],
+  "generateOnlyCells": [
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15
+  ],
+  "note": "Hip is a guide estimated from the existing paintings, not a separate runtime rig. Do not stretch limbs to satisfy the guide; report a contradiction if anatomy cannot meet it.",
+  "frames": [
+    {
+      "cell": 0,
+      "phase": 0,
+      "worldHead": {
+        "x": 972.397185,
+        "y": 517.4307800000001
+      },
+      "support": "R",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 255.9324999999999,
+        "y": 518.05
+      },
+      "sourceL": {
+        "x": 200.84499999999989,
+        "y": 562.12
+      },
+      "worldR": {
+        "x": 975.553275,
+        "y": 748.8773800000001
+      },
+      "worldL": {
+        "x": 946.246725,
+        "y": 772.3226200000001
+      },
+      "worldSupport": {
+        "x": 976.1999999999999,
+        "y": 750,
+        "step": 1,
+        "zone": "stairs"
+      },
+      "exactExistingKey": "contact-R"
+    },
+    {
+      "cell": 1,
+      "phase": 0.0625,
+      "worldHead": {
+        "x": 975.6662028617724,
+        "y": 514.0432392589506
+      },
+      "support": "R",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 249.91356819700323,
+        "y": 524.6359952105018
+      },
+      "sourceL": {
+        "x": 199.4733217650495,
+        "y": 556.1314346636268
+      },
+      "worldR": {
+        "x": 975.6202211425781,
+        "y": 748.9935887109376
+      },
+      "worldL": {
+        "x": 948.7860100407787,
+        "y": 765.7491625000001
+      },
+      "worldSupport": {
+        "x": 976.1999999999999,
+        "y": 750,
+        "step": 1,
+        "zone": "stairs"
+      },
+      "exactExistingKey": null
+    },
+    {
+      "cell": 2,
+      "phase": 0.125,
+      "worldHead": {
+        "x": 978.9027106209929,
+        "y": 508.24255397788596
+      },
+      "support": "R",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 244.31189262971256,
+        "y": 536.3761955302896
+      },
+      "sourceL": {
+        "x": 205.25986824138602,
+        "y": 519.7086955302896
+      },
+      "worldR": {
+        "x": 975.8766375,
+        "y": 749.4386900000001
+      },
+      "worldL": {
+        "x": 955.1009605254103,
+        "y": 740.57158
+      },
+      "worldSupport": {
+        "x": 976.1999999999999,
+        "y": 750,
+        "step": 1,
+        "zone": "stairs"
+      },
+      "exactExistingKey": null
+    },
+    {
+      "cell": 3,
+      "phase": 0.1875,
+      "worldHead": {
+        "x": 982.241799319717,
+        "y": 502.50735670787844
+      },
+      "support": "R",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 238.51739574756553,
+        "y": 547.9932980849325
+      },
+      "sourceL": {
+        "x": 214.27710559702936,
+        "y": 483.16285863180735
+      },
+      "worldR": {
+        "x": 976.1330538574218,
+        "y": 749.8837912890625
+      },
+      "worldL": {
+        "x": 963.2372194973366,
+        "y": 715.3939975
+      },
+      "worldSupport": {
+        "x": 976.1999999999999,
+        "y": 750,
+        "step": 1,
+        "zone": "stairs"
+      },
+      "exactExistingKey": null
+    },
+    {
+      "cell": 4,
+      "phase": 0.25,
+      "worldHead": {
+        "x": 985.8185599999999,
+        "y": 499.31628
+      },
+      "support": "R",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 231.92,
+        "y": 554.21
+      },
+      "sourceL": {
+        "x": 222.5974999999998,
+        "y": 476.80499999999984
+      },
+      "worldR": {
+        "x": 976.1999999999999,
+        "y": 750
+      },
+      "worldL": {
+        "x": 971.2404299999998,
+        "y": 708.8205399999999
+      },
+      "worldSupport": {
+        "x": 976.1999999999999,
+        "y": 750,
+        "step": 1,
+        "zone": "stairs"
+      },
+      "exactExistingKey": "passing-R"
+    },
+    {
+      "cell": 5,
+      "phase": 0.3125,
+      "worldHead": {
+        "x": 989.7821909248603,
+        "y": 498.5168332458393
+      },
+      "support": "R",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 224.51262414999238,
+        "y": 556.047903834771
+      },
+      "sourceL": {
+        "x": 233.11144628111467,
+        "y": 482.09359719414596
+      },
+      "worldR": {
+        "x": 976.2229069726562,
+        "y": 750.1783180859375
+      },
+      "worldL": {
+        "x": 980.7974803464133,
+        "y": 710.8346269531249
+      },
+      "worldSupport": {
+        "x": 976.1999999999999,
+        "y": 750,
+        "step": 1,
+        "zone": "stairs"
+      },
+      "exactExistingKey": null
+    },
+    {
+      "cell": 6,
+      "phase": 0.375,
+      "worldHead": {
+        "x": 994.0562387812131,
+        "y": 498.0701025653609
+      },
+      "support": "R",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 216.6436207120055,
+        "y": 558.171442546314
+      },
+      "sourceL": {
+        "x": 246.79689510033174,
+        "y": 497.433942546314
+      },
+      "worldR": {
+        "x": 976.310645,
+        "y": 750.86131
+      },
+      "worldL": {
+        "x": 992.3521869745896,
+        "y": 718.54896
+      },
+      "worldSupport": {
+        "x": 976.1999999999999,
+        "y": 750,
+        "step": 1,
+        "zone": "stairs"
+      },
+      "exactExistingKey": null
+    },
+    {
+      "cell": 7,
+      "phase": 0.4375,
+      "worldHead": {
+        "x": 998.4373172469592,
+        "y": 497.6250856022022
+      },
+      "support": "R",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 208.57343191801598,
+        "y": 560.2917599846999
+      },
+      "sourceL": {
+        "x": 256.85764636938325,
+        "y": 512.7710666253247
+      },
+      "worldR": {
+        "x": 976.3983830273437,
+        "y": 751.5443019140625
+      },
+      "worldL": {
+        "x": 1002.0855851154711,
+        "y": 726.263293046875
+      },
+      "worldSupport": {
+        "x": 976.1999999999999,
+        "y": 750,
+        "step": 1,
+        "zone": "stairs"
+      },
+      "exactExistingKey": null
+    },
+    {
+      "cell": 8,
+      "phase": 0.5,
+      "worldHead": {
+        "x": 1002.72204,
+        "y": 496.83078
+      },
+      "support": "L",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 200.5625,
+        "y": 562.12
+      },
+      "sourceL": {
+        "x": 256.49750000000006,
+        "y": 518.05
+      },
+      "worldR": {
+        "x": 976.42129,
+        "y": 751.72262
+      },
+      "worldL": {
+        "x": 1006.17871,
+        "y": 728.27738
+      },
+      "worldSupport": {
+        "x": 1006.4,
+        "y": 730,
+        "step": 2,
+        "zone": "stairs"
+      },
+      "exactExistingKey": "contact-L"
+    },
+    {
+      "cell": 9,
+      "phase": 0.5625,
+      "worldHead": {
+        "x": 1006.9504109824181,
+        "y": 493.782302424977
+      },
+      "support": "L",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 200.5043019315218,
+        "y": 556.3711670964954
+      },
+      "sourceL": {
+        "x": 248.59249246285376,
+        "y": 524.1154053777452
+      },
+      "worldR": {
+        "x": 980.6186996099877,
+        "y": 745.6157633203126
+      },
+      "worldL": {
+        "x": 1006.2016169726563,
+        "y": 728.4556980859375
+      },
+      "worldSupport": {
+        "x": 1006.4,
+        "y": 730,
+        "step": 2,
+        "zone": "stairs"
+      },
+      "exactExistingKey": null
+    },
+    {
+      "cell": 10,
+      "phase": 0.625,
+      "worldHead": {
+        "x": 1011.1999973304595,
+        "y": 488.3529638404502
+      },
+      "support": "L",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 211.20955036874946,
+        "y": 522.6097484202065
+      },
+      "sourceL": {
+        "x": 240.76946930364755,
+        "y": 535.6047484202064
+      },
+      "worldR": {
+        "x": 990.5634781266342,
+        "y": 722.22535
+      },
+      "worldL": {
+        "x": 1006.289355,
+        "y": 729.13869
+      },
+      "worldSupport": {
+        "x": 1006.4,
+        "y": 730,
+        "step": 2,
+        "zone": "stairs"
+      },
+      "exactExistingKey": null
+    },
+    {
+      "cell": 11,
+      "phase": 0.6875,
+      "worldHead": {
+        "x": 1015.3237575132713,
+        "y": 482.85905333569826
+      },
+      "support": "L",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 225.4900236216018,
+        "y": 488.96970553381436
+      },
+      "sourceL": {
+        "x": 233.18296149261727,
+        "y": 547.2154672525644
+      },
+      "worldR": {
+        "x": 1002.2844500799634,
+        "y": 698.8349366796875
+      },
+      "worldL": {
+        "x": 1006.3770930273437,
+        "y": 729.8216819140625
+      },
+      "worldSupport": {
+        "x": 1006.4,
+        "y": 730,
+        "step": 2,
+        "zone": "stairs"
+      },
+      "exactExistingKey": null
+    },
+    {
+      "cell": 12,
+      "phase": 0.75,
+      "worldHead": {
+        "x": 1019.1746499999999,
+        "y": 479.6168600000001
+      },
+      "support": "L",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 236.15750000000008,
+        "y": 483.585
+      },
+      "sourceL": {
+        "x": 225.9875000000001,
+        "y": 553.6449999999998
+      },
+      "worldR": {
+        "x": 1011.81044,
+        "y": 692.7280800000001
+      },
+      "worldL": {
+        "x": 1006.4,
+        "y": 730
+      },
+      "worldSupport": {
+        "x": 1006.4,
+        "y": 730,
+        "step": 2,
+        "zone": "stairs"
+      },
+      "exactExistingKey": "passing-L"
+    },
+    {
+      "cell": 13,
+      "phase": 0.8125,
+      "worldHead": {
+        "x": 1022.6780519296512,
+        "y": 478.6169179605843
+      },
+      "support": "L",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 244.05759637525435,
+        "y": 488.41231446847416
+      },
+      "sourceL": {
+        "x": 219.3723340468551,
+        "y": 555.781943374724
+      },
+      "worldR": {
+        "x": 1019.5166932012866,
+        "y": 694.2962692578126
+      },
+      "worldL": {
+        "x": 1006.3841336425781,
+        "y": 730.1369118359376
+      },
+      "worldSupport": {
+        "x": 1006.4,
+        "y": 730,
+        "step": 2,
+        "zone": "stairs"
+      },
+      "exactExistingKey": null
+    },
+    {
+      "cell": 14,
+      "phase": 0.875,
+      "worldHead": {
+        "x": 1025.9534882673345,
+        "y": 478.0290796163032
+      },
+      "support": "L",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 252.40743628953248,
+        "y": 500.80761350318966
+      },
+      "sourceL": {
+        "x": 213.1012673546345,
+        "y": 557.8726135031895
+      },
+      "worldR": {
+        "x": 1027.2342443733658,
+        "y": 700.3027300000001
+      },
+      "worldL": {
+        "x": 1006.3233625,
+        "y": 730.6613100000001
+      },
+      "worldSupport": {
+        "x": 1006.4,
+        "y": 730,
+        "step": 2,
+        "zone": "stairs"
+      },
+      "exactExistingKey": null
+    },
+    {
+      "cell": 15,
+      "phase": 0.9375,
+      "worldHead": {
+        "x": 1029.1451392213503,
+        "y": 477.4386114638705
+      },
+      "support": "L",
+      "sourceHead": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceHipGuide": {
+        "x": 240,
+        "y": 312
+      },
+      "sourceR": {
+        "x": 257.5760580590449,
+        "y": 513.2078557863105
+      },
+      "sourceL": {
+        "x": 206.98769198509683,
+        "y": 559.9682268800603
+      },
+      "worldR": {
+        "x": 1033.1756021087622,
+        "y": 706.3091907421876
+      },
+      "worldL": {
+        "x": 1006.2625913574218,
+        "y": 731.1857081640626
+      },
+      "worldSupport": {
+        "x": 1006.4,
+        "y": 730,
+        "step": 2,
+        "zone": "stairs"
+      },
+      "exactExistingKey": null
+    }
+  ]
+}

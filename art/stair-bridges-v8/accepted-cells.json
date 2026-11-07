@@ -1,0 +1,21 @@
+{
+  "runtimeAsset": "dist/assets/stair-bridges-v8.png",
+  "atlas": [724, 1086],
+  "cellSize": [362, 543],
+  "acceptedCells": [0, 1, 2],
+  "unusedTransparentCell": 3,
+  "uniformPackingScale": 0.82,
+  "ids": ["stair-up-bridge-0", "stair-up-bridge-1", "stair-down-bridge-2"],
+  "rejected": {
+    "generated-raw-cell-3": "Knee bend exceeds the intended endpoint, so it is not an intermediate pose.",
+    "rejected-standalone.png": "Changed painted treatment and introduced a visible background glow.",
+    "rejected-replacement.png": "Changed painted treatment and introduced a visible background glow."
+  },
+  "measuredMaxHeadJumpAtHeight266": {
+    "upBefore": 11.9585,
+    "upAfter": 7.0318,
+    "downBefore": 16.2613,
+    "downAfter": 11.9476
+  },
+  "notes": "Whole paintings at a fixed runtime scale. No limb deformation. All five stair transitions were measured. Horizontal contact shifts between drawings and the remaining downward transition still require future animation refinement."
+}

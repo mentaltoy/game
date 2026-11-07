@@ -1,0 +1,287 @@
+{
+  "frames": [
+    {
+      "cell": 0,
+      "sourceBounds": [
+        0,
+        0,
+        314,
+        418
+      ],
+      "bounds": [
+        23,
+        24,
+        297,
+        398
+      ],
+      "headBounds": [
+        166,
+        236
+      ],
+      "headWidth": 71,
+      "headRoot": 201.0,
+      "headFloor": 374
+    },
+    {
+      "cell": 1,
+      "sourceBounds": [
+        314,
+        0,
+        627,
+        418
+      ],
+      "bounds": [
+        77,
+        27,
+        236,
+        397
+      ],
+      "headBounds": [
+        176,
+        235
+      ],
+      "headWidth": 60,
+      "headRoot": 205.5,
+      "headFloor": 370
+    },
+    {
+      "cell": 2,
+      "sourceBounds": [
+        627,
+        0,
+        940,
+        418
+      ],
+      "bounds": [
+        98,
+        28,
+        239,
+        396
+      ],
+      "headBounds": [
+        177,
+        236
+      ],
+      "headWidth": 60,
+      "headRoot": 206.5,
+      "headFloor": 368
+    },
+    {
+      "cell": 3,
+      "sourceBounds": [
+        940,
+        0,
+        1254,
+        418
+      ],
+      "bounds": [
+        71,
+        29,
+        266,
+        395
+      ],
+      "headBounds": [
+        178,
+        237
+      ],
+      "headWidth": 60,
+      "headRoot": 207.5,
+      "headFloor": 366
+    },
+    {
+      "cell": 4,
+      "sourceBounds": [
+        0,
+        418,
+        314,
+        836
+      ],
+      "bounds": [
+        25,
+        28,
+        309,
+        376
+      ],
+      "headBounds": [
+        176,
+        236
+      ],
+      "headWidth": 61,
+      "headRoot": 206.0,
+      "headFloor": 348
+    },
+    {
+      "cell": 5,
+      "sourceBounds": [
+        314,
+        418,
+        627,
+        836
+      ],
+      "bounds": [
+        63,
+        28,
+        284,
+        393
+      ],
+      "headBounds": [
+        177,
+        236
+      ],
+      "headWidth": 60,
+      "headRoot": 206.5,
+      "headFloor": 365
+    },
+    {
+      "cell": 6,
+      "sourceBounds": [
+        627,
+        418,
+        940,
+        836
+      ],
+      "bounds": [
+        67,
+        27,
+        245,
+        396
+      ],
+      "headBounds": [
+        177,
+        236
+      ],
+      "headWidth": 60,
+      "headRoot": 206.5,
+      "headFloor": 369
+    },
+    {
+      "cell": 7,
+      "sourceBounds": [
+        940,
+        418,
+        1254,
+        836
+      ],
+      "bounds": [
+        104,
+        26,
+        238,
+        396
+      ],
+      "headBounds": [
+        178,
+        237
+      ],
+      "headWidth": 60,
+      "headRoot": 207.5,
+      "headFloor": 370
+    },
+    {
+      "cell": 8,
+      "sourceBounds": [
+        0,
+        836,
+        314,
+        1254
+      ],
+      "bounds": [
+        103,
+        28,
+        240,
+        397
+      ],
+      "headBounds": [
+        177,
+        236
+      ],
+      "headWidth": 60,
+      "headRoot": 206.5,
+      "headFloor": 369
+    },
+    {
+      "cell": 9,
+      "sourceBounds": [
+        314,
+        836,
+        627,
+        1254
+      ],
+      "bounds": [
+        56,
+        28,
+        253,
+        396
+      ],
+      "headBounds": [
+        177,
+        236
+      ],
+      "headWidth": 60,
+      "headRoot": 206.5,
+      "headFloor": 368
+    },
+    {
+      "cell": 10,
+      "sourceBounds": [
+        627,
+        836,
+        940,
+        1254
+      ],
+      "bounds": [
+        28,
+        28,
+        302,
+        376
+      ],
+      "headBounds": [
+        178,
+        236
+      ],
+      "headWidth": 59,
+      "headRoot": 207.0,
+      "headFloor": 348
+    },
+    {
+      "cell": 11,
+      "sourceBounds": [
+        940,
+        836,
+        1254,
+        1254
+      ],
+      "bounds": [
+        82,
+        28,
+        270,
+        395
+      ],
+      "headBounds": [
+        178,
+        237
+      ],
+      "headWidth": 60,
+      "headRoot": 207.5,
+      "headFloor": 367
+    }
+  ],
+  "repair": {
+    "size": [
+      1087,
+      1447
+    ],
+    "bounds": [
+      237,
+      92,
+      924,
+      1356
+    ],
+    "headBounds": [
+      612,
+      835
+    ],
+    "headWidth": 224,
+    "headRoot": 723.5,
+    "headFloor": 1264
+  }
+}

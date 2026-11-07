@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101615">
+  <meta name="description" content="Esplora un interno dipinto: corri, cammina e percorri le scale con le frecce o i controlli touch.">
+  <title>Interno · Prova di movimento</title>
+  <link rel="stylesheet" href="style.css?v=9">
+</head>
+<body>
+  <main class="experience" id="experience">
+    <header class="masthead">
+      <p class="eyebrow">PROVA DI MOVIMENTO</p>
+      <p class="scene-name">Interno <span aria-hidden="true">·</span> 01</p>
+    </header>
+
+    <div class="scene-area">
+      <div class="stage" id="stage">
+        <canvas id="scene" tabindex="0" aria-label="Scena interattiva. Tieni premuta la metà sinistra o destra dello schermo per correre. Attiva Cammina per andare piano. Da tastiera usa le frecce o A e D; tieni premuto Maiusc per camminare."></canvas>
+        <div class="loading" id="loading" role="status">
+          <span class="loading-dot" aria-hidden="true"></span>
+          <span>Preparazione della scena…</span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="controls-bar">
+      <div class="movement-controls" role="group" aria-label="Movimento del personaggio">
+        <button class="direction-button" id="move-left" type="button" aria-label="Muoviti a sinistra">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" aria-hidden="true"><path d="M15 5 8 12l7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="direction-button" id="move-right" type="button" aria-label="Muoviti a destra">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" aria-hidden="true"><path d="m9 5 7 7-7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <button class="walk-button" id="walk-mode" type="button" aria-pressed="false" title="Attiva la camminata">Cammina</button>
+      <div class="instructions">
+        <p id="hint">Tieni premuto a sinistra o a destra per correre<span class="keyboard-hint"> · ← / → · Maiusc per camminare</span></p>
+        <p class="rotate-hint">Ruota iPhone per una vista più ampia</p>
+        <p id="notice" class="notice" aria-live="polite" aria-atomic="true"></p>
+      </div>
+      <button class="fullscreen-button" id="fullscreen" type="button" aria-label="Schermo intero" title="Schermo intero">
+        <svg viewBox="0 0 24 24" width="21" height="21" fill="none" aria-hidden="true"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </footer>
+  </main>
+  <script type="module" src="game.js?v=10"></script>
+</body>
+</html>

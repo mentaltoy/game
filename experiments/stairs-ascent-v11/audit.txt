@@ -1,0 +1,102 @@
+Scala V11 — prova del ciclo di salita, candidato 01
+7 novembre 2026. Stato: NON ACCETTATO, nessuna integrazione nel gioco pubblicato.
+
+Il prototipo mantiene continua la traslazione della figura intera. Non congela
+il corpo per piantare ogni singolo disegno, non deforma gli arti e non dissolve
+tra pose. Il controllo riprende i file conservati in questo esperimento; la camminata
+approvata, game.js e i sorgenti della V10 pubblicata non sono stati modificati.
+
+I QUATTRO DISEGNI CHIAVE
+Contatti e passaggi originali sono geometricamente plausibili usando una
+traiettoria che estende la gamba portante presto nel passo. Non era corretto
+scartarli solo perché non seguivano la precedente guida lineare. La scala
+anatomica comune .565 preserva la larghezza del cranio (~71px su riferimento
+500). Distribuendo il piccolo disaccordo dei due appoggi, nei gradini regolari
+le chiavi hanno residui entro circa1.7px verticali a H266.
+Questa è una verifica geometrica/visiva, non una misura biomeccanica di COM.
+
+I DODICI INTERMEDI EFFETTIVI
+Le immagini sono state misurate dopo il packing, non sostituite con i target.
+La sola traslazione del corpo non può correggerne l'anatomia variabile:
+- Cell1: suola portante(264,509), guida(249.91,524.64). A H266: +7.49px X,
+  -8.32px Y rispetto alla guida.
+- Cell9: +10.59px X, +5.26px Y.
+- Cell10: +10.76px X, +10.32px Y.
+- Cell11: +9.48px X, +13.72px Y.
+- Cell13/14/15: circa10.2/10.2/12.3px Y.
+- Cell5/6/7: circa6.9/5.8/5.2px Y.
+Anche cell2/3 eccedono il budget orizzontale di circa5.4/6.6px.
+Non sono quindi uno o due soli outlier isolati.
+
+La selezione fra le due pose adiacenti minimizza il residuo misurato e mantiene
+una progressione ordinata. Nel campionamento effettivo a120Hz:
+- massimo errore del punto di suola portante:14.07px X /13.82px Y;
+- zero fotogrammi di corpo fermo durante l'avanzamento;
+- nessun ritorno indietro nella selezione delle celle;
+- nessun salto dell'ancora della testa al cambio immagine.
+Gli ultimi tre punti NON certificano fluidità estetica: il resto della
+silhouette cambia ancora e i piedi possono galleggiare o penetrare la pedata.
+L'incertezza di misura ordinaria è circa1px mondo, molto meno degli scarti.
+Le suole libere parzialmente occluse hanno incertezza maggiore; non sono
+trattate come un centro anatomico ricostruito con certezza.
+
+Se invece si pianta ogni disegno, il problema ritorna al corpo:
+-0→1: testa indietro~4.28px e in basso~4.99px;
+-1→2: testa sale~18.09px fra due pose;
+-7→8: testa scende~7.46px;
+-11→12: testa scende~10.42px;
+-12→13: testa sale~11.48px;
+-15→0 successivo: testa scende~13.58px su una alzata di20.8px.
+Una curva arbitraria che inseguisse tutti questi valori reintrodurrebbe il
+sobbalzo respinto. Non è una piccola correzione naturale del bacino.
+
+PROVA NEL FONDALE
+actual-poses-in-room.png: sedici immagini intere effettive a H266, fondale e
+pixel originali della ringhiera. Nessuna modifica alla stanza.
+ascent-candidate-01.mp4:159fotogrammi,60fps,2.65secondi,450×450. Parte dal primo
+contatto rialzato, avanza, riceve rilascio a progress2.308, finisce al supporto3,
+resta fermo0.45s e riprende fino al supporto5. La raccolta finale è segnalata
+come mancante. Non contiene una falsa inversione o un raccordo nascosto.
+review.html: player con velocità reale/metà e avanzamento di un fotogramma.
+Le tavole statiche sono state ispezionate. Il video è codificato e verificato
+tecnicamente; non si dichiara una nuova prova su iPhone fisico.
+
+MODULI ISOLATI
+ascent-cycle.mjs: createAscentGeometry({nodes,frames,height,referenceHeight})
+  genera curva C1 dalle quattro chiavi reali, placement continuo e misure.
+ascent-renderer.mjs: createAscentRenderer({image,frames,nodes,...}), API draw,
+  getFootprints, placement. Restituisce false per transizioni non supportate;
+  non sostituisce silenziosamente un idle con piedi alla stessa quota.
+ascent-motion.mjs: create/update/getAscentPose. Completa la pedata al rilascio
+  e conserva il doppio appoggio. requiresTransition esplicita reverse/gather.
+Sono moduli di prova, NON un adattatore completo per room-motion.
+
+VERIFICHE
+6unit test superati: continuità della curva, alternanza dei supporti, drift
+esposto, stop sul gradino, richieste di transizione esplicite e input rapido.
+validate-candidate.mjs fallisce intenzionalmente il gate di accettazione:
+errori di contatto oltre3.5px e flusso incompleto. acceptance-report.json è il
+risultato da usare; i test del controller non autorizzano la pubblicazione.
+
+RACCORDI NECESSARI
+1.Ingresso dal pavimento al primo contatto rialzato, incluso il primo dislivello
+  di28.8px. Idle attuale crown534; primo contatto crown~542.4: il carico può
+  abbassare il corpo~8px prima della spinta, ma va disegnato continuamente.
+2.Raccolta dell'ultimo piede sul pianerottolo: contatto crown~455 contro idle
+  approvato421. Deve salire l'intero busto~34px mentre il piede arretrato passa
+  dal penultimo all'ultimo supporto. Un semplice spostamento di scarpa non basta.
+3.Inversione su scala: la strada più breve riutilizzabile è doppio appoggio→
+  raccolta su una sola pedata→giro approvato→ingresso nel ciclo opposto. Servono
+  i disegni di raccolta e ripartenza; non basta usare il giro a piedi pari sopra
+  una posa che occupa due quote.
+4.Discesa realmente alternata, ingresso dall'alto e raccolta finale al piano.
+  Il primo provino di quattro chiavi è in analisi separata; non è certificato.
+
+PROSSIMA AZIONE UTILE
+Preservare le quattro chiavi riuscite e i PNG del candidato scartato. Prima di
+rifare altre tavole complete, correggere e validare una sola sequenza breve
+di intermedi fra due chiavi, controllando l'immagine effettiva a scala d'uso.
+Una correzione statica del colore è indipendente e non risolve questi appoggi.
+Se il generatore non riesce a seguire abbastanza le ancore, occorre un ciclo
+autoriale coerente (disegno frame per frame o reference di moto continuativa)
+da dipingere mantenendo le proporzioni; non un'altra correzione del controller.

@@ -1,0 +1,173 @@
+{
+  "cell": [
+    500,
+    620
+  ],
+  "referenceHeight": 500,
+  "crown": [
+    250,
+    60
+  ],
+  "hip": [
+    240,
+    300
+  ],
+  "stepTranslation": [
+    57,
+    -40
+  ],
+  "cycleTranslation": [
+    114,
+    -80
+  ],
+  "poses": [
+    {
+      "phase": 0,
+      "nearSole": [
+        250,
+        520
+      ],
+      "farSole": [
+        193,
+        560
+      ],
+      "nearArm": "back",
+      "farArm": "front",
+      "farHip": [
+        236,
+        300
+      ],
+      "farKnee": [
+        238.17632259766418,
+        423.9809002223766
+      ],
+      "farAnkle": [
+        185,
+        536
+      ],
+      "nearHip": [
+        244,
+        300
+      ],
+      "nearKnee": [
+        318.96314347827155,
+        398.7751341171252
+      ],
+      "nearAnkle": [
+        242,
+        496
+      ]
+    },
+    {
+      "phase": 0.25,
+      "nearSole": [
+        221.5,
+        540
+      ],
+      "farSole": [
+        221.5,
+        480
+      ],
+      "nearArm": "middleFront",
+      "farArm": "middleBack",
+      "farHip": [
+        236,
+        300
+      ],
+      "farKnee": [
+        319.5057851380913,
+        391.6666997795324
+      ],
+      "farAnkle": [
+        213.5,
+        456
+      ],
+      "nearHip": [
+        244,
+        300
+      ],
+      "nearKnee": [
+        287.15735373920097,
+        416.24733467150753
+      ],
+      "nearAnkle": [
+        213.5,
+        516
+      ]
+    },
+    {
+      "phase": 0.5,
+      "nearSole": [
+        193,
+        560
+      ],
+      "farSole": [
+        250,
+        520
+      ],
+      "nearArm": "front",
+      "farArm": "back",
+      "farHip": [
+        236,
+        300
+      ],
+      "farKnee": [
+        314.87888042080283,
+        395.6771771299754
+      ],
+      "farAnkle": [
+        242,
+        496
+      ],
+      "nearHip": [
+        244,
+        300
+      ],
+      "nearKnee": [
+        237.89934639610058,
+        423.84983659902514
+      ],
+      "nearAnkle": [
+        185,
+        536
+      ]
+    },
+    {
+      "phase": 0.75,
+      "nearSole": [
+        221.5,
+        480
+      ],
+      "farSole": [
+        221.5,
+        540
+      ],
+      "nearArm": "middleBack",
+      "farArm": "middleFront",
+      "farHip": [
+        236,
+        300
+      ],
+      "farKnee": [
+        284.3062811346108,
+        414.2037792848553
+      ],
+      "farAnkle": [
+        213.5,
+        516
+      ],
+      "nearHip": [
+        244,
+        300
+      ],
+      "nearKnee": [
+        322.16246239876443,
+        396.2633339946302
+      ],
+      "nearAnkle": [
+        213.5,
+        456
+      ]
+    }
+  ]
+}

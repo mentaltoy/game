@@ -1,0 +1,20 @@
+Use case: identity-preserve / painted game animation.
+Asset: a production animation atlas of TWELVE chronological full-body running poses, exactly four equal columns by three equal rows, read left to right and top to bottom. Aim for a 2048×2048 transparent PNG, with generous separation and the complete figure inside each cell. The supplied image is the binding reference for the SAME adult male scientist-explorer, his precise face, dark wavy hair, body proportions, dark blue-grey rolled-sleeve shirt, khaki trousers, brown boots and small dark device with yellow details on his anatomical RIGHT hip. Preserve the restrained, textured, hand-painted 1990s cinematic adventure art; no photorealism, no 3D render, no cartoon simplification.
+
+Create a genuine smooth RUN cycle toward screen RIGHT, not accelerated walking. The man is lean, mature and athletic rather than muscular. Slight natural forward lean, elbows bent about90 degrees, relaxed closed hands, opposing arm and leg action, springy but restrained running mechanics. Keep face, head size, torso dimensions, shirt and trouser colours and soft lighting identical in all twelve poses. Never rotate his view: all poses are the same side profile facing right, with the right-hip device visible. Use one fixed physical scale and virtual camera for the whole sheet. Keep the pelvis approximately centered in each cell; the head may rise only subtly with the gait. A consistent invisible ground line is near the bottom of each cell; both feet must be clearly above it during flight. Do not rescale or vertically center each pose independently.
+
+Chronological phases, each a different authentic pose:
+1 Near/right foot initial contact just ahead of pelvis, knee yielding; far/left knee folded behind. Near/right arm back, far/left arm forward.
+2 Near/right stance loading: foot under pelvis, bent support knee, far knee swinging through with its heel folded close to the thigh.
+3 Near/right midstance: pelvis advances over the planted foot, far knee passes forward; arms naturally exchange position while remaining bent.
+4 Near/right late push-off: support foot trails behind on the toe, far knee forward and high. Near/right arm now forward, far/left arm back.
+5 First flight: both feet off the ground, far/left lower leg unfolding forward, near/right heel folding up behind.
+6 Late first flight: far/left foot descends just before contact, near/right leg folded; slight natural settling toward the next landing.
+7 Far/left foot initial contact just ahead of pelvis. This is half a cycle from1: near/right knee folded behind, near/right arm forward and far/left arm back.
+8 Far/left stance loading, bent supporting knee, near/right knee starts to pass forward.
+9 Far/left midstance, near/right knee passing forward, bent arms exchange naturally.
+10 Far/left late push-off on trailing toe, near/right knee raised forward, near/right arm back.
+11 Second flight: both feet airborne, near/right leg unfolding forward, far/left heel folded up behind.
+12 Late second flight: near/right foot descending just before the original pose1 contact, completing a seamless cycle.
+
+The two legs must remain distinct, with consistent near/far shading and anatomically plausible knees, ankles and soles. Flight phases must look like running, not a walking stride. Exactly two arms, two legs and two hands per figure; no detached fragments, no duplicate limbs. The entire person, hair and boots must be fully included in every cell. No scenery, ground, shadows, motion blur, effects, text, numbers, grid lines, labels, borders, watermarks or checkerboard. Genuine transparent alpha only. Preserve brushwork and stable pigment/light across all cells.

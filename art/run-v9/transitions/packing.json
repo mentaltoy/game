@@ -1,0 +1,75 @@
+{
+  "source": "generated-transitions-raw.png",
+  "sourceScale": 0.62,
+  "referenceHeight": 495,
+  "cellWidth": 420,
+  "cellHeight": 560,
+  "frames": [
+    {
+      "id": "run-transition-0",
+      "cell": 0,
+      "sourceRoot": 354,
+      "sourceBounds": [
+        235,
+        27,
+        435,
+        795
+      ],
+      "sourceCrop": [
+        230,
+        0,
+        211,
+        836
+      ],
+      "scale": 0.62,
+      "offset": [
+        133,
+        27
+      ],
+      "cap": 44,
+      "floor": 520,
+      "baseline": 520,
+      "root": 210,
+      "flight": false,
+      "sole": [
+        183,
+        520
+      ]
+    },
+    {
+      "id": "run-transition-1",
+      "cell": 1,
+      "sourceRoot": 328.5,
+      "sourceBounds": [
+        88,
+        58,
+        414,
+        796
+      ],
+      "sourceCrop": [
+        710,
+        0,
+        337,
+        836
+      ],
+      "scale": 0.62,
+      "offset": [
+        58,
+        26
+      ],
+      "cap": 62,
+      "floor": 520,
+      "baseline": 520,
+      "root": 210,
+      "flight": false,
+      "sole": [
+        170,
+        520
+      ]
+    }
+  ],
+  "excludedCells": [
+    2
+  ],
+  "reasonExcluded": "Third pose crouches deeper than the steady running contact."
+}

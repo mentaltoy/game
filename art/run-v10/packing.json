@@ -1,0 +1,462 @@
+{
+  "cellWidth": 420,
+  "cellHeight": 560,
+  "referenceHeight": 495,
+  "sourceScale": 1.2,
+  "repairScaleReason": "Single repaired painting matched to original physical framing; head width registered statically like approved V6, never animated separately.",
+  "frames": [
+    {
+      "id": "run10-0",
+      "cell": 0,
+      "cap": 71,
+      "floor": 519,
+      "root": 240,
+      "baseline": 519,
+      "sole": [
+        283.5,
+        519
+      ],
+      "flight": false,
+      "devicePatch": [
+        143,
+        217,
+        112,
+        112
+      ],
+      "headCalibration": null,
+      "source": "outputs/prototipo-camminata/art/run-v10/generated-candidate-01.png",
+      "crop": [
+        18,
+        0,
+        285,
+        418
+      ],
+      "scale": 1.2,
+      "offset": [
+        14,
+        42
+      ],
+      "bounds": [
+        20,
+        71,
+        349,
+        519
+      ]
+    },
+    {
+      "id": "run10-1",
+      "cell": 1,
+      "cap": 74,
+      "floor": 519,
+      "root": 240,
+      "baseline": 519,
+      "sole": [
+        201.5,
+        519
+      ],
+      "flight": false,
+      "devicePatch": [
+        145,
+        223,
+        112,
+        112
+      ],
+      "headCalibration": null,
+      "source": "outputs/prototipo-camminata/art/run-v10/generated-candidate-01.png",
+      "crop": [
+        386,
+        0,
+        170,
+        418
+      ],
+      "scale": 1.2,
+      "offset": [
+        79,
+        42
+      ],
+      "bounds": [
+        85,
+        74,
+        276,
+        519
+      ]
+    },
+    {
+      "id": "run10-2",
+      "cell": 2,
+      "cap": 76,
+      "floor": 517,
+      "root": 240,
+      "baseline": 517,
+      "sole": [
+        174.5,
+        517
+      ],
+      "flight": false,
+      "devicePatch": [
+        144,
+        226,
+        112,
+        112
+      ],
+      "headCalibration": null,
+      "source": "outputs/prototipo-camminata/art/run-v10/generated-candidate-01.png",
+      "crop": [
+        720,
+        0,
+        152,
+        418
+      ],
+      "scale": 1.2,
+      "offset": [
+        104,
+        42
+      ],
+      "bounds": [
+        110,
+        76,
+        279,
+        517
+      ]
+    },
+    {
+      "id": "run10-3",
+      "cell": 3,
+      "cap": 77,
+      "floor": 516,
+      "root": 240,
+      "baseline": 516,
+      "sole": [
+        125,
+        516
+      ],
+      "flight": false,
+      "devicePatch": [
+        142,
+        220,
+        112,
+        112
+      ],
+      "headCalibration": {
+        "x": 0.9250585480093678,
+        "y": 1
+      },
+      "source": "outputs/prototipo-camminata/art/run-v10/generated-knee03-repair.png",
+      "crop": [
+        232,
+        0,
+        698,
+        1447
+      ],
+      "scale": 0.3474683544303797,
+      "offset": [
+        69,
+        45
+      ],
+      "bounds": [
+        71,
+        77,
+        309,
+        516
+      ]
+    },
+    {
+      "id": "run10-4",
+      "cell": 4,
+      "cap": 75,
+      "floor": 493,
+      "root": 240,
+      "baseline": 520,
+      "sole": null,
+      "flight": true,
+      "devicePatch": [
+        144,
+        216,
+        112,
+        112
+      ],
+      "headCalibration": null,
+      "source": "outputs/prototipo-camminata/art/run-v10/generated-candidate-01.png",
+      "crop": [
+        20,
+        418,
+        294,
+        418
+      ],
+      "scale": 1.2,
+      "offset": [
+        16,
+        42
+      ],
+      "bounds": [
+        22,
+        75,
+        363,
+        493
+      ]
+    },
+    {
+      "id": "run10-5",
+      "cell": 5,
+      "cap": 75,
+      "floor": 514,
+      "root": 240,
+      "baseline": 514,
+      "sole": [
+        273,
+        514
+      ],
+      "flight": false,
+      "devicePatch": [
+        141,
+        212,
+        112,
+        112
+      ],
+      "headCalibration": null,
+      "source": "outputs/prototipo-camminata/art/run-v10/generated-candidate-01.png",
+      "crop": [
+        372,
+        418,
+        232,
+        418
+      ],
+      "scale": 1.2,
+      "offset": [
+        62,
+        42
+      ],
+      "bounds": [
+        68,
+        75,
+        333,
+        514
+      ]
+    },
+    {
+      "id": "run10-6",
+      "cell": 6,
+      "cap": 74,
+      "floor": 518,
+      "root": 240,
+      "baseline": 518,
+      "sole": [
+        216.5,
+        518
+      ],
+      "flight": false,
+      "devicePatch": [
+        149,
+        212,
+        112,
+        112
+      ],
+      "headCalibration": null,
+      "source": "outputs/prototipo-camminata/art/run-v10/generated-candidate-01.png",
+      "crop": [
+        689,
+        418,
+        189,
+        418
+      ],
+      "scale": 1.2,
+      "offset": [
+        67,
+        42
+      ],
+      "bounds": [
+        72,
+        74,
+        286,
+        518
+      ]
+    },
+    {
+      "id": "run10-7",
+      "cell": 7,
+      "cap": 73,
+      "floor": 517,
+      "root": 240,
+      "baseline": 517,
+      "sole": [
+        196.5,
+        517
+      ],
+      "flight": false,
+      "devicePatch": [
+        149,
+        225,
+        112,
+        112
+      ],
+      "headCalibration": null,
+      "source": "outputs/prototipo-camminata/art/run-v10/generated-candidate-01.png",
+      "crop": [
+        1039,
+        418,
+        145,
+        418
+      ],
+      "scale": 1.2,
+      "offset": [
+        111,
+        42
+      ],
+      "bounds": [
+        117,
+        73,
+        278,
+        517
+      ]
+    },
+    {
+      "id": "run10-8",
+      "cell": 8,
+      "cap": 75,
+      "floor": 518,
+      "root": 240,
+      "baseline": 518,
+      "sole": [
+        173,
+        518
+      ],
+      "flight": false,
+      "devicePatch": [
+        144,
+        226,
+        112,
+        112
+      ],
+      "headCalibration": null,
+      "source": "outputs/prototipo-camminata/art/run-v10/generated-candidate-01.png",
+      "crop": [
+        98,
+        836,
+        148,
+        418
+      ],
+      "scale": 1.2,
+      "offset": [
+        110,
+        42
+      ],
+      "bounds": [
+        116,
+        75,
+        281,
+        518
+      ]
+    },
+    {
+      "id": "run10-9",
+      "cell": 9,
+      "cap": 75,
+      "floor": 517,
+      "root": 240,
+      "baseline": 517,
+      "sole": [
+        110,
+        517
+      ],
+      "flight": false,
+      "devicePatch": [
+        148,
+        224,
+        112,
+        112
+      ],
+      "headCalibration": null,
+      "source": "outputs/prototipo-camminata/art/run-v10/generated-candidate-01.png",
+      "crop": [
+        365,
+        836,
+        208,
+        418
+      ],
+      "scale": 1.2,
+      "offset": [
+        53,
+        42
+      ],
+      "bounds": [
+        59,
+        75,
+        296,
+        517
+      ]
+    },
+    {
+      "id": "run10-10",
+      "cell": 10,
+      "cap": 76,
+      "floor": 493,
+      "root": 240,
+      "baseline": 520,
+      "sole": null,
+      "flight": true,
+      "devicePatch": [
+        149,
+        218,
+        112,
+        112
+      ],
+      "headCalibration": null,
+      "source": "outputs/prototipo-camminata/art/run-v10/generated-candidate-01.png",
+      "crop": [
+        650,
+        836,
+        285,
+        418
+      ],
+      "scale": 1.2,
+      "offset": [
+        20,
+        42
+      ],
+      "bounds": [
+        26,
+        76,
+        355,
+        493
+      ]
+    },
+    {
+      "id": "run10-11",
+      "cell": 11,
+      "cap": 76,
+      "floor": 516,
+      "root": 240,
+      "baseline": 516,
+      "sole": [
+        242.5,
+        516
+      ],
+      "flight": false,
+      "devicePatch": [
+        143,
+        224,
+        112,
+        112
+      ],
+      "headCalibration": null,
+      "source": "outputs/prototipo-camminata/art/run-v10/generated-candidate-01.png",
+      "crop": [
+        1017,
+        836,
+        199,
+        418
+      ],
+      "scale": 1.2,
+      "offset": [
+        85,
+        42
+      ],
+      "bounds": [
+        91,
+        76,
+        317,
+        516
+      ]
+    }
+  ]
+}

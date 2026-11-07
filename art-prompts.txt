@@ -1,0 +1,146 @@
+Use case: precise-object-edit
+Asset type: background plate for a 2D cinematic platform game.
+Input image: the provided approved tropical research facility interior. This is the sole edit target and must be preserved.
+Primary request: remove ONLY the standing male character near the center-left (approximately x=515, y=585 in the 1454×846 original) and the character's faint floor reflection directly beneath his feet. Reconstruct the small areas of window vegetation, concrete wall and floor previously obscured by him so they are indistinguishable from the existing scene.
+Absolute invariants: retain the EXACT original framing, aspect ratio, dimensions if supported, camera, architecture, stairs, stair rails, furniture, stool, instrument panels, doorway, lights, windows, plants, foreground leaves, material texture, color palette, soft painted finish, exposure, contrast, and every other object. Keep original geometry and perspective. No enhancements, no restyling, no crop, no camera move, no new elements, no extra reflections. Preserve the pavement surface and horizontal architectural alignments.
+No person anywhere. No text or watermark. Solid opaque background, no transparency.
+Output a faithful clean background with only that character and his reflection removed.
+Use case: background-extraction
+Asset type: one transparent-background idle sprite for a 2D cinematic game.
+Input image: approved visual development sheet. Sole target is the LEFTMOST LARGE STANDING MALE FIGURE in the lower strip, around x=200, y=690, not any other figure or the environments.
+Primary request: extract and faithfully reproduce ONLY this single complete standing figure, isolated as a clean RGBA cutout on genuinely transparent background. Same exact human design, proportions, posture, clothing, colors, face and hairstyle, anatomy, painted shading and restrained crisp gouache-like finish. Full body from hair to boot soles with ample empty transparent padding.
+Pose: relaxed natural standing idle, side profile facing RIGHT, arms comfortably hanging at sides and both boots planted on the SAME baseline. Match the reference stance and silhouette. No walking, leaning, dramatic gesture or turned head. Maintain the original scale relationships of head, torso, arms, legs, boots.
+Appearance invariants: original adult male scientist with short slightly tousled dark hair and light stubble, slate blue-grey rolled-sleeve shirt tucked into ochre/sand practical trousers, dark belt with small technical utility device at the hip, dark brown field boots. Preserve design as drawn, with NO extra pockets, equipment, backpack, hat or changes in costume.
+IMPORTANT: exactly ONE figure, no duplicate, no motion sequence, no scene, no paper texture, no background colour, no ground line, no floor, no shadow, no reflection, no outline glow, no text, no labels. Background alpha must be transparent including between arms and torso and between legs. Edges clean and antialiased, no white matte. This should match the original reference illustration rather than redesign it.
+Use case: stylized-concept.
+Asset type: transparent 2D game character sprite sheet for an eight-frame walking animation.
+Reference image: the approved concept board, used ONLY to preserve the identity, costume, proportions and painted rendering of the male scientist shown at the bottom. Do not include any background scene from the reference.
+Create exactly EIGHT full-body animation frames of this same man walking steadily TO THE RIGHT in strict side profile. Organize them as a precise regular FOUR-COLUMN by TWO-ROW sprite sheet, read left-to-right on row one and then left-to-right on row two. Use a landscape 1536 by 1024 canvas if possible, giving each cell equal size. NO borders, dividing lines, captions or frame numbers. Genuine transparent background.
+Character: adult slender athletic male field scientist, slightly untidy dark hair, light stubble, slate-blue rolled-sleeve shirt, ochre/sand trousers, dark field boots, narrow dark belt with the small rectangular technical device from the reference. Exact SAME head, face, torso, clothes, silhouette and equipment in all frames. A restrained painterly flat-colour rendering with crisp clean edges matching the reference. No black outline, photorealism or pixelation.
+Animation: a continuous normal relaxed walk IN PLACE with realistic rotoscoped weight and alternating arms. It is a full stride (two steps), evenly spaced in time. The eight sequential phases are:
+1 first contact: near leg forward with heel landing, far leg extended behind on toe, opposite arm forward;
+2 first down: near leg takes the weight with knee slightly bent, far heel lifts and far leg begins swing;
+3 first passing: near supporting leg below pelvis, far leg passes forward with knee bent and toes above the floor;
+4 first up: near heel lifts under pelvis, far leg swings forward preparing contact;
+5 opposite contact: far leg forward with heel landing, near leg extended behind on toe, arms reversed from frame 1;
+6 opposite down: far leg takes the weight with knee slightly bent, near heel lifts and near leg begins swing;
+7 opposite passing: far supporting leg below pelvis, near leg passes forward with knee bent;
+8 opposite up: far heel lifts under pelvis, near leg swings forward preparing frame 1.
+Normal WALK, never run; at least one foot touches the same baseline in every cell. Small natural vertical pelvis motion only. Torso upright and head stable. Whole body always faces RIGHT. Arms swing moderately forward/back and remain anatomically attached, hands relaxed.
+Technical alignment: every frame stays centred on the same horizontal pelvis anchor within its equal-sized cell. Keep identical apparent body scale. Each row has one shared invisible foot-ground baseline at 92 percent of cell height. Head around 12 percent of cell height. Leave sufficient transparent padding on all sides, with no overlap between cells and no body parts clipped. Keep front/back limbs visually distinguishable by subtle shade.
+
+CORREZIONE MIRATA, BUILT-IN IMAGEGEN, ALPHA TRUE:
+Edit this transparent sprite sheet. Preserve the man's design, outfit, face, paint style, size, all eight cell positions, the exact 1536x1024 canvas and 4-column by 2-row layout.
+Correct ONLY the walking phase continuity. Top row remains frames1-4. Bottom row frames5-8 MUST show the OPPOSITE leg and arm phase, not repeated poses. Same profile facing RIGHT in all cells.
+Clearly show the near arm, the arm closest to the viewer: in frame1 it swings BACK to the left behind the hip; in frame2 it swings toward the body; in frame3 it passes vertically at the hip; in frame4 it swings FORWARD to the right; in frame5 it is FORWARD, in frame6 returning, in frame7 vertically near hip, in frame8 swings BACK. Opposite far arm does the reverse.
+For legs: frame1 near leg extended forward to the right, far leg back. Frame3 near leg planted straight and far knee passing ahead. Frame5 FAR leg extends forward to right, NEAR leg extends back to left with heel raised. Frame7 FAR leg planted straight, NEAR knee lifted and passing ahead. Frames2,4,6,8 are the in-between normal WALK poses. Keep each grounded foot on same baseline (y=478 first row, y=990 second row). No running or jumping. Natural moderate stride.
+The full body remains at the same scale and centered pelvis x in each cell. All frames fully visible within cells. Remove ALL background pixels to genuine clear transparent alpha. No atmosphere, shadow, glow, opaque background or reflected feet. Keep only the eight isolated characters. No text or grid lines.
+Constraints: ONLY eight isolated character drawings on transparency. No ground, shadows, reflected feet, platforms, lines, scenery, text, logos or watermark. Preserve recognizable costume and face exactly. This sheet is intended to be sliced into eight equal rectangles and animated in sequence.
+
+
+VERSIONE 3 — POSE DI INVERSIONE
+Strumento: ImageGen integrato. Asset: dist/assets/turn-v3.png
+Use case: identity-preserve.
+Asset type: transparent production sprite atlas for a painterly 2D cinematic platform adventure.
+Input image 1 is the exact character identity, costume, anatomical proportions, brushwork and color reference. Create a turn-in-place character sheet of this SAME man. Preserve the distinctive dark tousled hair, stubble, facial features, slate blue-grey rolled-sleeve field shirt, wide naturally draping khaki trousers, dark brown leather lace-up boots, brown belt, and small yellow-screen device at his belt. Preserve the reference's hand-painted gouache/oil appearance, subdued palette, broad painted facets, realistic anatomy, and cloth volume. Do not make his legs thin or elongated.
+
+Composition: one horizontal row of exactly FIVE full-body character poses in FIVE equally sized cells, left to right. Every character is entirely visible from hair to boot sole, same head size and body height, feet on the identical horizontal baseline. Generous transparent space separates the silhouettes, no overlap. Canvas approximately 2048x1024 landscape. Each full body approximately 850 pixels tall with generous top/bottom margin. No cell borders and no labels.
+
+The five poses are a coherent standing turn from right to left, around a fixed spot, facing TOWARD the viewer during the middle:
+1. Exact clean right profile (nose points screen right), standing naturally with relaxed arms down.
+2. Right three-quarter view, rotated 45 degrees toward the viewer; both shoulders visible.
+3. Full frontal view, facing straight toward the viewer, same neutral stance and relaxed hands.
+4. Left three-quarter view, rotated 45 degrees toward screen left.
+5. Exact clean left profile (nose points screen left), standing naturally with relaxed arms down.
+
+Keep pelvis, head height, shoulders, limb lengths and garment widths consistent through all five poses. Both feet remain beneath the pelvis in a comfortable narrow standing stance; slight real rotation of the feet in each pose, never a walking stride or T pose. Pose 1 and pose 5 should have the same calm side silhouette as the supplied reference. Soft consistent upper-left lighting in all poses.
+Background must be genuinely TRANSPARENT alpha, with no glow, no opaque backdrop, no ground plane, no cast shadow, no ellipse beneath the feet, no scenery, no text. Do not redesign or stylize the character anew.
+
+
+VERSIONE 4 — ROTAZIONE DALLA TAVOLA APPROVATA
+Strumento: ImageGen integrato. Asset: dist/assets/turn-painted-v4.png
+Reference: dist/assets/walk-approved-v4.png, copia esatta della tavola work/walk-v3.png scelta da Nicola.
+SHA-256 reference: 7eaeb5963a0056f596c106dbd6a51d0bf52876b07df83d9bf4dde0ce280897ba
+Use case: identity-preserve. Production sprite animation supplement. Input image is the EXACT approved character and paint style; use this and NOT any different character sheet. Produce a transparent RGBA image in a 4-column 2-row regular grid with EIGHT complete isolated paintings of this SAME field scientist standing neutrally and turning slowly in place from right-facing side profile through FRONT view to left-facing side profile. The sheet supplements the supplied WALK CYCLE; appearance MUST be indistinguishable when switching between sheets. Preserve face/hair, healthy proportions, loose beige khaki trousers, grey blue rolled-sleeve shirt, brown boots, yellow-display belt device, EXACT angular painterly strokes, color values, soft light. Same camera, same distance, identical figure height, head-to-foot proportions and drawing detail as each person in the reference. EIGHT cells in row-major order: 1 strict right profile neutral standing arms relaxed; 2 facing 30 degrees toward viewer from right profile; 3 facing60degrees toward viewer from right profile; 4 DIRECT FRONT VIEW; 5 facing60degrees toward viewer from left profile; 6 facing30degrees toward viewer from left profile; 7 strict LEFT profile neutral; 8 repeat strict right profile neutral matching cell1. Each entire figure from crown to boot sole fits same-sized cell with padding, all boots planted on same baseline per row, same pelvis center horizontally in each cell. This is a small natural foot pivot not a marching pose. Feet comfortably close, knees relaxed straight. No exaggerated shoulder/leg bulk or higher-detail face than reference, NO photorealistic redraw, NO new character or different resolution look. No shadows, background, text, arrows, numbers, grid or frame. Genuinely transparent background. High-resolution landscape ratio4:3 similar to reference.
+
+
+
+VERSIONE 4 — INTERMEDI DIPINTI
+Strumento: ImageGen integrato. Reference: dist/assets/walk-approved-v4.png. Asset: dist/assets/walk-bridges-v4.png
+Use case: identity-preserve.
+Asset type: eight additional complete painted walking keyframes, a transparent 4-column by 2-row sprite sheet.
+Reference image: the attached approved character walk atlas is the strict identity, anatomy, garment volume, palette, brushwork and scale reference. Match it exactly, including face, hair, grey-blue shirt, wide khaki trousers, brown boots and yellow-screen belt device. These new drawings must intercut invisibly with the reference in a cinematic 2D adventure game.
+Primary request: draw eight MISSING IN-BETWEEN poses for a calm, light, natural walking cycle in RIGHT-facing strict side profile. Four poses across top row, four across bottom, all complete bodies equal size, generous transparent separation. Maintain the original painted detail and full trouser volume. Do not draw running, bent-forward posture, high marching knees or dramatic stride. Stable head, subtle body weight change, natural relaxed arms. Same exact full body height and floor baseline in each equal cell. No visible cell borders, numbers or captions.
+Top row, poses 1–4:
+1: near leg supporting slightly ahead of pelvis, foot flat; far leg back with heel lifted and toe just leaving ground; near arm moderately behind, far arm ahead.
+2: near leg straight supporting directly under pelvis; far knee and foot passing below the pelvis, toe about one boot-sole thickness above ground; near arm beside the hip, far arm beside torso.
+3: near supporting leg now slightly behind pelvis, heel just beginning to rise; FAR knee is forward of near knee, FAR shin dropping toward floor in front, its boot airborne just above floor. Near arm swings forward, far arm back. This is the essential proper passing pose missing from the reference.
+4: near supporting leg back on toe; FAR leg extended moderately ahead with heel about to land, not yet touching floor. Near arm moderately forward, far arm back.
+Bottom row is the opposite half-cycle, with near/far leg roles REVERSED:
+5: FAR leg supporting slightly ahead of pelvis, foot flat; NEAR leg back with heel lifted and toe leaving ground. Near arm ahead, far arm behind.
+6: FAR leg straight supporting under pelvis; NEAR knee and foot passing below pelvis, toe about one boot-sole thickness above ground. Both arms passing sides.
+7: FAR supporting leg slightly behind pelvis, heel beginning to rise; NEAR knee forward of far knee, NEAR shin dropping toward floor in front, boot airborne just above floor. Near arm back, far arm forward.
+8: FAR supporting leg back on toe; NEAR leg extended moderately ahead, heel about to land. Near arm moderately back, far arm forward.
+Preserve the normal slender-athletic but not skinny build of the reference, especially ample pant legs. Each foot remains anatomically joined to trouser cuff; each arm is joined naturally to shoulder. At least one boot in actual ground contact in every cell. Identical torso orientation and head in all frames. All figures face screen RIGHT, never mirrored, front-facing or three-quarter.
+Genuine transparent alpha background, including all gaps between limbs. No shadows, ground plane, backdrop, glow, text, framing, reflections, outlines, props or scenery. This is a production animation supplement, not a loose concept variation. Aim for the same 1448x1086 proportions as the reference.
+
+
+
+VERSIONE 4 — COMPLETAMENTO E RACCOLTA
+Strumento: ImageGen integrato. Reference: dist/assets/walk-approved-v4.png. Asset: dist/assets/walk-completion-v4.png
+Use case: identity-preserve.
+Asset type: four complete hand-painted animation drawings for the approved 2D adventure protagonist. Transparent atlas with exactly TWO columns and TWO rows, four equally sized cells. No captions, lines, shadows or background.
+The supplied atlas is the strict visual reference. Match this EXACT man's identity, face, hair, shirt, wide khaki trousers, belt with yellow device and brown leather boots, painted texture, colours, level of detail and anatomy. Every full figure faces RIGHT in strict side profile with identical scale, steady head height, same floor baseline, and ample transparent padding. Change only the pose. Do not make the trousers skinny.
+The four requested poses, left to right and top to bottom:
+1 TOP LEFT: A mid-stride walking pose. NEAR leg (closest to viewer) supports the weight with near foot flat slightly BEHIND the pelvis. FAR leg is recovering and passing forward: far knee is just ahead of the supporting knee, far foot is directly below pelvis, low above the floor. The near arm begins swinging FORWARD to screen right (hand a little ahead of hip), far arm behind. Relaxed walk, not running.
+2 TOP RIGHT: OPPOSITE passing pose. FAR leg supports the weight, foot flat just behind the pelvis. The NEAR leg is now in front of the other leg, knee advanced to screen RIGHT, bent knee, shin descending diagonally forward, near boot suspended very low ahead of the support leg. The NEAR arm hangs by the hip and is swinging BACK toward screen LEFT, the far arm swings forward. Crucial opposite arm and leg: near leg FORWARD, near arm BACK.
+3 BOTTOM LEFT: Later than pose2: FAR leg stretched behind toward screen LEFT with toe planted and heel raised. NEAR leg extends naturally FORWARD toward screen RIGHT with heel just above the ground about to land. NEAR arm is behind pelvis toward screen LEFT; FAR arm forward. This is the final recovery before the initial rightward step in the reference. Restrained natural walking stride.
+4 BOTTOM RIGHT: Collecting the feet to stop. Near foot flat under pelvis, far foot just behind by half a boot length with toe still touching the ground. Both knees nearly straight; relaxed arms very close to the hips, no large swing. Strict RIGHT profile. Same body height and painted appearance.
+All four must have correct anatomy, at least one foot on floor, clean continuous limbs and FULL wide trousers. No high knees, running, big body dip, exaggerated movement or added equipment. Preserve the approved art, do not redraw in a different style. Genuine transparent alpha, including gaps between limbs, no glow, floor, cast shadow, text or framing.
+
+
+V5 — BRACCIA BRIDGE 6
+Strumento: ImageGen integrato, edit mirato.
+Use case: precise-object-edit. Production animation correction; treat this as a surgical edit, not a redraw.
+Preserve the exact input canvas dimensions and equal-cell atlas layout, every character's exact position, scale, head, face, hair, torso lean, belt, trousers, legs, boots, soles and floor baseline. Preserve the ORIGINAL painted texture and colour, lighting, shading and alpha. All figures face RIGHT exactly as supplied. Do not make any figure thinner or taller. Do not change the walking phase of any leg.
+Change ONLY the arm pose(s) explicitly listed below. Repaint the tiny areas exposed by the old arm in the identical painting style. Keep shoulders and shirt sleeves anatomically continuous. Hands relaxed. The new arm positions are subtle intermediate swings, not gestures. Do not generate extra figures or change any other cell. All pixels below the hands must retain the original legs and shoes without reinterpretation. Preserve genuine transparent alpha. No ground, shadow, text, glow, labels or framing.
+Input is a 1448x1086 atlas of 4 columns by 2 rows. Edit ONLY cell index6: BOTTOM ROW, THIRD COLUMN. The other seven figures must remain identical.
+In this single pose the NEAR arm closest to the viewer is currently extended too far forward to the RIGHT. It must be returning DOWN toward the hip: elbow lowered, forearm hanging almost vertically with the wrist just a little in front of the hip. In this 362x543 cell, put the NEAR wrist approximately at x=200,y=268 (currently around x=241,y=243). Fingers naturally below the wrist, hand roughly next to the front trouser pocket; no hand on hip.
+The FAR arm must be coming forward from behind but is still almost at the body centre, mostly hidden behind the torso/near arm: FAR wrist about x=180,y=268. Do not leave the far hand sticking far out behind. This pose is the small middle position before near arm continues swinging backward. Both arms close to the body, no large forearm diagonal.
+Keep every leg position, trouser fold, boot and foot contact EXACTLY the same as this bottom-third source figure. No colour correction in this edit.
+
+
+V5 — BRACCIA SUPPLEMENTO
+Strumento: ImageGen integrato, edit mirato.
+Use case: precise-object-edit. Production animation correction; treat this as a surgical edit, not a redraw.
+Preserve the exact input canvas dimensions and equal-cell atlas layout, every character's exact position, scale, head, face, hair, torso lean, belt, trousers, legs, boots, soles and floor baseline. Preserve the ORIGINAL painted texture and colour, lighting, shading and alpha. All figures face RIGHT exactly as supplied. Do not make any figure thinner or taller. Do not change the walking phase of any leg.
+Change ONLY the arm pose(s) explicitly listed below. Repaint the tiny areas exposed by the old arm in the identical painting style. Keep shoulders and shirt sleeves anatomically continuous. Hands relaxed. The new arm positions are subtle intermediate swings, not gestures. Do not generate extra figures or change any other cell. All pixels below the hands must retain the original legs and shoes without reinterpretation. Preserve genuine transparent alpha. No ground, shadow, text, glow, labels or framing.
+Input is a 1086x1448 atlas of 2 columns by 2 rows, each cell543x724. Edit ONLY the TWO TOP ROW characters' arms. Both bottom row characters must remain identical.
+TOP LEFT: The near arm is currently too far forward (right) and the far arm too far back (left). Move both toward a modest middle swing. NEAR wrist about x=302,y=360 in this cell: hand moderately ahead of hip, forearm mostly down with a mild forward diagonal. FAR wrist about x=209,y=373: hand just behind hip, mostly occluded, not far out behind. The near knee already lifted and the far leg's exact support MUST NOT CHANGE.
+TOP RIGHT: The near arm is currently too far behind, and far arm too far forward for this instant. Moderate BOTH swings while retaining the opposite direction. NEAR wrist about x=201,y=373 within its 543x724 cell (near hand only slightly behind the hip); FAR wrist about x=290,y=366 (far hand only moderately forward). Forearms mostly down, relaxed hands, not bent up or held in front of chest. The near knee, forward boot and supporting leg MUST remain exactly as supplied.
+These are three original approved walking drawings with only arm continuity corrected. Keep all heads, torsos, lower bodies, colours and all other poses unchanged.
+
+
+V5 — PULIZIA BRACCIO RESIDUO
+Strumento: ImageGen integrato, edit mirato.
+Use case: precise-object-edit.
+The supplied 4-column by 2-row transparent sprite atlas has ONE specific generation error in the BOTTOM ROW, THIRD COLUMN character (cell index6). That character accidentally has THREE hands. Correct ONLY this error.
+Delete the stray rear arm and hand protruding BEHIND the body to SCREEN LEFT, around x=135,y=255 inside that 362x543 cell. It is the old leftover skin-coloured shape behind the left hip, separate from the TWO CORRECT hands. Reconstruct only the tiny exposed area with the matching khaki trouser edge and clear transparent background.
+KEEP the correct NEAR arm hanging down beside the front hip with hand in the centre, and the correct FAR hand visible slightly to its RIGHT. These are the TWO arms to keep. Do NOT move, redraw, bend, rotate or change those two correct arms.
+Keep the whole lower body, leg positions, trouser folds, boots, foot contacts, head, face, hair, torso, shirt, belt, palette, painted texture, scale, position, and all seven other cells EXACTLY unchanged. Preserve the same 1448x1086 canvas and transparent alpha. Only remove the stray THIRD arm/hand behind this single figure. No other changes, no new figures, no text, no background, no shadow or glow.
+
+
+V5 — OCCLUSIONE BRACCIO LONTANO
+Strumento: ImageGen integrato, edit mirato.
+Use case: precise-object-edit. Surgical correction of ONE arm in ONE cell of this existing transparent sprite atlas.
+Keep exactly the same 1086x1448 canvas, 2 columns by 2 rows, framing and character scale. Three other figures must remain identical. Edit ONLY the TOP-LEFT figure's FAR arm (the arm behind the torso, currently hanging visibly far to the LEFT behind the hip).
+This far arm is currently too far back for this frame of the walk. Bring its forearm and wrist inward toward the centre of the figure, so it is NATURALLY OCCLUDED BEHIND THE TORSO AND UPPER THIGH. Its wrist should be about x=233,y=373 within the top-left 543x724 cell, behind the body. Therefore this far hand should NOT stick out beyond the left hip silhouette. Only a small natural part of the far upper arm may be visible beside the rear shirt sleeve; most of the forearm and hand are hidden behind the man's body. Do not draw the hidden arm over the trousers. Do not leave a second old hand behind the hip.
+KEEP the near arm and hand (foreground, slightly forward to the RIGHT) exactly as supplied. Do not move or re-angle this near arm. There are two anatomical arms, but only the near hand is clearly visible in this pose.
+Keep head, face, hair, entire shirt and near sleeve except the tiny far-arm join, torso position, belt, all trouser folds, BOTH legs, boot shapes and exact foot positions completely unchanged. Preserve the painterly texture, palette, lighting, alpha and all proportions. Clear transparent space where the old far arm/hand used to protrude. No ground, shadows, glow, text, frames or changes outside this small far-arm correction.
+
+
+V6 — DEVICE SUL FIANCO LONTANO
+Use case: precise-object-edit. Edit target: the supplied exact 1024x1024 atlas containing a 4 by 4 grid of sixteen tightly cropped painted waist views. Keep the grid, camera, crop positions, proportions, garment texture and all arm/hand silhouettes EXACTLY aligned with the input. Primary request: remove the black/charcoal electronic belt device with yellow bars from EVERY one of the 16 tiles. Remove its short black aerial, attachment clip, dangling small dark cord/strap and its cast shadow too. In each tiny removed region restore the continuous brown leather belt at the top and the ochre/khaki painted trouser fabric underneath, with plausible folds matching the existing surrounding hand-painted material. All sixteen devices must be completely gone: no dark rectangular remnants, yellow lights, cables or device shadow. Preserve natural clothing folds and belt loops. Crucial in tile row2 column2, row2 columns3/4, row3 all columns and row4 column1: the bare forearm crosses IN FRONT of the device. Preserve every forearm pixel, shape and edge; only restore the exposed hardware below/around that forearm. Do not move, redesign or repaint any arm. Do not change the character pose, clothing, palette, crop, scale or grid. Keep all existing neutral gray background regions unchanged. No new objects, no pockets added, no text, no labels, no borders. This is a localized restoration of painted cloth, not a redesign. Output exactly the same 4 by 4 contact sheet geometry, 1024x1024 pixels.
+
+
+Asset finale: dist/assets/device-hidden-v6.png. Tavola 4×4 di ritagli della cintura dei 15 frame della camminata V5 più la raccolta; i ritagli sono preparati senza ridisegnare il personaggio. Il renderer applica soltanto la maschera hardware ai frame verso sinistra. La rotazione usa i disegni originali. Testa e toni dei tessuti sono calibrati deterministicamente al caricamento, non rigenerati.

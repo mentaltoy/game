@@ -1,0 +1,28 @@
+{
+  "video": "https://www.youtube.com/watch?v=wNTnRM77XuE",
+  "capture": "CUA screenshots supplied by root, 32 samples at nominal40ms",
+  "cycleStart": 330.32,
+  "cycleEnd": 331.12,
+  "periodEstimateSeconds": 0.8,
+  "motionGuideFrames": [
+    8,
+    10,
+    11,
+    13,
+    15,
+    16,
+    18,
+    20,
+    21,
+    23,
+    25,
+    26
+  ],
+  "guideRole": "Analysis only: matched whole-body motion and limb opposition, not source pixel art for production",
+  "observed": [
+    "Both arms exchange forward/back with torso rotation every half cycle",
+    "Recovery knee stays underneath or only modestly ahead of pelvis, thigh angled down",
+    "Heel folds behind, low forward reaching foot, brief flight",
+    "Lower bent-body run is not the V9 high-knee skipping gesture"
+  ]
+}

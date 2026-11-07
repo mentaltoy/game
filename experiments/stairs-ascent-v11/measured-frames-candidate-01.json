@@ -1,0 +1,941 @@
+{
+  "status": "candidate only; no game integration",
+  "atlas": "stair-up-sixteen-candidate-01.png",
+  "layout": {
+    "columns": 4,
+    "rows": 4,
+    "cellWidth": 500,
+    "cellHeight": 620
+  },
+  "referenceHeight": 500,
+  "batchCalibration": {
+    "A": {
+      "scale": 0.9367105263157894,
+      "medianRawHeadWidth": 76.0,
+      "file": "intermediates-A-candidate-01.png"
+    },
+    "B": {
+      "scale": 0.9555704697986577,
+      "medianRawHeadWidth": 74.5,
+      "file": "intermediates-B-candidate-01.png"
+    }
+  },
+  "unchangedKeyCells": [
+    0,
+    4,
+    8,
+    12
+  ],
+  "frames": [
+    {
+      "cell": 0,
+      "source": "contacts-candidate-01.png",
+      "sourceCrop": [
+        0,
+        0,
+        796,
+        987
+      ],
+      "rawCap": 59,
+      "rawRoot": 396.5,
+      "rawHeadWidth": 126,
+      "scale": 0.565,
+      "existingKey": true,
+      "id": "stair-up-v10-0",
+      "phase": 0.0,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 84,
+      "actualPackedFloor": 563,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        26,
+        50
+      ],
+      "feet": {
+        "R": {
+          "x": 255.95499999999998,
+          "y": 518.385,
+          "uncertaintyX": 1.6949999999999998
+        },
+        "L": {
+          "x": 200.86749999999998,
+          "y": 562.4549999999999,
+          "uncertaintyX": 0.8474999999999999
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 1,
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        0,
+        0,
+        460,
+        570
+      ],
+      "rawCap": 62,
+      "rawRoot": 220.5,
+      "rawFloor": 555,
+      "rawHeadWidth": 76,
+      "scale": 0.9367105263157894,
+      "id": "stair-up-v10-1",
+      "phase": 0.0625,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 545,
+      "actualPackedHeadWidth": 69,
+      "packingTranslation": [
+        43,
+        25
+      ],
+      "feet": {
+        "R": {
+          "x": 264.0,
+          "y": 509.0,
+          "floor": 510,
+          "roi": [
+            230,
+            302,
+            493,
+            521
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 203.0,
+          "y": 544.0,
+          "floor": 545,
+          "roi": [
+            160,
+            245,
+            530,
+            551
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 2,
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        460,
+        0,
+        920,
+        570
+      ],
+      "rawCap": 62,
+      "rawRoot": 219.0,
+      "rawFloor": 553,
+      "rawHeadWidth": 75,
+      "scale": 0.9367105263157894,
+      "id": "stair-up-v10-2",
+      "phase": 0.125,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 84,
+      "actualPackedFloor": 543,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        45,
+        25
+      ],
+      "feet": {
+        "R": {
+          "x": 254.5,
+          "y": 543.0,
+          "floor": 543,
+          "roi": [
+            220,
+            309,
+            530,
+            551
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 194.0,
+          "y": 484.0,
+          "floor": 488,
+          "roi": [
+            162,
+            244,
+            465,
+            494
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 3,
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        920,
+        0,
+        1380,
+        570
+      ],
+      "rawCap": 62,
+      "rawRoot": 214.5,
+      "rawFloor": 553,
+      "rawHeadWidth": 76,
+      "scale": 0.9367105263157894,
+      "id": "stair-up-v10-3",
+      "phase": 0.1875,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 84,
+      "actualPackedFloor": 543,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        49,
+        25
+      ],
+      "feet": {
+        "R": {
+          "x": 251.0,
+          "y": 543.0,
+          "floor": 543,
+          "roi": [
+            224,
+            312,
+            530,
+            551
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 208.5,
+          "y": 456.0,
+          "floor": 460,
+          "roi": [
+            175,
+            238,
+            430,
+            466
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 4,
+      "source": "passing-candidate-02.png",
+      "sourceCrop": [
+        0,
+        0,
+        796,
+        987
+      ],
+      "rawCap": 58,
+      "rawRoot": 396.5,
+      "rawHeadWidth": 126,
+      "scale": 0.565,
+      "existingKey": true,
+      "id": "stair-up-v10-4",
+      "phase": 0.25,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 554,
+      "actualPackedHeadWidth": 71,
+      "packingTranslation": [
+        26,
+        50
+      ],
+      "feet": {
+        "R": {
+          "x": 231.94249999999997,
+          "y": 553.98,
+          "uncertaintyX": 0.8474999999999999
+        },
+        "L": {
+          "x": 222.61999999999998,
+          "y": 476.57499999999993,
+          "uncertaintyX": 4.52
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 5,
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        0,
+        570,
+        460,
+        1140
+      ],
+      "rawCap": 32,
+      "rawRoot": 221.5,
+      "rawFloor": 552,
+      "rawHeadWidth": 76,
+      "scale": 0.9367105263157894,
+      "id": "stair-up-v10-5",
+      "phase": 0.3125,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 570,
+      "actualPackedHeadWidth": 69,
+      "packingTranslation": [
+        43,
+        53
+      ],
+      "feet": {
+        "R": {
+          "x": 216.0,
+          "y": 569.0,
+          "floor": 570,
+          "roi": [
+            170,
+            260,
+            556,
+            577
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 248.5,
+          "y": 483.5,
+          "floor": 487,
+          "roi": [
+            242,
+            310,
+            464,
+            489
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 6,
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        460,
+        570,
+        920,
+        1140
+      ],
+      "rawCap": 32,
+      "rawRoot": 219.0,
+      "rawFloor": 552,
+      "rawHeadWidth": 75,
+      "scale": 0.9367105263157894,
+      "id": "stair-up-v10-6",
+      "phase": 0.375,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 570,
+      "actualPackedHeadWidth": 69,
+      "packingTranslation": [
+        45,
+        53
+      ],
+      "feet": {
+        "R": {
+          "x": 218.0,
+          "y": 569.0,
+          "floor": 570,
+          "roi": [
+            170,
+            265,
+            556,
+            577
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 282.0,
+          "y": 498.0,
+          "floor": 499,
+          "roi": [
+            246,
+            325,
+            485,
+            508
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 7,
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        920,
+        570,
+        1380,
+        1140
+      ],
+      "rawCap": 31,
+      "rawRoot": 214.5,
+      "rawFloor": 552,
+      "rawHeadWidth": 76,
+      "scale": 0.9367105263157894,
+      "id": "stair-up-v10-7",
+      "phase": 0.4375,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 571,
+      "actualPackedHeadWidth": 69,
+      "packingTranslation": [
+        49,
+        54
+      ],
+      "feet": {
+        "R": {
+          "x": 214.5,
+          "y": 570.0,
+          "floor": 571,
+          "roi": [
+            168,
+            260,
+            557,
+            578
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 291.0,
+          "y": 514.0,
+          "floor": 515,
+          "roi": [
+            246,
+            333,
+            506,
+            530
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 8,
+      "source": "contacts-candidate-01.png",
+      "sourceCrop": [
+        796,
+        0,
+        1592,
+        987
+      ],
+      "rawCap": 59,
+      "rawRoot": 397.5,
+      "rawHeadWidth": 126,
+      "scale": 0.565,
+      "existingKey": true,
+      "id": "stair-up-v10-8",
+      "phase": 0.5,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 84,
+      "actualPackedFloor": 563,
+      "actualPackedHeadWidth": 71,
+      "packingTranslation": [
+        25,
+        50
+      ],
+      "feet": {
+        "R": {
+          "x": 200.14999999999998,
+          "y": 562.4549999999999,
+          "uncertaintyX": 0.8474999999999999
+        },
+        "L": {
+          "x": 256.085,
+          "y": 518.385,
+          "uncertaintyX": 2.26
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 9,
+      "source": "intermediates-B-candidate-01.png",
+      "sourceCrop": [
+        0,
+        0,
+        459,
+        570
+      ],
+      "rawCap": 27,
+      "rawRoot": 236.5,
+      "rawFloor": 546,
+      "rawHeadWidth": 76,
+      "scale": 0.9555704697986577,
+      "id": "stair-up-v10-9",
+      "phase": 0.5625,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 579,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        24,
+        57
+      ],
+      "feet": {
+        "R": {
+          "x": 191.5,
+          "y": 578.0,
+          "floor": 579,
+          "roi": [
+            148,
+            243,
+            563,
+            584
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 268.5,
+          "y": 534.0,
+          "floor": 535,
+          "roi": [
+            234,
+            322,
+            519,
+            541
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 10,
+      "source": "intermediates-B-candidate-01.png",
+      "sourceCrop": [
+        459,
+        0,
+        918,
+        570
+      ],
+      "rawCap": 27,
+      "rawRoot": 220.0,
+      "rawFloor": 522,
+      "rawHeadWidth": 75,
+      "scale": 0.9555704697986577,
+      "id": "stair-up-v10-10",
+      "phase": 0.625,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 556,
+      "actualPackedHeadWidth": 71,
+      "packingTranslation": [
+        40,
+        57
+      ],
+      "feet": {
+        "R": {
+          "x": 199.0,
+          "y": 531.0,
+          "floor": 535,
+          "roi": [
+            162,
+            260,
+            522,
+            548
+          ],
+          "uncertaintyX": 4,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 261.0,
+          "y": 555.0,
+          "floor": 556,
+          "roi": [
+            231,
+            311,
+            539,
+            562
+          ],
+          "uncertaintyX": 4,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 11,
+      "source": "intermediates-B-candidate-01.png",
+      "sourceCrop": [
+        918,
+        0,
+        1377,
+        570
+      ],
+      "rawCap": 26,
+      "rawRoot": 201.5,
+      "rawFloor": 540,
+      "rawHeadWidth": 74,
+      "scale": 0.9555704697986577,
+      "id": "stair-up-v10-11",
+      "phase": 0.6875,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 574,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        57,
+        58
+      ],
+      "feet": {
+        "R": {
+          "x": 268.0,
+          "y": 494.0,
+          "floor": 500,
+          "roi": [
+            228,
+            326,
+            470,
+            502
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 251.0,
+          "y": 573.0,
+          "floor": 574,
+          "roi": [
+            221,
+            310,
+            558,
+            580
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 12,
+      "source": "passing-candidate-02.png",
+      "sourceCrop": [
+        796,
+        0,
+        1592,
+        987
+      ],
+      "rawCap": 58,
+      "rawRoot": 363.5,
+      "rawHeadWidth": 126,
+      "scale": 0.565,
+      "existingKey": true,
+      "id": "stair-up-v10-12",
+      "phase": 0.75,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 554,
+      "actualPackedHeadWidth": 71,
+      "packingTranslation": [
+        45,
+        50
+      ],
+      "feet": {
+        "R": {
+          "x": 236.53499999999997,
+          "y": 483.35499999999996,
+          "uncertaintyX": 1.13
+        },
+        "L": {
+          "x": 226.36499999999998,
+          "y": 553.415,
+          "uncertaintyX": 0.8474999999999999
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 13,
+      "source": "intermediates-B-candidate-01.png",
+      "sourceCrop": [
+        0,
+        570,
+        459,
+        1140
+      ],
+      "rawCap": 28,
+      "rawRoot": 237.5,
+      "rawFloor": 544,
+      "rawHeadWidth": 74,
+      "scale": 0.9555704697986577,
+      "id": "stair-up-v10-13",
+      "phase": 0.8125,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 577,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        23,
+        56
+      ],
+      "feet": {
+        "R": {
+          "x": 235.0,
+          "y": 502.0,
+          "floor": 505,
+          "roi": [
+            198,
+            294,
+            474,
+            506
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 214.0,
+          "y": 575.0,
+          "floor": 577,
+          "roi": [
+            167,
+            260,
+            562,
+            583
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 14,
+      "source": "intermediates-B-candidate-01.png",
+      "sourceCrop": [
+        459,
+        570,
+        918,
+        1140
+      ],
+      "rawCap": 29,
+      "rawRoot": 220.0,
+      "rawFloor": 548,
+      "rawHeadWidth": 75,
+      "scale": 0.9555704697986577,
+      "id": "stair-up-v10-14",
+      "phase": 0.875,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 579,
+      "actualPackedHeadWidth": 71,
+      "packingTranslation": [
+        40,
+        55
+      ],
+      "feet": {
+        "R": {
+          "x": 229.0,
+          "y": 509.0,
+          "floor": 512,
+          "roi": [
+            200,
+            301,
+            479,
+            513
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 209.0,
+          "y": 577.0,
+          "floor": 579,
+          "roi": [
+            166,
+            260,
+            563,
+            584
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    },
+    {
+      "cell": 15,
+      "source": "intermediates-B-candidate-01.png",
+      "sourceCrop": [
+        918,
+        570,
+        1377,
+        1140
+      ],
+      "rawCap": 28,
+      "rawRoot": 201.5,
+      "rawFloor": 552,
+      "rawHeadWidth": 74,
+      "scale": 0.9555704697986577,
+      "id": "stair-up-v10-15",
+      "phase": 0.9375,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 583,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        57,
+        56
+      ],
+      "feet": {
+        "R": {
+          "x": 288.5,
+          "y": 524.0,
+          "floor": 525,
+          "roi": [
+            245,
+            340,
+            507,
+            535
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        },
+        "L": {
+          "x": 204.5,
+          "y": 583.0,
+          "floor": 583,
+          "roi": [
+            157,
+            253,
+            567,
+            588
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle"
+    }
+  ],
+  "sourceHashes": {
+    "intermediates-A-candidate-01.png": "de16e8c706f1659ba32001c1220d28614567ebea35091be15d688991a52183fc",
+    "passing-candidate-02.png": "fe0c7bccecdf82da55449c592b3bfe1850e6c336824bb442b62dcde3372b5295",
+    "intermediates-B-candidate-01.png": "b48f6b2fc4ea79e7946929e41b1914388b3c7fbebf73fefd69d68663714074bf",
+    "contacts-candidate-01.png": "9fa2d0d33ef0459614a33fc16c7c6994a4a6d7c58cf25ba95f74b0ed8b05b774"
+  }
+}
