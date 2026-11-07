@@ -1,10 +1,11 @@
 import { createGroundLocomotion, updateGroundLocomotion, getGroundLocomotionPose } from './run-motion.js?v=9';
 import { createSpriteRenderer } from './sprite-renderer.js?v=8';
 import { attachScreenInput } from './screen-input.js?v=8';
-import { createRoomMotion, updateRoomMotion, getRoomPose } from './room-motion.js?v=9';
+import { createRoomMotion, updateRoomMotion, getRoomPose } from './room-motion.js?v=14';
 import { drawForeground } from './room-layout.js?v=8';
 import { createStairRenderer } from './stair-renderer.js?v=9';
-import { createRunRenderer, RUN_STRIDE_HEIGHT, RUN_PERIOD } from './run-renderer-v10.js?v=10';
+import { createAscentRenderer } from './ascent-renderer-v14.js?v=14';
+import { createRunRenderer, chooseRunFrame, RUN_STRIDE_HEIGHT, RUN_PERIOD } from './run-renderer-v10.js?v=10';
 const clamp = (value, low, high) => Math.max(low, Math.min(high, value));
 
 const canvas = document.querySelector('#scene');
@@ -60,6 +61,8 @@ function drawFootShadow(foot) {
 function render() {
   if (!initialized) return;
   pose = studio ? getGroundLocomotionPose(motion) : getRoomPose(motion);
+  const paintPose = !studio && stairRenderer.prepareGroundPose
+    ? stairRenderer.prepareGroundPose(pose,{isAirborne:pose.locomotion==='run' && !pose.runTransition && !!chooseRunFrame(pose)?.flight}) : pose;
   const actor = pose.surface === 'stairs' ? stairRenderer : pose.locomotion === 'run' || pose.runTransition ? runRenderer : renderer;
   ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.fillStyle = '#101615'; ctx.fillRect(0, 0, canvas.width, canvas.height);
@@ -72,16 +75,19 @@ function render() {
   } else ctx.drawImage(background, 0, 0, world.width, world.height);
   ctx.save();
   ctx.beginPath(); ctx.rect(0, world.floor, world.width, world.height * .914 - world.floor); ctx.clip();
-  if (!studio && pose.surface === 'lower') actor.draw(ctx, pose, { alpha: .085, reflection: true });
+  if (!studio && pose.surface === 'lower') actor.draw(ctx, paintPose, { alpha: .085, reflection: true });
   ctx.restore();
-  for (const footprint of actor.getFootprints(pose)) drawFootShadow(footprint);
-  actor.draw(ctx, pose);
+  for (const footprint of actor.getFootprints(paintPose)) drawFootShadow(footprint);
+  actor.draw(ctx, paintPose);
   if (!studio) drawForeground(ctx, background, world);
   canvas.dataset.position = pose.x.toFixed(2);
   canvas.dataset.motion = pose.turn ? 'turning' : pose.settled ? 'idle' : pose.locomotion === 'run' ? 'running' : 'walking';
   canvas.dataset.turnProgress = pose.turn ? pose.turn.progress.toFixed(3) : '';
   canvas.dataset.facing = pose.facing === 1 ? 'right' : 'left';
-  canvas.dataset.revision = '10';
+  canvas.dataset.revision = '14';
+  canvas.dataset.stairMode = pose.surface==='stairs'?pose.mode:'';
+  canvas.dataset.ascentProgress = Number.isFinite(pose.ascentProgress)?pose.ascentProgress.toFixed(4):'';
+  canvas.dataset.stairIndex = Number.isFinite(pose.index)?String(pose.index):'';
   canvas.dataset.locomotion = pose.locomotion ?? 'walk';
   canvas.dataset.requestedGait = walkMode || walkKeys.size ? 'walk' : 'run';
   canvas.dataset.surface = pose.surface ?? 'studio';
@@ -91,8 +97,8 @@ function render() {
   canvas.dataset.head = renderer.source.head;
   canvas.dataset.device = actor.source.device ?? renderer.source.device;
   canvas.dataset.grade = actor.source.grading ?? renderer.source.grade;
-  canvas.dataset.artwork = pose.surface === 'stairs' && pose.mode === 'stepping'
-    ? 'stair-refined-v9' : pose.locomotion === 'run' || pose.runTransition ? 'run-painted-v10' : 'walk-approved-v4';
+  canvas.dataset.artwork = pose.surface === 'stairs'
+    ? stairRenderer.getArtwork(paintPose) : pose.locomotion === 'run' || pose.runTransition ? 'run-painted-v10' : 'walk-approved-v4';
   canvas.dataset.renderer = actor.source.renderer;
   canvas.dataset.frames = actor.source.frameCount ?? renderer.source.walkFrames.length;
   canvas.dataset.phase = (pose.locomotion === 'run' ? pose.runPhase : pose.walkPhase).toFixed(4);
@@ -215,7 +221,9 @@ new ResizeObserver(resize).observe(stage);
 window.visualViewport?.addEventListener('resize', resize);
 
 try {
-  const images = await Promise.all(['assets/interior.png', 'assets/walk-approved-v4.png', 'assets/turn-painted-v4.png', 'assets/walk-bridges-v4.png', 'assets/walk-completion-v4.png', 'assets/walk-bridges-v5-arms.png', 'assets/walk-completion-v5-arms.png', 'assets/walk-start-v5-arms.png', 'assets/device-hidden-v6.png', 'assets/stair-up-v8.png', 'assets/stair-down-v8.png', 'assets/stair-bridges-v8.png', 'assets/run-painted-v10.png', 'assets/run-device-hidden-v10.png', 'assets/run-transitions-v9.png', 'assets/run-transitions-device-hidden-v9.png', 'assets/stair-refined-v9.png'].map(loadImage));
+  const [images,ascentFrames,transitionFrames] = await Promise.all([Promise.all(['assets/interior.png', 'assets/walk-approved-v4.png', 'assets/turn-painted-v4.png', 'assets/walk-bridges-v4.png', 'assets/walk-completion-v4.png', 'assets/walk-bridges-v5-arms.png', 'assets/walk-completion-v5-arms.png', 'assets/walk-start-v5-arms.png', 'assets/device-hidden-v6.png', 'assets/stair-up-v8.png', 'assets/stair-down-v8.png', 'assets/stair-bridges-v8.png', 'assets/run-painted-v10.png', 'assets/run-device-hidden-v10.png', 'assets/run-transitions-v9.png', 'assets/run-transitions-device-hidden-v9.png', 'assets/stair-refined-v9.png','assets/stair-up-v14.png','assets/stair-transitions-v14.png'].map(loadImage)),
+    ...['assets/stair-up-v14.json','assets/stair-transitions-v14.json'].map(async url=>{const response=await fetch(url);if(!response.ok)throw new Error('Pose delle scale non disponibili');return response.json();})
+  ]);
   background = images[0];
   renderer = createSpriteRenderer({ walkImage: images[1], turnImage: images[2], bridgeImage: images[3], extraImage: images[4], armBridgeImage: images[5], armExtraImage: images[6], armStartImage: images[7], devicePatchAtlas: images[8], extraColumns: 2, extraRows: 2, extraTimes: [.365, .865, null], extraSettleCell: 3 });
   runRenderer = createRunRenderer({ runImage: images[12], devicePatchAtlas: images[13], transitionImage: images[14], transitionDevicePatchAtlas: images[15], groundRenderer: renderer });
@@ -224,8 +232,11 @@ try {
   const runSpeed = runStride / RUN_PERIOD;
   motion = studio
     ? createGroundLocomotion({ x: world.width * .5, min: world.width * .174, max: world.width * .826, height: world.characterHeight, floor: world.floor, speed: 250, runStride, runSpeed })
-    : createRoomMotion({ world, x: world.width * .354, height: world.characterHeight, speed: 160, runStride, runSpeed });
-  if (!studio) stairRenderer = createStairRenderer({ upImage: images[9], downImage: images[10], bridgeImage: images[11], refinementImage: images[16], groundRenderer: renderer, nodes: motion.nodes });
+    : createRoomMotion({ world, x: world.width * .354, height: world.characterHeight, speed: 160, runStride, runSpeed, supportLockedAscent:true });
+  if (!studio) {
+    const legacyRenderer=createStairRenderer({ upImage: images[9], downImage: images[10], bridgeImage: images[11], refinementImage: images[16], groundRenderer: renderer, nodes: motion.nodes });
+    stairRenderer=createAscentRenderer({atlas:images[17],frames:ascentFrames,transitionAtlas:images[18],transitionFrames,groundRenderer:renderer,legacyRenderer,nodes:motion.nodes});
+  }
   pose = studio ? getGroundLocomotionPose(motion) : getRoomPose(motion);
   initialized = true;
   canvas.dataset.ready = 'true';

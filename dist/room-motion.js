@@ -1,6 +1,6 @@
 import { createGroundLocomotion, updateGroundLocomotion, getGroundLocomotionPose,
   getRunApproachDistance } from './run-motion.js?v=9';
-import { createStairMotion, updateStairMotion, getStairPose } from './stair-motion.js?v=9';
+import { createStairMotion, updateStairMotion, getStairPose } from './stair-motion.js?v=14';
 import { getRoomBounds, getRoomStairs } from './room-layout.js?v=8';
 
 const clamp = (value, low, high) => Math.max(low, Math.min(high, value));
@@ -28,6 +28,8 @@ function makeGround(state, surface, x, facing) {
 function makeStairs(state, index, facing) {
   state.stairs = createStairMotion({
     nodes: state.nodes, height: state.height, index, facing,
+    supportLockedAscent: state.supportLockedAscent, ascentStepDuration: state.ascentStepDuration,
+    ascentGatherDuration: state.ascentGatherDuration,
   });
   state.ground = null;
   state.surface = 'stairs';
@@ -35,14 +37,18 @@ function makeStairs(state, index, facing) {
 
 /** Coordinates are in the same world space as room-layout and the painting. */
 export function createRoomMotion({ world, x, height = world?.characterHeight, speed = 160,
-  runSpeed = speed * 2, runStride = height * 1.10 }) {
+  runSpeed = speed * 2, runStride = height * 1.10,
+  supportLockedAscent = false, ascentStepDuration = .45, ascentGatherDuration = .32 }) {
   if (!world || ![world.width, world.height, x, height, speed, runSpeed, runStride].every(Number.isFinite)
-    || world.width <= 0 || world.height <= 0 || height <= 0 || speed <= 0 || runSpeed < speed || runStride <= 0) {
+    || world.width <= 0 || world.height <= 0 || height <= 0 || speed <= 0 || runSpeed < speed || runStride <= 0
+    || !Number.isFinite(ascentStepDuration) || ascentStepDuration <= 0
+    || !Number.isFinite(ascentGatherDuration) || ascentGatherDuration <= 0) {
     throw new Error('Invalid room motion dimensions.');
   }
   const dimensions = { width: world.width, height: world.height };
   const state = {
     world: dimensions, height, speed, runSpeed, runStride,
+    supportLockedAscent: !!supportLockedAscent, ascentStepDuration, ascentGatherDuration,
     bounds: getRoomBounds(dimensions), nodes: getRoomStairs(dimensions),
     surface: 'lower', ground: null, stairs: null,
   };

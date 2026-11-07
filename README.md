@@ -1,12 +1,20 @@
-# Interno 01 — prototipo di movimento V10 touch
+# Interno 01 — prototipo di movimento V14
 
 Prototipo browser statico di un'avventura laterale per iPhone, con personaggio e scenario dipinti. «Interno 01» e il nome tecnico `painted-walk-study` sono provvisori: non sono il titolo definitivo del gioco. Il codice usa Canvas e moduli JavaScript, senza dipendenze di esecuzione esterne.
 
 ## Stato e pubblicazione
 
-Sono approvati lo stile dipinto, il personaggio e la camminata in piano. Dopo la prova sul telefono, Nicola ha respinto corsa e scale V9: ginocchia troppo alte, un braccio quasi fermo e scatti evidenti sui gradini. La V10 sostituisce la corsa con una nuova sequenza; la camminata rimane invariata. Nell’ultimo riscontro Nicola considera accettabile la discesa; la salita resta da rifinire. Il gioco usa ancora le scale V9.
+**[V14 pubblicata: apri il gioco completo](https://isola-prototipo.vercel.app/?v=14).** La salita del provino V13 è integrata nella stanza, con ingresso, arresto su un gradino, ripresa e raccolta sul pianerottolo. Deployment `dpl_CM7j35rUqHvDcAYnQ6Xjq8zZtDMh`, stato READY. Superati 81 test locali e nel build Vercel; verificati caricamento pubblico della revisione 14 e comando Cammina senza errori console. Il percorso completo e i raccordi sono stati controllati in una fixture locale con gli stessi moduli e asset pubblicati. [Registro del rilascio](releases/ascent-v14.json). La prova su iPhone fisico resta da fare.
 
-La revisione V13 del [provino di due passi](https://isola-prototipo.vercel.app/stair-study/?v=13-support) applica il riscontro successivo di Nicola: conservare il carattere del movimento V12 e bloccare la scarpa che sostiene il peso. La geometria comune delle scale è pedata 30 / alzata 21 a H266, con 0,45 s per gradino. I disegni V12 rimangono invariati e le figure intere sono registrate su un punto coerente della suola, con tempi fissi. Sorgenti e limiti in [experiments/stairs-support-v13](experiments/stairs-support-v13/README.md). Il gioco completo e la discesa non vengono sostituiti da questo provino.
+Il ciclo V13 e i suoi disegni sono conservati. Lo standard resta pedata 30 / alzata 21 a H266, con cadenza di 0,45 s per gradino; la raccolta dura 0,32 s. Sei nuovi disegni interi raccordano ingresso e raccolta, con una sola scala fisica per tutta la tavola. Camminata, corsa V10, discesa V9 e comandi touch a metà schermo rimangono invariati.
+
+Restano limiti visibili da valutare: abbassamento della testa di circa 20 unità all’ingresso e differenza di circa 15 unità nel raccordo finale a H266. È immobile il punto misurato sotto l’avampiede; i contorni dell’intera scarpa non sono identici fra i disegni. [Sorgenti, misure e limiti V14](art/stairs-v14/README.md).
+
+## Pubblicazioni precedenti
+
+Sono approvati lo stile dipinto, il personaggio e la camminata in piano. Dopo la prova sul telefono, Nicola aveva respinto corsa e scale V9: ginocchia troppo alte, un braccio quasi fermo e scatti evidenti sui gradini. La V10 aveva sostituito la corsa, conservando la camminata e le scale V9. Nel riscontro successivo Nicola aveva considerato accettabile la discesa e chiesto di rifinire la salita.
+
+La revisione V13 del [provino di due passi](https://isola-prototipo.vercel.app/stair-study/?v=13-support) applica il riscontro successivo di Nicola: conservare il carattere del movimento V12 e bloccare la scarpa che sostiene il peso. La geometria comune delle scale è pedata 30 / alzata 21 a H266, con 0,45 s per gradino. I disegni V12 rimangono invariati e le figure intere sono registrate su un punto coerente della suola, con tempi fissi. Sorgenti e limiti in [experiments/stairs-support-v13](experiments/stairs-support-v13/README.md). Il rilascio del solo provino V13 non sostituiva il gioco completo né la discesa; l’integrazione nel gioco è il lavoro V14 descritto sopra.
 
 V13 pubblicata nel deployment `dpl_ETAFCbcGWRjkRhV56CLQGJST5eQt`, READY. Verificati riproduzione sul link pubblico, revisione `13-support` e assenza di errori console; 59 test superati sia localmente sia nel build Vercel. [Registro del rilascio](releases/stair-support-v13.json).
 
@@ -31,7 +39,7 @@ Aprire `http://127.0.0.1:8765` sullo stesso computer. Questo indirizzo non è ra
 - Tenere premuta la metà sinistra o destra della superficie di gioco per correre. Spostare il dito oltre il centro cambia direzione; con più dita prevale l'ultima appoggiata.
 - Attivare il pulsante **Cammina** per usare il passo lento approvato; premendolo di nuovo si torna alla corsa. Da tastiera, **Maiusc** attiva temporaneamente la camminata.
 - Da tastiera restano disponibili frecce sinistra/destra e A/D. Sul telefono le due metà dello schermo sono aree invisibili: nessun pulsante direzionale viene disegnato. I comandi direzionali restano accessibili ai lettori di schermo; Cammina e schermo intero restano visibili.
-- Il rilascio avvia l'arresto. Sulle scale il passo in corso raggiunge un appoggio prima della raccolta o dell'inversione.
+- Il rilascio avvia l'arresto. Durante la salita V14 il passo in corso raggiunge il contatto e mantiene quella posa sul gradino; lo stesso comando riprende la salita. Per invertire si raccolgono prima i piedi. Sul pianerottolo la raccolta precede il ritorno al movimento in piano.
 - Il pulsante schermo intero usa la Fullscreen API quando disponibile; altrimenti passa a un layout più essenziale. Il formato orizzontale offre più spazio alla scena.
 
 I controlli della pagina sono esclusi dai gesti sulle metà dello schermo. Rilascio fuori dall'area, annullamento del gesto, perdita di focus e cambio di visibilità azzerano l'input gestuale.
@@ -44,7 +52,7 @@ Piante e ringhiere in primo piano coprono il personaggio usando ritagli del **di
 
 ## Disegni e continuità del personaggio
 
-La tavola approvata è `dist/assets/walk-approved-v4.png`, copia esatta della tavola scelta da Nicola, originariamente `work/walk-v3.png` nel workspace. SHA-256:
+La tavola approvata è `dist/assets/walk-approved-v4.png`, copia esatta della tavola scelta da Nicola. SHA-256:
 
 ```text
 7eaeb5963a0056f596c106dbd6a51d0bf52876b07df83d9bf4dde0ce280897ba
@@ -69,7 +77,7 @@ La nuova sequenza alterna entrambi i bracci e riduce l'altezza del ginocchio nel
 
 Il periodo a velocità piena è 0,8 s, misurato sul ciclo Flashback a 5:30.32–5:31.12. La falcata rimane 1,1H, più corta delle circa 1,9H osservate nella reference: il movimento orizzontale segue la distanza effettivamente coperta dai piedi dipinti. Nel mondo H ≈ 266 la velocità è circa 366 px/s. Non si allunga la falcata deformando arti o introducendo scivolamento.
 
-`dist/run-renderer-v10.js` e i due nuovi atlanti sostituiscono la corsa V9; i due raccordi iniziali V9 sono conservati. I PNG, i prompt ImageGen integrato, i metadati e i limiti sono in `art/run-v10/`. Il feedback di Nicola sulla V10 è ancora atteso. Le immagini e i moduli approvati della camminata, il fondale e le scale V9 rimangono byte-identici alla pubblicazione precedente.
+`dist/run-renderer-v10.js` e i due nuovi atlanti sostituiscono la corsa V9; i due raccordi iniziali V9 sono conservati. I PNG, i prompt ImageGen integrato, i metadati e i limiti sono in `art/run-v10/`. Il feedback di Nicola sulla V10 è ancora atteso. Nel rilascio V10 le immagini e i moduli approvati della camminata, il fondale e le scale V9 erano rimasti byte-identici alla pubblicazione precedente.
 
 ## Corsa V9 — archivio
 
@@ -79,7 +87,15 @@ La testa conserva la dimensione fisica della base approvata, senza ridimensionar
 
 Gli originali, i prompt ImageGen integrato, i dati di packing e i limiti misurati sono in `art/run-v9/`. I due raccordi riducono il salto verticale iniziale della testa da 26 a massimo 11 pixel a H266; rimane un piccolo cambio orizzontale della scarpa tra i disegni di avvio. Il ciclo usa figure intere discrete, senza deformazioni o dissolvenze.
 
-## Scale V9
+## Salita V14
+
+`dist/ascent-renderer-v14.js` integra il ciclo del provino V13 senza cambiare i disegni dei passi centrali. `dist/assets/stair-up-v14.png` e il relativo JSON conservano quel ciclo; `dist/assets/stair-transitions-v14.png` e il relativo JSON contengono sei pose intere di ingresso e raccolta. Il primo raccordo del fondale resta distinto dai gradini ripetuti: il ciclo standard non viene stirato per adattarlo a una pedata diversa.
+
+Il controller raggiunge il contatto quando si rilascia il comando su un gradino interno e mantiene l’appoggio (`contact-hold`). Riprendendo nello stesso verso prosegue da quel contatto; prima dell’inversione raccoglie i piedi. La raccolta di 0,32 s collega anche l’ultimo appoggio al pianerottolo. Il renderer continua a scegliere figure intere: niente articolazione di ritagli, morph o dissolvenze degli arti.
+
+La nuova tavola usa un’unica scala, 73/71,5, calibrata sulla larghezza del cranio; l’altezza di ogni sagoma piegata non viene normalizzata. Le misure registrano un abbassamento iniziale della testa di circa 20 unità e un raccordo finale ancora di circa 15 unità a H266. L’ancora dell’avampiede è stabile, mentre talloni, piede libero e cambi di sagoma richiedono giudizio visivo. Dettagli e attribuzione delle pose in [art/stairs-v14](art/stairs-v14/README.md). Il provino V13 resta disponibile separatamente per il confronto.
+
+## Scale V9 — archivio della salita e discesa conservata
 
 `stair-refined-v9.png` affianca gli atlanti V8 preservati. Il renderer seleziona le nuove pose usando gli appoggi e il busto realmente dipinti. Il punto di sostegno di ogni figura rimane fermo sulla pedata per tutta la durata della posa, eliminando lo scorrimento presente nella V8. La raccolta conserva inizialmente l'ultima figura della scala prima di raccordarsi alla posa ferma.
 
@@ -87,7 +103,7 @@ Sulle cinque pedate, a H266, il salto verticale massimo tra disegni passa da 7,0
 
 La scala resta da rifinire: l'alternanza anatomica delle gambe non è ancora convincente in tutti i passaggi, e un raccordo delle braccia in salita rimane visibile. Appoggi più stabili e continuità misurata non equivalgono a una rotoscopia continua; la verifica visiva e il feedback sul telefono restano essenziali.
 
-## Scale successive — prove separate dal gioco
+## Prove V10–V12 — archivio separato dal gioco
 
 `art/stairs-v10/` e `art/stairs-down-v10/` conservano i nuovi disegni, le guide e i prompt in lavorazione. Il numero delle cartelle indica quando sono state preparate, non una versione online: la V10 pubblicata usa ancora le scale V9. La tavola di salita a sedici pose non è approvata; gli intermedi hanno scarti visibili negli appoggi e richiedono correzioni prima dell’integrazione. Questi file non sono caricati dalla demo. Il [checkpoint portabile](experiments/stairs-ascent-v11/README.md) conserva codice sperimentale, misure e prova video; il relativo controllo di accettazione fallisce intenzionalmente finché non vengono corretti gli appoggi e completati i raccordi.
 
@@ -101,7 +117,9 @@ La scala resta da rifinire: l'alternanza anatomica delle gambe non è ancora con
 | `dist/room-layout.js` | Percorso, gradini misurati e maschere delle piante/ringhiere originali |
 | `dist/room-motion.js` | Collegamento fra pavimento, scala e pianerottolo |
 | `dist/run-motion.js` / `run-renderer-v10.js` | Corsa dedicata, raccordi con il cammino e frenata |
-| `dist/stair-motion.js` / `stair-renderer.js` | Movimento e pose dedicate alla scala |
+| `dist/stair-motion.js` | Appoggi, arresto, ripresa, raccolta e inversione sulle scale |
+| `dist/ascent-renderer-v14.js` | Salita V13 integrata e sei raccordi V14 |
+| `dist/stair-renderer.js` | Discesa V9 conservata |
 | `dist/*-grade.js` | Correzioni cromatiche statiche delle immagini |
 
 `motion.js`, `gait.js`, `painted-rig.js` e `shirt-grade.js` sono materiale storico e non fanno parte del percorso di esecuzione attuale. `vercel.json` configura il sito statico con `dist` come directory pubblicata e `npm test` prima del rilascio.

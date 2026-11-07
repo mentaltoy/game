@@ -1,0 +1,465 @@
+{
+  "entryStartPhase": 0.18,
+  "entryContactPhase": 0.82,
+  "gatherStartPhase": 0.18,
+  "gatherGroundPhase": 0.86,
+  "status": "Measured generated transition candidates; visual integration review required",
+  "cellWidth": 500,
+  "cellHeight": 620,
+  "columns": 2,
+  "rows": 3,
+  "referenceHeight": 500,
+  "sourceSha256": "75fa62224496784d9974cc849ab69deb4a2ed5c0271307c11643e37c31fd90e8",
+  "calibration": {
+    "alphaThreshold": 192,
+    "targetCranialWidth": 73,
+    "headDepthRaw": 70,
+    "rawWidths": [
+      71,
+      72,
+      70,
+      71,
+      72,
+      73
+    ],
+    "commonScale": 1.020979020979021,
+    "perPoseBodyNormalization": false,
+    "alphaPolicy": "Original source preserved. Packing crops to all alpha>=2 content with2pxmargin; discarded outside noise has alpha<=1/255, opaque body preserved and applies one uniform whole-image affine scale and translation; interpolation resamples alpha but no masks or background-removal edits are applied."
+  },
+  "frames": [
+    {
+      "cell": 0,
+      "id": "stair-transition-v14-0",
+      "kind": "entry",
+      "support": "L",
+      "groupSupport": "L",
+      "at": 0.18,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "feet": {
+        "L": {
+          "x": 214,
+          "y": 544,
+          "method": "Forefoot20packedpxbehindtoe;medianlocalalpha192soleoutline",
+          "toe": 234,
+          "heel": 152,
+          "profileRange": [
+            544,
+            544
+          ],
+          "rawROI": [
+            170,
+            437,
+            255,
+            483
+          ]
+        },
+        "R": {
+          "x": 279,
+          "y": 509,
+          "method": "Visiblelowersolepoint;notregisteredtothesupportingforefootconvention",
+          "rawROI": [
+            246,
+            408,
+            336,
+            450
+          ],
+          "uncertaintyX": 33
+        }
+      },
+      "source": "transitions-generated.png",
+      "sourceCell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "opaqueCrop": [
+        168,
+        20,
+        196,
+        466
+      ],
+      "rawCap": 28,
+      "rawHeadWidth": 71,
+      "rawHeadRoot": 269,
+      "scale": 1.020979020979021,
+      "packingTranslation": [
+        147,
+        75
+      ],
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 544,
+      "bodyHeightWorld": 245.252,
+      "notes": null
+    },
+    {
+      "cell": 1,
+      "id": "stair-transition-v14-1",
+      "kind": "entry",
+      "support": "L",
+      "groupSupport": "L",
+      "at": 0.5,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "feet": {
+        "L": {
+          "x": 203,
+          "y": 550,
+          "method": "Forefoot20packedpxbehindtoe;medianlocalalpha192soleoutline",
+          "toe": 223,
+          "heel": 141,
+          "profileRange": [
+            550,
+            551
+          ],
+          "rawROI": [
+            125,
+            437,
+            214,
+            483
+          ]
+        },
+        "R": {
+          "x": 278,
+          "y": 501,
+          "method": "Visiblelowersolepoint;notregisteredtothesupportingforefootconvention",
+          "rawROI": [
+            234,
+            395,
+            323,
+            437
+          ],
+          "uncertaintyX": 32.5
+        }
+      },
+      "source": "transitions-generated.png",
+      "sourceCell": [
+        512,
+        0,
+        512,
+        512
+      ],
+      "opaqueCrop": [
+        123,
+        16,
+        263,
+        470
+      ],
+      "rawCap": 22,
+      "rawHeadWidth": 72,
+      "rawHeadRoot": 235.5,
+      "scale": 1.020979020979021,
+      "packingTranslation": [
+        135,
+        77
+      ],
+      "actualPackedCrown": 84,
+      "actualPackedFloor": 551,
+      "bodyHeightWorld": 248.44400000000002,
+      "notes": null
+    },
+    {
+      "cell": 2,
+      "id": "stair-transition-v14-2",
+      "kind": "gather",
+      "support": "R",
+      "groupSupport": "R",
+      "at": 0.18,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "feet": {
+        "R": {
+          "x": 299,
+          "y": 546,
+          "method": "Forefoot20packedpxbehindtoe;medianlocalalpha192soleoutline",
+          "toe": 319,
+          "heel": 232,
+          "profileRange": [
+            546,
+            546
+          ],
+          "rawROI": [
+            252,
+            436,
+            344,
+            480
+          ]
+        },
+        "L": {
+          "x": 189,
+          "y": 522,
+          "method": "Visiblelowersolepoint;notregisteredtothesupportingforefootconvention",
+          "rawROI": [
+            151,
+            379,
+            226,
+            455
+          ],
+          "uncertaintyX": 6.5
+        }
+      },
+      "source": "transitions-generated.png",
+      "sourceCell": [
+        0,
+        512,
+        512,
+        512
+      ],
+      "opaqueCrop": [
+        149,
+        14,
+        225,
+        467
+      ],
+      "rawCap": 21,
+      "rawHeadWidth": 70,
+      "rawHeadRoot": 273.5,
+      "scale": 1.020979020979021,
+      "packingTranslation": [
+        123,
+        76
+      ],
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 546,
+      "bodyHeightWorld": 246.316,
+      "notes": null
+    },
+    {
+      "cell": 3,
+      "id": "stair-transition-v14-3",
+      "kind": "gather",
+      "support": "R",
+      "groupSupport": "R",
+      "at": 0.58,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "feet": {
+        "R": {
+          "x": 281,
+          "y": 550,
+          "method": "Forefoot20packedpxbehindtoe;medianlocalalpha192soleoutline",
+          "toe": 301,
+          "heel": 214,
+          "profileRange": [
+            550,
+            551
+          ],
+          "rawROI": [
+            203,
+            437,
+            293,
+            480
+          ]
+        },
+        "L": {
+          "x": 216,
+          "y": 542,
+          "method": "Visiblelowersolepoint;notregisteredtothesupportingforefootconvention",
+          "rawROI": [
+            140,
+            400,
+            207,
+            466
+          ],
+          "uncertaintyX": 1.5
+        }
+      },
+      "source": "transitions-generated.png",
+      "sourceCell": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "opaqueCrop": [
+        138,
+        11,
+        158,
+        470
+      ],
+      "rawCap": 17,
+      "rawHeadWidth": 71,
+      "rawHeadRoot": 240,
+      "scale": 1.020979020979021,
+      "packingTranslation": [
+        146,
+        77
+      ],
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 551,
+      "bodyHeightWorld": 248.44400000000002,
+      "notes": null
+    },
+    {
+      "cell": 4,
+      "id": "stair-transition-v14-4",
+      "kind": "gather",
+      "support": "L",
+      "groupSupport": "L",
+      "at": 0.18,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "feet": {
+        "L": {
+          "x": 243,
+          "y": 554,
+          "method": "Forefoot20packedpxbehindtoe;medianlocalalpha192soleoutline",
+          "toe": 263,
+          "heel": 179,
+          "profileRange": [
+            554,
+            555
+          ],
+          "rawROI": [
+            197,
+            441,
+            286,
+            484
+          ]
+        },
+        "R": {
+          "x": 280,
+          "y": 515,
+          "method": "Visiblelowersolepoint;notregisteredtothesupportingforefootconvention",
+          "rawROI": [
+            285,
+            414,
+            316,
+            443
+          ],
+          "uncertaintyX": 14
+        }
+      },
+      "source": "transitions-generated.png",
+      "sourceCell": [
+        0,
+        1024,
+        512,
+        512
+      ],
+      "opaqueCrop": [
+        192,
+        11,
+        218,
+        475
+      ],
+      "rawCap": 18,
+      "rawHeadWidth": 72,
+      "rawHeadRoot": 268.5,
+      "scale": 1.020979020979021,
+      "packingTranslation": [
+        172,
+        76
+      ],
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 555,
+      "bodyHeightWorld": 250.572,
+      "notes": null
+    },
+    {
+      "cell": 5,
+      "id": "stair-transition-v14-5",
+      "kind": "gather",
+      "support": "R",
+      "groupSupport": "L",
+      "at": 0.58,
+      "requestedSupport": "L",
+      "weightTransfer": true,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "feet": {
+        "R": {
+          "x": 253,
+          "y": 555,
+          "method": "Forefoot20packedpxbehindtoe;medianlocalalpha192soleoutline",
+          "toe": 273,
+          "heel": 188,
+          "profileRange": [
+            555,
+            555
+          ],
+          "rawROI": [
+            172,
+            437,
+            259,
+            484
+          ]
+        },
+        "L": {
+          "x": 291,
+          "y": 542,
+          "method": "Visiblelowersolepoint;notregisteredtothesupportingforefootconvention",
+          "rawROI": [
+            261,
+            435,
+            300,
+            471
+          ],
+          "uncertaintyX": 14.5
+        }
+      },
+      "source": "transitions-generated.png",
+      "sourceCell": [
+        512,
+        1024,
+        512,
+        512
+      ],
+      "opaqueCrop": [
+        117,
+        11,
+        185,
+        479
+      ],
+      "rawCap": 17,
+      "rawHeadWidth": 73,
+      "rawHeadRoot": 236,
+      "scale": 1.020979020979021,
+      "packingTranslation": [
+        129,
+        77
+      ],
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 555,
+      "bodyHeightWorld": 251.104,
+      "notes": "The generated near/right foot is lowest. Render as a right-support weight transfer; do not pin the far/left foot."
+    }
+  ],
+  "groundEntryRegistration": {
+    "source": "turn-painted-v4.png",
+    "cell": 0,
+    "support": "L",
+    "visibility": "Occluded by near/right boot; anatomical far/left toe cannot be measured.",
+    "referenceRoot": 180,
+    "referenceCap": 15,
+    "referenceFloor": 519,
+    "referenceBodyHeight": 504,
+    "localAnchor": {
+      "x": 180,
+      "y": 518
+    },
+    "groundRootOffsetRatio": {
+      "x": 0,
+      "y": -0.001984126984126984
+    },
+    "worldAnchorAtH266AndRoot916Floor800": {
+      "x": 916,
+      "y": 799.4722222222222
+    },
+    "method": "Inferred hidden-foot registration inside visible sole. At x176..184 the alpha>=192 lower contour median is y518. Not an anatomical toe-minus20 measurement.",
+    "settleCrossCheck": "walk-completion-v4 cell3 reveals the rear/left heel and diagonal sole but its toe and forefoot are occluded by the near/right boot, so it cannot determine an independent exact forefoot landmark."
+  }
+}

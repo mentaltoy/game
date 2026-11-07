@@ -1,4 +1,14 @@
-# Direzione approvata da Nicola — V10 touch e provino V13, 7 novembre 2026
+# Direzione approvata da Nicola — integrazione salita V14, 7 novembre 2026
+
+## Ambito V14 autorizzato — prevale sulle prove separate precedenti
+
+- Dopo la prova V13, Nicola ha chiesto: «procediamo con le rifiniture e metti tutto online insieme al resto del gioco». Sono autorizzate l’integrazione della salita nella stanza, la sua verifica e la pubblicazione nello stesso progetto Vercel. Le indicazioni precedenti che limitavano la salita al solo provino descrivono lo storico e non bloccano questo lavoro.
+- Conservare il ciclo e i disegni V13, il fondale, la camminata, la corsa V10, la discesa V9 e le due metà invisibili dello schermo per i comandi touch. Intervenire sui raccordi e sulla gestione della salita senza modificare le altre movenze.
+- Standard delle scale: pedata 30 / alzata 21 a H266, cadenza di 0,45 s per gradino. La raccolta V14 dura 0,32 s. Il primo raccordo del fondale è distinto dai gradini ripetuti; non deformare il ciclo per adattarlo a geometrie arbitrarie.
+- Se il comando viene rilasciato durante la salita, completare il passo fino al contatto e mantenere la posa sul gradino interno (`contact-hold`). Riprendere nello stesso verso da quel contatto; raccogliere i piedi prima di un’inversione e all’uscita sul pianerottolo.
+- I sei nuovi raccordi sono figure complete, con una sola scala fisica per tutta la tavola. Non normalizzare separatamente l’altezza delle pose piegate, non articolare ritagli e non nascondere i cambi con morph o dissolvenze. Le misure e i ruoli anatomici sono in `art/stairs-v14/` e `dist/assets/stair-transitions-v14.json`.
+- Dichiarare i limiti misurati: circa 20 unità di abbassamento iniziale della testa e circa 15 nel raccordo finale, a H266. Il vincolo esatto riguarda il punto sotto l’avampiede, non tutta la sagoma della scarpa. La registrazione del piede sinistro nell’idle è inferita perché occultato; la cella 5 dei raccordi appartiene al gruppo L ma trasferisce il sostegno effettivo a R.
+- V14 pubblicata; gli esiti verificati sono nella sezione finale e nel registro del rilascio. Non dichiarare una prova su iPhone fisico o assenza di scatti senza riscontro. Aggiornare README e registro soltanto con gli esiti effettivi.
 
 ## Progetto e stile
 
@@ -10,7 +20,7 @@
 
 ## Base approvata da preservare
 
-- Usare realmente `dist/assets/walk-approved-v4.png`, copia esatta della tavola scelta da Nicola (`work/walk-v3.png` nel workspace). SHA-256: `7eaeb5963a0056f596c106dbd6a51d0bf52876b07df83d9bf4dde0ce280897ba`. Non sostituirla silenziosamente con un altro personaggio o con il vecchio rig.
+- Usare realmente `dist/assets/walk-approved-v4.png`, copia esatta della tavola scelta da Nicola. SHA-256: `7eaeb5963a0056f596c106dbd6a51d0bf52876b07df83d9bf4dde0ce280897ba`. Non sostituirla silenziosamente con un altro personaggio o con il vecchio rig.
 - Nicola ha approvato movimento in piano e resa complessiva V4, poi le braccia V5 e le rifiniture V6. Preservare controller, appoggi, velocità, tempi del ciclo, proporzioni e fondale già approvati nelle modifiche successive.
 - Camminata, posa ferma e inversione devono condividere il trattamento delle immagini complete. Sono stati rifiutati i salti fra arti ritagliati e pose intere, i frammenti durante la deformazione e la sensazione di scarponi pesanti. Non reintrodurre rig o dissolvenze degli arti per mascherare un raccordo.
 - Conservare il dispositivo sul fianco anatomico destro e la sua occlusione nelle viste opposte; il riflesso deve usare la stessa variante del personaggio.
@@ -40,11 +50,11 @@
 - Rifinire la continuità visibile di busto e appoggi sulle scale, inclusi arresti, inversioni e raccordi con il pavimento. Una verifica matematica non sostituisce l'ispezione delle pose nella stanza.
 - Continuare la demo online su Vercel. GitHub era stato rimandato a quando Nicola torna a casa. Il 7 novembre Nicola ha esplicitamente riaperto il trasferimento: creare/verificare il repository `mentaltoy/game` e salvarvi i sorgenti è ora autorizzato.
 
-## Pubblicazione corrente e lavoro rimandato
+## Pubblicazioni V10 — storico e lavoro rimandato
 
 - V10 touch online su Vercel: https://isola-prototipo.vercel.app/; progetto `prj_sL6enHn7Dtc1LOvua2OlDV3RRk21`, team `team_Qz7eQFBIblAjAZwmQP67tlJV`, deployment `dpl_HERM8qCqvAamJheiVh2dknDrKeXQ` READY. Pubblicazione tramite upload diretto; sorgenti salvati nel repository pubblico `mentaltoy/game`. La V10 sostituisce soltanto il ciclo di corsa e ne imposta il periodo a 0,8 s. Camminata e scale V9 sono preservate. Nell’ultimo riscontro Nicola considera accettabile la discesa; la salita resta da rifinire in una prova separata. Verificati link pubblico, revisione 10, comandi a metà schermo e Cammina a 844×390, senza errori console; 55 test superati. Il feedback di Nicola sulla nuova corsa è ancora atteso.
 - Il 7 novembre Nicola è tornato a casa e ha esplicitamente ripreso GitHub. Repository pubblico: https://github.com/mentaltoy/game . Il caricamento iniziale conserva i sorgenti V10 e i materiali sperimentali separati; verificare sempre il commit remoto prima di dichiarare concluso un aggiornamento. I file sono salvati localmente e negli ZIP V8, V9 e V10. Il precedente link Sites rimane V7 privato.
-- Prima di pubblicare nuove modifiche, verificare questo deployment Vercel e i sorgenti locali V10; non sostituirli con il vecchio stato Sites V7.
+- Prima di pubblicare nuove modifiche, verificare il deployment Vercel effettivamente corrente e gli aggiornamenti locali e remoti; non sostituirli con il vecchio stato Sites V7.
 
 ## Riscontro dopo la prova V9
 
@@ -87,3 +97,7 @@ La V10 touch è READY e il build supera 55 test. Verifica mobile locale Chrome a
 - La discesa e il gioco completo restano quelli pubblicati V10 touch; la correzione viene valutata prima nei due gradini di `/stair-study/`.
 
 - Provino V13 online nello stesso percorso: deployment `dpl_ETAFCbcGWRjkRhV56CLQGJST5eQt`, READY, 59 test superati. Registrazione statica dello stesso punto sotto l’avampiede, venti pixel sorgente dietro il bordo della punta; immagini V12 intatte. La punta è stabile, ma sagoma dei talloni e cambi di disegno restano da giudicare visivamente. Dettagli in `releases/stair-support-v13.json`.
+
+## Esito rilascio V14 — 7 novembre 2026
+
+Salita integrata pubblicata su https://isola-prototipo.vercel.app/?v=14, deployment `dpl_CM7j35rUqHvDcAYnQ6Xjq8zZtDMh` READY. 81 test passati localmente e nel build Vercel. Pagina pubblica caricata, revisione 14 e toggle Cammina verificati, nessun errore console. Percorso completo e campioni dei raccordi verificati nella fixture locale con gli stessi moduli e asset della produzione; nessuna nuova prova fisica su iPhone. Restano cambi discreti di sagoma e raccordi da valutare con Nicola. Dati, hash e limiti in `releases/ascent-v14.json`. La successiva revisione deve preservare lo standard e gli appoggi approvati.

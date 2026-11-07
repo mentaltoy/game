@@ -8,9 +8,12 @@ const mix = (a,b,t) => a+(b-a)*t;
 const GATHER_TIME = .14;
 const TURN_RATE = 1/.34, TURN_ACCEL = TURN_RATE/.05;
 
-export function createStairMotion({ nodes, height, facing = 1, index, stepDuration = .34 }) {
+export function createStairMotion({ nodes, height, facing = 1, index, stepDuration = .34,
+  supportLockedAscent = false, ascentStepDuration = .45, ascentGatherDuration = .32 }) {
   if (!Array.isArray(nodes) || nodes.length < 2 || !Number.isFinite(height) || height <= 0
     || !Number.isFinite(stepDuration) || stepDuration <= 0
+    || !Number.isFinite(ascentStepDuration) || ascentStepDuration <= 0
+    || !Number.isFinite(ascentGatherDuration) || ascentGatherDuration <= 0
     || !nodes.every((node,i) => Number.isFinite(node?.x) && Number.isFinite(node?.y)
       && (!i || node.x > nodes[i-1].x && node.y <= nodes[i-1].y))) {
     throw new Error('Stair supports must run from lower left to upper right.');
@@ -21,7 +24,10 @@ export function createStairMotion({ nodes, height, facing = 1, index, stepDurati
   const points = nodes.map(node => ({ ...node })), point = points[index];
   return {
     nodes: points, height, facing, index, x: point.x, floor: point.y,
-    maxRate: 1/stepDuration, rate: 0, stepCount: 0, supportFoot: 1,
+    supportLockedAscent: !!supportLockedAscent, ascentGatherDuration,
+    baseRate: 1/stepDuration, ascentRate: 1/ascentStepDuration,
+    maxRate: supportLockedAscent && facing===1 ? 1/ascentStepDuration : 1/stepDuration,
+    rate: 0, stepCount: 0, supportFoot: 1,
     feet: [0,1].map(() => ({ x: point.x, y: point.y, nodeIndex:index, planted:true })),
     step: null, lastStep: null, gather: null, turn: null, mode:'idle', exitDirection:0
   };
@@ -39,8 +45,10 @@ function nextIsOutside(state, facing=state.facing) {
 function startStep(state) {
   if(nextIsOutside(state)) return false;
   const next=state.index+state.facing, movingFoot=1-state.supportFoot;
+  state.maxRate=state.supportLockedAscent && state.facing===1 ? state.ascentRate : state.baseRate;
   state.step={ fromIndex:state.index, toIndex:next, progress:0, movingFoot,
-    footFrom:{...state.feet[movingFoot]} };
+    footFrom:{...state.feet[movingFoot]},
+    fromCollected:state.feet.every(foot=>foot.planted && foot.nodeIndex===state.index) };
   state.mode='stepping';
   return true;
 }
@@ -58,7 +66,10 @@ function startGather(state) {
   if(Math.abs(foot.x-to.x)<1e-8 && Math.abs(foot.y-to.y)<1e-8) {
     state.gather=null; state.mode='idle'; return;
   }
-  state.gather={ elapsed:0, movingFoot, from:{...foot} };
+  // Capture the timing now: an input reversal during collection must not
+  // retime the authored transition or change the moving foot's trajectory.
+  const duration=state.supportLockedAscent && state.facing===1 ? state.ascentGatherDuration : GATHER_TIME;
+  state.gather={ elapsed:0, duration, movingFoot, from:{...foot} };
   state.mode='gathering';
 }
 function finishStep(state, wanted) {
@@ -69,6 +80,11 @@ function finishStep(state, wanted) {
   state.feet[step.movingFoot]={ x:state.x,y:state.floor,nodeIndex:state.index,planted:true };
   state.step=null; state.stepCount++;
   if(wanted===state.facing && !nextIsOutside(state)) startStep(state);
+  else if(state.supportLockedAscent && state.facing===1 && !wanted && !nextIsOutside(state)) {
+    // Keep the just-landed split stance on an interior tread. A released
+    // command must not replace the painted contact with a flat-ground idle.
+    state.rate=0; state.mode='contact-hold';
+  }
   else startGather(state);
 }
 function updateStep(state,wanted,dt) {
@@ -85,10 +101,10 @@ function updateStep(state,wanted,dt) {
 }
 function updateGather(state,dt) {
   const gather=state.gather;
-  gather.elapsed=Math.min(GATHER_TIME,gather.elapsed+dt);
+  gather.elapsed=Math.min(gather.duration,gather.elapsed+dt);
   const to={...state.nodes[state.index],nodeIndex:state.index};
-  state.feet[gather.movingFoot]=swingFoot(gather.from,to,gather.elapsed/GATHER_TIME,state.height*.065);
-  if(gather.elapsed>=GATHER_TIME) { state.gather=null; state.mode='idle'; }
+  state.feet[gather.movingFoot]=swingFoot(gather.from,to,gather.elapsed/gather.duration,state.height*.065);
+  if(gather.elapsed>=gather.duration) { state.gather=null; state.mode='idle'; }
 }
 function updateTurn(state,wanted,dt) {
   const turn=state.turn;
@@ -109,6 +125,11 @@ function substep(state,wanted,dt) {
   if(state.gather) { updateGather(state,dt); return; }
   if(state.step) { updateStep(state,wanted,dt); return; }
   if(!wanted) return;
+  if(state.mode==='contact-hold' && wanted!==state.facing) {
+    // The released trailing foot is gathered before the existing turn. A
+    // direct resume in the same direction instead keeps both real supports.
+    startGather(state); return;
+  }
   if(wanted!==state.facing) {
     state.turn={sourceFacing:state.facing,targetFacing:wanted,progress:0,velocity:0,goal:1};
     state.mode='turning'; return;
@@ -132,14 +153,19 @@ export function getStairPose(state) {
   const phase=state.step?.progress??0, cyclePhase=((state.stepCount%2)+phase)/2;
   const speed=state.step?state.rate*Math.abs(state.nodes[state.step.toIndex].x-state.nodes[state.step.fromIndex].x):0;
   const settled=!state.step&&!state.gather&&!state.turn;
+  const ascending=state.supportLockedAscent && state.facing===1;
+  const ascentProgress=ascending && state.step ? state.step.fromIndex+phase
+    : ascending && state.lastStep?.stepTo>state.lastStep?.stepFrom ? state.index : null;
   return {
     x:state.x,floor:state.floor,height:state.height,facing:state.facing,
     speed,velocity:speed*state.facing,stepPhase:phase,cyclePhase,walkPhase:cyclePhase,
-    walkWeight:state.step?1:state.gather?1-smoother(state.gather.elapsed/GATHER_TIME):0,
+    walkWeight:state.step || state.mode==='contact-hold'?1:state.gather?1-smoother(state.gather.elapsed/state.gather.duration):0,
     turn:state.turn?{ progress:state.turn.progress,sourceFacing:state.turn.sourceFacing,targetFacing:state.turn.targetFacing }:null,
     feet:state.feet.map(foot=>({...foot})),supportFoot:state.supportFoot,
     stepFrom:state.step?.fromIndex??state.index,stepTo:state.step?.toIndex??state.index,
-    gatherProgress:state.gather?state.gather.elapsed/GATHER_TIME:null,
+    index:state.index,supportLockedAscent:state.supportLockedAscent,ascentProgress,
+    stepFromCollected:state.step?.fromCollected??false,
+    gatherProgress:state.gather?state.gather.elapsed/state.gather.duration:null,
     lastStep:state.lastStep?{...state.lastStep}:null,
     settled,walking:!!state.step,mode:state.mode,exitDirection:state.exitDirection
   };

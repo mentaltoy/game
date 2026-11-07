@@ -1,0 +1,48 @@
+Six transition drawings — measured, not automatically accepted
+7 November 2026
+
+Files: atlas.png (1000x1860), frames.json; 2 columns x3 rows, 500x620cells.
+Source 1024x1536 retained unchanged outside workspace. No generated pixels
+were recoloured, warped, masked or repainted here.
+
+One scale for all6figures:73/71.5=1.020979020979021. Raw cranial widths at
+alpha>=192 over the upper70rows are71,72,70,71,72,73. Each whole figure is
+translated to nominal crown250,83; no individual bodyheight normalization.
+
+Alpha: source has alpha1/255 noise across the full cell. Tight packing crops
+to all pixels alpha>=2 plus2pixelmargin. Only alpha<=1 noise lies outside.
+No opaque body clipping. Bicubic affine scaling resamples alpha normally;
+alpha is NOT numerically unchanged by resizing. OriginalPNG remains intact.
+
+Support roles:
+0/1entry L; 2/3gather R; 4gather L; 5gatherR after L-group collection.
+Cell5actually has the near/right boot lowest. Its far/left boot is higher;
+metadata marks groupSupportL, supportR, weightTransfertrue. Pinning L would
+sink the lower near/right shoe. No flipping/mirroring done.
+
+Measured supporting point is20packedpixels behind the front toe contour,
+with Y at local lower sole edge(alpha>=192,median of9columns). Free-foot
+points are visible sole/toe samples under occlusion, not that same landmark.
+Do not use freepoints to certify double support or exact anatomical centers.
+
+Ground-entry registration audit:
+The earlier934.47 candidate is the near/right forefoot, not rear/left.
+In approved turn-painted-v4 cell0 the far/left foot is fully hidden. The
+point local(180,518) lies inside the visible sole and at its measured lower
+outline: x176..184 alpha192 contour median is518. Use only as an inferred
+hidden-foot registration, not a visible anatomical landmark. With root916,
+floor800 andH266 it maps to(916,799.4722), ratio(0,-1/504) fromroot/floor.
+Entry0/1 crownX then935.152/941.004, approachingfirstRcontact942.74.
+Settle3 shows the far/left heel/sole but hides the toe behind the near/right
+boot; it does not provide an exact far/left forefoot measurement either.
+
+Integration risks:
+Gather2/3 support-to-crown heights246.32/248.44worldunits; finalcell5height
+251.10. Groundidle is266. These whole drawings do not completely bridge the
+standing-height handoff. Their head/foot relations must be assessed in scene.
+
+Source measurements and ROIs are recorded perframe. Particularly cell3L
+andcell4R/cell5L are partiallyoccluded footsamples; their X is not anatomy.
+Thresholds requested byparent: entryStartPhase.18,entryContactPhase.82;
+gatherStartPhase.18,gatherGroundPhase.86. Frames0/1 at.18/.50; collection
+first/second at.18/.58. No controllerorcanonicalrepository fileschanged.
