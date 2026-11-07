@@ -1,0 +1,107 @@
+V12 — MISURE E PACKING DEL PROVINO, 7 NOVEMBRE2026
+
+FILE DA USARE PER IL CONFRONTO
+stair-up-v12-review.png
+stair-up-v12-review-metadata.json
+Layout4×4, celle500×620, atlas2000×2480, scala runtime.532.
+Sostituzioni11/13/14/15. Cella2 originale ripristinata. Dodici celle non
+sostituite, incluse le quattro chiavi, identiche pixel RGBA per pixel all'atlas
+V11. La variante precedente *candidate* contiene anche la nuova2 e resta
+soltanto un confronto scartato: non usarla come montaggio finale.
+
+La nuova2 avrebbe un portante più coerente quasi all'inizio del ciclo
+(fase.0155 anziché.125), incompatibile con il suo ordine e con il piede libero.
+Il pair precedente1/2 è respinto: nessuna sua immagine è nel montaggio.
+Il fullsheet generato con layout806×1952 non è stato usato né calibrato.
+
+CALIBRAZIONE E PUNTI DI MISURA
+La stessa misura di silhouette alfa>=192 nelle chiavi packed dà cranio
+72/74/72/74px, media73. È un criterio riproducibile diverso dalla vecchia
+stima nominale71.2: non sono intercambiabili senza cambiare la scala.
+Scala nuova11=.41954023; tripla13/14/15=.73986486 comune all'intera tavola.
+Intera figura trasformata una volta, poi packing; nessun arto separato,
+nessuna deformazione, dissolve, correzione di proporzioni o colore.
+
+11: raw1126×1397, crown184, cranio174; portante L punto più basso
+~(524.78,1271). Coordinate packed(232.17,539.24). L'ancora è il contatto
+visibile più basso, non il centro anatomico della scarpa. La fascia3px più
+bassa è molto più larga: usarne il centro sposterebbe X e darebbe un altro
+fit. Il piede libero è parzialmente occluso: misura della punta visibile,
+non dell'intera suola.
+
+13/14/15: raw1950×807, tre celle650×807, crown104 in tutte; crani100/98/98.
+Portanti packed L rispettivamente(224.43,545.36),(221.56,545.36),
+(215.90,550.54). Le punte libere13/14 sono sensibilmente avanti rispetto
+alla guida iniziale. Il loro scartoX non deve essere confuso con un errore
+del centro della caviglia: è riportata la provenienza dei punti nei metadata.
+
+ASSEGNAZIONE DELLE FASI
+Nuova11: alla fase assegnata.6875 massimoerrore portante4.31px; migliore fase
+libera nello stesso appoggio.662, errore2.30px. È una correzione locale utile.
+Nuove13/14: fasi libere migliori.717/.7315, prima della chiave12(.75).
+Non spostarle lì senza rispettare il movimento reale della gamba libera.
+Nuova15: migliore fase libera.803, ma anche qui va conservato l'ordine.
+
+AUDIT DEL MONTAGGIO EFFETTIVO, A H266
+Due passi regolari, corpo continuo, quattro chiavi intatte. Campionamento
+1200Hz per trovare anche gli estremi durante il mantenimento di una posa.
+                                      portante X   portante Y
+16vecchie, selezioneadattiva ordinata    14.19px       14.13px
+V12review, stessa selezione             12.39px       12.39px
+V12retiming monotono vincolato          12.53px       12.92px
+
+Il retiming è una prova separata: ordine0..15, quattrochiavi vincolate ai
+quarti, minimo33.3ms perposa, costo dominante sugli appoggi. Non migliora il
+massimo: NON è raccomandato come soluzione. retiming-review.json contiene
+sequenza e risultati completi. Restano dominanti le vecchie celle1/9/10.
+
+Piede libero V12review: fino30.70pxX/35.73pxY dalla curva di DISEGNO, con
+massimo cambio del punto visibile10→11 circa39.92px. Questi non sono misure
+di penetrazione dei gradini; punta, centro visibile e parti occluse hanno
+incertezze diverse. Servono a individuare i raccordi da guardare nella prova.
+Il numero del portante riguarda il punto dichiarato, non certifica l'intera
+suola o l'assenza di collisioni. Nessuna animazione finale è accettata qui.
+
+Non certificare fluidità dal mantenimento del crown: il suo salto matematico
+è zero per costruzione, mentre la silhouette può ancora cambiare. La tavola
+di packing è stata ispezionata; il confronto animato nel fondale è in carico
+al parent. Il provino resta un confronto revisionabile, non la sostituzione
+della salita pubblicata.
+
+SCRIPT
+pack-candidates.mjs: richiede sharp via NODE_PATH; legge i PNG generati e il
+checkout canonico, scrive solo questa cartella. Verifica l'identità delle
+12cellepreservate. Sourcepaths e misure sono conservati nel file.
+retime-review.mjs: senza dipendenze esterne; audit del playback effettivo e
+ricerca di una selezione temporale monotona.
+audit-two-steps.mjs: specifica e audit geometrico iniziale, separato dalle
+misure dei nuovi candidati. Il confronto hypothetical è soltanto teorico:
+non deve essere citato come qualità raggiunta dai PNG.
+
+ULTIME ALTERNATIVE — NON INSERITE NEL MONTAGGIO REVIEW
+Nuova2 assegnata come1, mantenendo2 originale: il portante della cella1 scende
+a4.90pxX/4.50pxY, ma il suo piede libero salta32.85px verso l'alto dal contatto0.
+La figura è già in una fase avanzata di sollevamento: il raccordo rimane brusco.
+Il massimo globale non cambia(12.39/12.39), perché restano9/10dominanti.
+
+Ultima coppia9/10:1594×987, due celle797×987; cap126, cranio122/122,
+scala comune.59836066 e offset(9,8). Portanti packed L:
+9=(267.19,503.44);10=(255.52,521.99).
+Sostituendo la coppia, massimo portante9.84pxX/12.72pxY: miglioraX, peggioraY
+di0.33px rispetto al review. Il massimo salto del punto libero passa39.92→32.28px.
+Il piede libero del9 segue meglio il distacco da8; il10 ha forte occlusione
+fra le scarpe, quindi il suo campione libero(387,851raw) è soltanto una stima.
+Non è una riduzione simultanea dei due errori massimi. Nessun atlas finale
+sovrascritto con queste opzioni; last-options-audit.json conserva il confronto.
+
+VARIANTE FINALE PER CONFRONTO VISIVO (SU RICHIESTA DEL PARENT)
+stair-up-v12-review-pair910.png
+stair-up-v12-review-pair910-metadata.json
+Usa9/10/11/13/14/15nuovi, conserva1/2originali e tutte le quattrochiavi.
+Le10celle non sostituite sono verificate RGBA identiche. Nessun retiming
+contro l'ordine anatomico. Il file review precedente resta intatto.
+pair910-final-audit.json conferma9.84pxX/12.72pxY di portante;
+libero30.70pxX/35.73pxY dalla guida e massimo cambio visibile32.28px.
+Questa variante è pronta esclusivamente per il confronto del player,
+esplicitamente fuori soglia. Non dichiara risolti appoggi o fluidità.
+Rigenerazione packing: stesso comando con argomento --pair910.

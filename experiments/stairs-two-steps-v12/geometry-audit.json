@@ -1,0 +1,221 @@
+{
+  "maxStanceErrorX": 9.837891432676884,
+  "maxStanceErrorY": 12.716430158101616,
+  "maxFreeGuideDifferenceX": 30.697249814054544,
+  "maxFreeGuideDifferenceY": 35.728469644410666,
+  "maxFreeVisiblePointJump": 32.277102472186144,
+  "note": "Free-foot numbers are differences from an authored guide, NOT penetration/ground errors. Points are visible sole/toe samples; anatomical center and exact spatial clearance remain unverified. Maximum includes held frames.",
+  "contactGate": false,
+  "byCell": [
+    {
+      "cell": 0,
+      "maxX": 3.3958319855227046,
+      "maxY": 6.094169851010292,
+      "freeGuideX": 2.4915033358890923,
+      "freeGuideY": 5.607090545149958
+    },
+    {
+      "cell": 1,
+      "maxX": 6.912100521089542,
+      "maxY": 11.178078236194096,
+      "freeGuideX": 1.161832500988453,
+      "freeGuideY": 4.011287611194007
+    },
+    {
+      "cell": 2,
+      "maxX": 5.086013889571973,
+      "maxY": 6.818720571541348,
+      "freeGuideX": 8.818402502635763,
+      "freeGuideY": 35.728469644410666
+    },
+    {
+      "cell": 3,
+      "maxX": 6.553871563268331,
+      "maxY": 3.215354708582481,
+      "freeGuideX": 4.121927502965264,
+      "freeGuideY": 34.550877132210644
+    },
+    {
+      "cell": 4,
+      "maxX": 3.947123405106936,
+      "maxY": 2.5622162197817033,
+      "freeGuideX": 3.92658570360004,
+      "freeGuideY": 6.8938041763785805
+    },
+    {
+      "cell": 5,
+      "maxX": 4.46382423996306,
+      "maxY": 7.101961518673875,
+      "freeGuideX": 9.769958888770589,
+      "freeGuideY": 4.184111258596772
+    },
+    {
+      "cell": 6,
+      "maxX": 5.342570228838213,
+      "maxY": 6.815553104382161,
+      "freeGuideX": 25.30679975762905,
+      "freeGuideY": 8.265632219421718
+    },
+    {
+      "cell": 7,
+      "maxX": 3.554253323826515,
+      "maxY": 6.618778666468302,
+      "freeGuideX": 23.100181033404397,
+      "freeGuideY": 0.1360692914682886
+    },
+    {
+      "cell": 8,
+      "maxX": 4.00630638042378,
+      "maxY": 4.691907899346461,
+      "freeGuideX": 4.781663188468883,
+      "freeGuideY": 7.435107217771588
+    },
+    {
+      "cell": 9,
+      "maxX": 9.837891432676884,
+      "maxY": 12.716430158101616,
+      "freeGuideX": 9.312978120742173,
+      "freeGuideY": 1.3802089812426175
+    },
+    {
+      "cell": 10,
+      "maxX": 7.741746669083568,
+      "maxY": 8.135797516417597,
+      "freeGuideX": 16.541990812164386,
+      "freeGuideY": 16.252007121516726
+    },
+    {
+      "cell": 11,
+      "maxX": 4.617632357020057,
+      "maxY": 4.311948401243058,
+      "freeGuideX": 13.239706024963084,
+      "freeGuideY": 26.220544046264195
+    },
+    {
+      "cell": 12,
+      "maxX": 3.7174477103179697,
+      "maxY": 3.154202406957438,
+      "freeGuideX": 4.025747800428803,
+      "freeGuideY": 5.527572710160484
+    },
+    {
+      "cell": 13,
+      "maxX": 4.1755193490711235,
+      "maxY": 5.928121532427895,
+      "freeGuideX": 26.720655846973727,
+      "freeGuideY": 10.473574023981882
+    },
+    {
+      "cell": 14,
+      "maxX": 4.299095870666861,
+      "maxY": 6.314651322086206,
+      "freeGuideX": 30.697249814054544,
+      "freeGuideY": 11.522596727491646
+    },
+    {
+      "cell": 15,
+      "maxX": 4.548204760621729,
+      "maxY": 4.25177698226878,
+      "freeGuideX": 9.138791643596505,
+      "freeGuideY": 3.31944670243206
+    }
+  ],
+  "switches": [
+    {
+      "phase": 0.0625,
+      "from": 0,
+      "to": 1,
+      "freeVisiblePointJump": 9.883388574962487
+    },
+    {
+      "phase": 0.06354166666666666,
+      "from": 1,
+      "to": 2,
+      "freeVisiblePointJump": 32.277102472186144
+    },
+    {
+      "phase": 0.12604166666666666,
+      "from": 2,
+      "to": 3,
+      "freeVisiblePointJump": 16.774880387054914
+    },
+    {
+      "phase": 0.18854166666666666,
+      "from": 3,
+      "to": 4,
+      "freeVisiblePointJump": 13.27555900877996
+    },
+    {
+      "phase": 0.3125,
+      "from": 4,
+      "to": 5,
+      "freeVisiblePointJump": 14.252537409022981
+    },
+    {
+      "phase": 0.34479166666666666,
+      "from": 5,
+      "to": 6,
+      "freeVisiblePointJump": 19.41982183234442
+    },
+    {
+      "phase": 0.4375,
+      "from": 6,
+      "to": 7,
+      "freeVisiblePointJump": 9.766221787364811
+    },
+    {
+      "phase": 0.43854166666666666,
+      "from": 7,
+      "to": 8,
+      "freeVisiblePointJump": 18.720697134476616
+    },
+    {
+      "phase": 0.5625,
+      "from": 8,
+      "to": 9,
+      "freeVisiblePointJump": 7.665380818928599
+    },
+    {
+      "phase": 0.5635416666666667,
+      "from": 9,
+      "to": 10,
+      "freeVisiblePointJump": 31.477862216420274
+    },
+    {
+      "phase": 0.6260416666666667,
+      "from": 10,
+      "to": 11,
+      "freeVisiblePointJump": 24.52343154923084
+    },
+    {
+      "phase": 0.6885416666666667,
+      "from": 11,
+      "to": 12,
+      "freeVisiblePointJump": 7.678164185998034
+    },
+    {
+      "phase": 0.8125,
+      "from": 12,
+      "to": 13,
+      "freeVisiblePointJump": 29.989959600973798
+    },
+    {
+      "phase": 0.8447916666666667,
+      "from": 13,
+      "to": 14,
+      "freeVisiblePointJump": 5.812519185030442
+    },
+    {
+      "phase": 0.8760416666666667,
+      "from": 14,
+      "to": 15,
+      "freeVisiblePointJump": 25.268341461996844
+    },
+    {
+      "phase": 0.9385416666666667,
+      "from": 15,
+      "to": 0,
+      "freeVisiblePointJump": 6.601655765467866
+    }
+  ]
+}

@@ -4,7 +4,9 @@ Prototipo browser statico di un'avventura laterale per iPhone, con personaggio e
 
 ## Stato e pubblicazione
 
-Sono approvati lo stile dipinto, il personaggio e la camminata in piano. Dopo la prova sul telefono, Nicola ha respinto corsa e scale V9: ginocchia troppo alte, un braccio quasi fermo e scatti evidenti sui gradini. La V10 sostituisce la corsa con una nuova sequenza; la camminata rimane invariata. Le scale pubblicate sono ancora quelle V9 e restano da ricostruire.
+Sono approvati lo stile dipinto, il personaggio e la camminata in piano. Dopo la prova sul telefono, Nicola ha respinto corsa e scale V9: ginocchia troppo alte, un braccio quasi fermo e scatti evidenti sui gradini. La V10 sostituisce la corsa con una nuova sequenza; la camminata rimane invariata. Nell’ultimo riscontro Nicola considera accettabile la discesa; la salita resta da rifinire. Il gioco usa ancora le scale V9.
+
+Il [provino V12 di due passi in salita](https://isola-prototipo.vercel.app/stair-study/) è pubblico, con riproduzione, rallentatore e dettaglio. Non sostituisce il movimento nel gioco: conserva il fondale e le quattro pose chiave, correggendo sei intermedi con figure dipinte intere. Il busto segue una traiettoria continua, ma alcuni cambi del piede restano bruschi e la soglia degli appoggi non è superata. [Sorgenti, prompt e misure](experiments/stairs-two-steps-v12/README.md) documentano anche i tentativi scartati. Il deployment corrente è `dpl_FFUKPjajAjC9AQ89yXq5YdaJNeKm`, READY: aggiunge soltanto il provino e mantiene identici tutti i 61 file del rilascio precedente. Build: 55 test superati; player pubblico caricato e riprodotto senza errori console; layout verificato a 393×852 e 852×393 nel browser, non su iPhone fisico. Dettagli in [releases/stair-study-v12.json](releases/stair-study-v12.json).
 
 La **V10 touch è pubblicata su Vercel**: https://isola-prototipo.vercel.app/ — link pubblico, senza login. Le due metà invisibili coprono tutta la schermata del telefono. Deployment `dpl_HERM8qCqvAamJheiVh2dknDrKeXQ`, stato READY, progetto `isola-prototipo` nello spazio Mentaltoy. Sorgenti e materiali del progetto: [mentaltoy/game](https://github.com/mentaltoy/game). La demo Vercel è pubblicata tramite upload diretto; il repository non attiva ancora pubblicazioni automatiche. La precedente pubblicazione Sites resta V7 privata e non è il link attuale.
 
@@ -81,7 +83,7 @@ Sulle cinque pedate, a H266, il salto verticale massimo tra disegni passa da 7,0
 
 La scala resta da rifinire: l'alternanza anatomica delle gambe non è ancora convincente in tutti i passaggi, e un raccordo delle braccia in salita rimane visibile. Appoggi più stabili e continuità misurata non equivalgono a una rotoscopia continua; la verifica visiva e il feedback sul telefono restano essenziali.
 
-## Scale successive — prove non pubblicate
+## Scale successive — prove separate dal gioco
 
 `art/stairs-v10/` e `art/stairs-down-v10/` conservano i nuovi disegni, le guide e i prompt in lavorazione. Il numero delle cartelle indica quando sono state preparate, non una versione online: la V10 pubblicata usa ancora le scale V9. La tavola di salita a sedici pose non è approvata; gli intermedi hanno scarti visibili negli appoggi e richiedono correzioni prima dell’integrazione. Questi file non sono caricati dalla demo. Il [checkpoint portabile](experiments/stairs-ascent-v11/README.md) conserva codice sperimentale, misure e prova video; il relativo controllo di accettazione fallisce intenzionalmente finché non vengono corretti gli appoggi e completati i raccordi.
 
