@@ -1,4 +1,4 @@
-# Direzione approvata da Nicola — V10 pubblicata, 7 novembre 2026
+# Direzione approvata da Nicola — V10 touch pubblicata, 7 novembre 2026
 
 ## Progetto e stile
 
@@ -42,7 +42,7 @@
 
 ## Pubblicazione corrente e lavoro rimandato
 
-- V10 online su Vercel: https://isola-prototipo.vercel.app/; progetto `prj_sL6enHn7Dtc1LOvua2OlDV3RRk21`, team `team_Qz7eQFBIblAjAZwmQP67tlJV`, deployment `dpl_GJyi9PbkFN9cNsXHfNojeVznPFsK` READY. Upload diretto, senza GitHub. La V10 sostituisce soltanto il ciclo di corsa e ne imposta il periodo a 0,8 s. Camminata e scale V9 sono preservate; le scale sono ancora respinte da Nicola e in ricostruzione separata. Verificati link pubblico, revisione 10, comandi a metà schermo e Cammina a 844×390, senza errori console; 55 test superati. Il feedback di Nicola sulla nuova corsa è ancora atteso.
+- V10 touch online su Vercel: https://isola-prototipo.vercel.app/; progetto `prj_sL6enHn7Dtc1LOvua2OlDV3RRk21`, team `team_Qz7eQFBIblAjAZwmQP67tlJV`, deployment `dpl_HERM8qCqvAamJheiVh2dknDrKeXQ` READY. Pubblicazione tramite upload diretto; sorgenti salvati nel repository pubblico `mentaltoy/game`. La V10 sostituisce soltanto il ciclo di corsa e ne imposta il periodo a 0,8 s. Camminata e scale V9 sono preservate; le scale sono ancora respinte da Nicola e in ricostruzione separata. Verificati link pubblico, revisione 10, comandi a metà schermo e Cammina a 844×390, senza errori console; 55 test superati. Il feedback di Nicola sulla nuova corsa è ancora atteso.
 - Il 7 novembre Nicola è tornato a casa e ha esplicitamente ripreso GitHub. Repository pubblico: https://github.com/mentaltoy/game . Il caricamento iniziale conserva i sorgenti V10 e i materiali sperimentali separati; verificare sempre il commit remoto prima di dichiarare concluso un aggiornamento. I file sono salvati localmente e negli ZIP V8, V9 e V10. Il precedente link Sites rimane V7 privato.
 - Prima di pubblicare nuove modifiche, verificare questo deployment Vercel e i sorgenti locali V10; non sostituirli con il vecchio stato Sites V7.
 
@@ -68,3 +68,5 @@ Nicola ha creato e indicato `https://github.com/mentaltoy/game`. L’ispezione h
 ## Correzione mobile V10 touch — 7 novembre 2026
 
 Nicola ha chiarito che i comandi sinistra/destra sul telefono devono essere due metà invisibili dell’intera schermata, senza pulsanti direzionali visibili. Preservare i gesti su tutta `#experience`, inclusi margini e zone fuori dal canvas; usare l’altezza dinamica della viewport. Cammina e schermo intero conservano la loro funzione. Il CSS nasconde visivamente le frecce sui dispositivi touch, mantenendole accessibili. Movimento e immagini restano quelli V10.
+
+La V10 touch è READY e il build supera 55 test. Verifica mobile locale Chrome a 393×852 e 852×393; file pubblici HTML/CSS identici e HTTP 200. Il controllo interattivo successivo alla pubblicazione non è stato completato per timeout del browser: non dichiarare una nuova prova su iPhone fisico. Dettagli in `releases/v10-touch.json`.
