@@ -1,0 +1,110 @@
+{
+  "referenceHeight": 266,
+  "tread": 30,
+  "rise": 21,
+  "stepSeconds": 0.45,
+  "maxSupportingPointError": 1.1368683772161603e-13,
+  "maxHeldDrawingTranslation": 0,
+  "maxHeadChangeBetweenDrawings": 14.373848475617107,
+  "changes": [
+    {
+      "from": 0,
+      "to": 2,
+      "phase": 0.125,
+      "headJump": 13.299999999999933,
+      "transfer": false
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "phase": 0.25,
+      "headJump": 5.876132061143601,
+      "transfer": false
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "phase": 0.375,
+      "headJump": 5.947940820149471,
+      "transfer": false
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "phase": 0.625,
+      "headJump": 10.772178981060396,
+      "transfer": false
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "phase": 0.688,
+      "headJump": 0.5319999999999823,
+      "transfer": false
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "phase": 0.875,
+      "headJump": 1.9181532785468254,
+      "transfer": false
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "phase": 1,
+      "headJump": 11.721003370019083,
+      "transfer": true
+    },
+    {
+      "from": 8,
+      "to": 10,
+      "phase": 1.125,
+      "headJump": 7.097765282115263,
+      "transfer": false
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "phase": 1.25,
+      "headJump": 14.373848475617107,
+      "transfer": false
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "phase": 1.375,
+      "headJump": 8.25886093841036,
+      "transfer": false
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "phase": 1.625,
+      "headJump": 8.120627561956095,
+      "transfer": false
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "phase": 1.688,
+      "headJump": 2.127999999999929,
+      "transfer": false
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "phase": 1.75,
+      "headJump": 4.576437042066822,
+      "transfer": false
+    },
+    {
+      "from": 15,
+      "to": 0,
+      "phase": 2,
+      "headJump": 4.6114500973121295,
+      "transfer": true
+    }
+  ],
+  "note": "The supporting landmark is fixed. This does not certify every pixel of the painted sole, the outgoing foot at double contact, or continuous head motion."
+}

@@ -1,0 +1,458 @@
+{
+  "revision": "10-touch-with-stair-support-v13",
+  "date": "2026-11-07",
+  "sourceBase": "cd4064365cd32b97a79c7d1b47eae830b3fb1801",
+  "status": "support-locked-study",
+  "deployment": {
+    "id": "dpl_ETAFCbcGWRjkRhV56CLQGJST5eQt",
+    "state": "READY",
+    "url": "https://isola-prototipo-3zthjaif2-mentaltoys-projects.vercel.app",
+    "publicStudyUrl": "https://isola-prototipo.vercel.app/stair-study/?v=13-support",
+    "aliases": [
+      "isola-prototipo.vercel.app",
+      "isola-prototipo-mentaltoys-projects.vercel.app"
+    ],
+    "method": "direct-file-upload",
+    "ready": 1794041562491
+  },
+  "files": [
+    {
+      "file": "dist/assets/device-hidden-v6.png",
+      "sha": "20d15ca2afd0cf010da06f73f3d025df9ba9fdba",
+      "size": 2132846
+    },
+    {
+      "file": "dist/assets/idle.png",
+      "sha": "0d5a583b8e90ab206a56140b9053a2cdd7750d14",
+      "size": 1287748
+    },
+    {
+      "file": "dist/assets/interior.png",
+      "sha": "348ef9c04ae1946ae01ac50c52c3f0264799af6a",
+      "size": 1959904
+    },
+    {
+      "file": "dist/assets/run-device-hidden-v10.png",
+      "sha": "35ead6b1148b4bb47fd929e180f4a29bd1d33dff",
+      "size": 300275
+    },
+    {
+      "file": "dist/assets/run-device-hidden-v9.png",
+      "sha": "d773fcb34b447b93eef8132749981c656d309394",
+      "size": 319846
+    },
+    {
+      "file": "dist/assets/run-painted-v10.png",
+      "sha": "548f92bbd70c47818b4ffdfbeea5a847170e83da",
+      "size": 1876537
+    },
+    {
+      "file": "dist/assets/run-painted-v9.png",
+      "sha": "08572f307cc3be508710415daf451d0cc040564b",
+      "size": 1873732
+    },
+    {
+      "file": "dist/assets/run-transitions-device-hidden-v9.png",
+      "sha": "01f90bf60767a99a4742c766478256973badeefa",
+      "size": 72320
+    },
+    {
+      "file": "dist/assets/run-transitions-v9.png",
+      "sha": "08ddef4d656f28b89e3f36fb1edbace2d713b361",
+      "size": 262278
+    },
+    {
+      "file": "dist/assets/stair-bridges-v8.png",
+      "sha": "fb6e6161747df7533eba0b2c40854181ccaa3052",
+      "size": 521101
+    },
+    {
+      "file": "dist/assets/stair-down-v8.png",
+      "sha": "b3db9f97475e8927a83b89a1f19310d19e5ef948",
+      "size": 1206996
+    },
+    {
+      "file": "dist/assets/stair-refined-v9.png",
+      "sha": "a00042e88401e0a74c938604a1c2a0ab984e26b4",
+      "size": 2336998
+    },
+    {
+      "file": "dist/assets/stair-up-v8.png",
+      "sha": "f7556746d57aeecab84b32a324cd0d972b313398",
+      "size": 1202645
+    },
+    {
+      "file": "dist/assets/turn-painted-v4.png",
+      "sha": "d9e66a7e5c1883c068088cccd40db2b83ad38194",
+      "size": 926993
+    },
+    {
+      "file": "dist/assets/turn-v3.png",
+      "sha": "6321e9da1199c0c6b4b24fb123c49d92a4c3b362",
+      "size": 1369610
+    },
+    {
+      "file": "dist/assets/walk-approved-v4.png",
+      "sha": "02eff2b198edd1c25e23d6748dcfdaf92230d460",
+      "size": 1116826
+    },
+    {
+      "file": "dist/assets/walk-bridges-v4.png",
+      "sha": "b9dbf8e8cd55e2d1a95a417aedc376f55d9ff5f8",
+      "size": 1116595
+    },
+    {
+      "file": "dist/assets/walk-bridges-v5-arms.png",
+      "sha": "6467c6c6cf88a9b5d0f32013b742778a670842e3",
+      "size": 1033414
+    },
+    {
+      "file": "dist/assets/walk-completion-v4.png",
+      "sha": "c59dde9053cf9b817d175f017a38794ccd9e9740",
+      "size": 968789
+    },
+    {
+      "file": "dist/assets/walk-completion-v5-arms.png",
+      "sha": "39bcaf107b59d8ff5a49394c513c8bcb7b01f04e",
+      "size": 946815
+    },
+    {
+      "file": "dist/assets/walk-cycle.png",
+      "sha": "9fccea093ce6e622c066cd54dda2cfbe7ab4f2e9",
+      "size": 1889687
+    },
+    {
+      "file": "dist/assets/walk-start-v5-arms.png",
+      "sha": "52ca269811603e5af4db57905dae3d0663cd3e92",
+      "size": 900001
+    },
+    {
+      "file": "dist/costume-grade.js",
+      "sha": "98f021fcfcd8f353c59e4afe6f5f56cabe11889d",
+      "size": 11403
+    },
+    {
+      "file": "dist/device-occlusion.js",
+      "sha": "08461f7cd157293ec037e078d1f22f9f9805d7c7",
+      "size": 6177
+    },
+    {
+      "file": "dist/face-grade.js",
+      "sha": "b7b21a1e9fee549f7db4da511d39a6032fefac55",
+      "size": 3216
+    },
+    {
+      "file": "dist/gait.js",
+      "sha": "7f997ac724ba8ac58668f6984f18a149d1dad963",
+      "size": 14317
+    },
+    {
+      "file": "dist/game.js",
+      "sha": "6cf65c595759543a18a221d2586b3b8318e8c710",
+      "size": 12654
+    },
+    {
+      "file": "dist/hair-grade.js",
+      "sha": "1b3d6a4e64e7f9180ee361ce5f764daf5d1df204",
+      "size": 5196
+    },
+    {
+      "file": "dist/head-calibration.js",
+      "sha": "3434d2d60e327197936f4a46af0a52f09b4bdaa0",
+      "size": 4114
+    },
+    {
+      "file": "dist/index.html",
+      "sha": "f8e75d060178d1816976959de83033bf3f7809eb",
+      "size": 2931
+    },
+    {
+      "file": "dist/motion.js",
+      "sha": "75255c21bcc73b2251a2965cc8a45c50c2617c51",
+      "size": 1149
+    },
+    {
+      "file": "dist/painted-rig.js",
+      "sha": "5acff5f24380cd34b8848fb0ef7d09916dd20ea5",
+      "size": 17325
+    },
+    {
+      "file": "dist/room-layout.js",
+      "sha": "56dfb34c3c2f076dcb1734bd8467ef201da53def",
+      "size": 10999
+    },
+    {
+      "file": "dist/room-motion.js",
+      "sha": "466c882f98918b864740edd50b4afca26c37a0f2",
+      "size": 4827
+    },
+    {
+      "file": "dist/run-grade-v10.js",
+      "sha": "28efdb148565de8410b57b43fb7ad57e78c1711a",
+      "size": 8380
+    },
+    {
+      "file": "dist/run-grade.js",
+      "sha": "41357c16283ab72374bb141d7cc7776c2e91f341",
+      "size": 8331
+    },
+    {
+      "file": "dist/run-head-calibration-v10.js",
+      "sha": "7857da8d3bc6f646d1b8a340bb6b591c75017a01",
+      "size": 3956
+    },
+    {
+      "file": "dist/run-motion.js",
+      "sha": "77516813668ee4b460ad974399795a386b15fceb",
+      "size": 6452
+    },
+    {
+      "file": "dist/run-renderer-v10.js",
+      "sha": "da0949d6c289a573baf276d58af8d465beb7bcfc",
+      "size": 8136
+    },
+    {
+      "file": "dist/run-renderer.js",
+      "sha": "c7298bd201f875b60ee2b4e851acaa9e649df4ba",
+      "size": 7809
+    },
+    {
+      "file": "dist/screen-input.js",
+      "sha": "c75f67090c7eb03462f1772a40f53b3070b8e746",
+      "size": 5389
+    },
+    {
+      "file": "dist/shirt-grade.js",
+      "sha": "1f23e270edbc710708a4d2aea32c21fb1d554952",
+      "size": 1847
+    },
+    {
+      "file": "dist/sprite-motion.js",
+      "sha": "4835b137854fd1527e0cf5dc62dacc20cd3b22ef",
+      "size": 4983
+    },
+    {
+      "file": "dist/sprite-renderer.js",
+      "sha": "85dce1fbb99093570c4ddd152ed08ed24b7589ed",
+      "size": 9751
+    },
+    {
+      "file": "dist/stair-grade.js",
+      "sha": "4cbb81ba0ff3146ada9ccdb0ab605d133173be48",
+      "size": 18008
+    },
+    {
+      "file": "dist/stair-motion.js",
+      "sha": "10a3d24483045f554ad498b6b82cad5b5cd7c998",
+      "size": 7139
+    },
+    {
+      "file": "dist/stair-renderer.js",
+      "sha": "0bf37df7e856e495f7f9b7ed7a7e026c940899ca",
+      "size": 9462
+    },
+    {
+      "file": "dist/studio.html",
+      "sha": "dad7977f7c9927f8248bc00431f9c3f9e850d038",
+      "size": 2955
+    },
+    {
+      "file": "dist/style.css",
+      "sha": "3eff9588c5a4279d7fc69c89cfc2f27076cbc190",
+      "size": 8216
+    },
+    {
+      "file": "package.json",
+      "sha": "b0d03a8d58c7bc4af3af6861be5b0056eebd21f1",
+      "size": 137
+    },
+    {
+      "file": "tests/gait.test.mjs",
+      "sha": "ad09f5010ac4f92eb91b067cf44bd7a654fcaab9",
+      "size": 12163
+    },
+    {
+      "file": "tests/room-motion.test.mjs",
+      "sha": "4e6675797000959e368e0fec3ad0f87c76a88cf9",
+      "size": 7491
+    },
+    {
+      "file": "tests/run-motion.test.mjs",
+      "sha": "d82eabe9b54641b4e4683f15a8cf961eb725d885",
+      "size": 9841
+    },
+    {
+      "file": "tests/run-profile-v10.test.mjs",
+      "sha": "9e06e1bc5c55d612e3324420ff6e48eccf1cebd4",
+      "size": 1998
+    },
+    {
+      "file": "tests/run-renderer-v10.test.mjs",
+      "sha": "6dc780aa98a9404b96cc9d95142b9a34cf6f449c",
+      "size": 2330
+    },
+    {
+      "file": "tests/run-renderer.test.mjs",
+      "sha": "af313c373b49f0f1edc84e60614cdbb8ed617148",
+      "size": 2522
+    },
+    {
+      "file": "tests/screen-input.test.mjs",
+      "sha": "b5d2d8cafbb520baf47032ce62d3bba6db4c12f8",
+      "size": 6109
+    },
+    {
+      "file": "tests/sprite-motion.test.mjs",
+      "sha": "5ae25b0c7219519dc98018825defddc4ef69247c",
+      "size": 6579
+    },
+    {
+      "file": "tests/stair-motion.test.mjs",
+      "sha": "1e82198597d63f553d882629cc3bb4744769a6b1",
+      "size": 5404
+    },
+    {
+      "file": "tests/stair-renderer.test.mjs",
+      "sha": "439b3d580697b6b4f82a8fd5e524dbc8f9d9478b",
+      "size": 4944
+    },
+    {
+      "file": "vercel.json",
+      "sha": "04229ae0dd902238559448f8c6d73e2d3c0b518c",
+      "size": 438
+    },
+    {
+      "file": "dist/stair-study/ascent-cycle.mjs",
+      "sha": "6bbc860f69c116e0a7f84568df6cafa016276884",
+      "size": 6593
+    },
+    {
+      "file": "dist/stair-study/atlas.png",
+      "sha": "b3250b2a4956ccdaaa5444977af0b0b3846b86e3",
+      "size": 2546501
+    },
+    {
+      "file": "dist/stair-study/display-grade.mjs",
+      "sha": "5f4e02212057e8fb7b50ea33d2f5778ee9953321",
+      "size": 2033
+    },
+    {
+      "file": "dist/stair-study/frames.json",
+      "sha": "8a6d83dbda685c39f831d672f53876d51c808afd",
+      "size": 23648
+    },
+    {
+      "file": "dist/stair-study/index.html",
+      "sha": "b53170853e4915d053f55ae8a2b8efb743b1656f",
+      "size": 933
+    },
+    {
+      "file": "dist/stair-study/study.css",
+      "sha": "11f9f6c0c50e85f64b5153f7dd00ac4cb604e448",
+      "size": 1620
+    },
+    {
+      "file": "dist/stair-study/study.mjs",
+      "sha": "7a073afb85cb3f7802fbe9ae5230109844067a90",
+      "size": 2965
+    },
+    {
+      "file": "dist/stair-study/two-steps.mp4",
+      "sha": "e53c9ac900c2f7d5f6734cfde02d9e4cfad6cd6d",
+      "size": 238776
+    },
+    {
+      "file": "dist/stair-study/stair-standard.mjs",
+      "sha": "672cfb590cd51cdf9ad56fec68623601fd13a818",
+      "size": 868
+    },
+    {
+      "file": "dist/stair-study/support-locked-v13.mjs",
+      "sha": "381812f5a4ca2cb002fbd1b0f6eda5c0321a6332",
+      "size": 2273
+    },
+    {
+      "file": "tests/stair-study-support.test.mjs",
+      "sha": "c56b0946f8f8102cd0fc6ee3de21a939fe237403",
+      "size": 2409
+    }
+  ],
+  "changedFiles": [
+    {
+      "file": "dist/stair-study/frames.json",
+      "sha": "8a6d83dbda685c39f831d672f53876d51c808afd",
+      "size": 23648
+    },
+    {
+      "file": "dist/stair-study/index.html",
+      "sha": "b53170853e4915d053f55ae8a2b8efb743b1656f",
+      "size": 933
+    },
+    {
+      "file": "dist/stair-study/study.mjs",
+      "sha": "7a073afb85cb3f7802fbe9ae5230109844067a90",
+      "size": 2965
+    },
+    {
+      "file": "dist/stair-study/two-steps.mp4",
+      "sha": "e53c9ac900c2f7d5f6734cfde02d9e4cfad6cd6d",
+      "size": 238776
+    },
+    {
+      "file": "dist/stair-study/stair-standard.mjs",
+      "sha": "672cfb590cd51cdf9ad56fec68623601fd13a818",
+      "size": 868
+    },
+    {
+      "file": "dist/stair-study/support-locked-v13.mjs",
+      "sha": "381812f5a4ca2cb002fbd1b0f6eda5c0321a6332",
+      "size": 2273
+    },
+    {
+      "file": "tests/stair-study-support.test.mjs",
+      "sha": "c56b0946f8f8102cd0fc6ee3de21a939fe237403",
+      "size": 2409
+    }
+  ],
+  "mainGameFilesByteIdentical": true,
+  "artworkByteIdenticalToV12": true,
+  "standard": {
+    "height": 266,
+    "tread": 30,
+    "rise": 21,
+    "stepSeconds": 0.45
+  },
+  "verification": {
+    "tests": {
+      "passed": 59,
+      "failed": 0,
+      "local": true,
+      "vercelBuild": true
+    },
+    "browser": "Codex in-app browser",
+    "viewports": [
+      "393x852",
+      "852x393"
+    ],
+    "publicRevision": "13-support",
+    "publicPlayback": true,
+    "consoleErrors": 0,
+    "physicalIPhoneTest": false,
+    "maxSupportingPointError": 1.1368683772161603e-13,
+    "maxHeldDrawingTranslation": 0,
+    "toeHorizontalSpan": [
+      0,
+      0
+    ],
+    "heelOutlineSpan": [
+      4.256,
+      3.192
+    ]
+  },
+  "limitations": [
+    "Different boot silhouettes remain visible; pinning an authored forefoot landmark does not freeze every boot pixel.",
+    "The supporting contact is registered; free/outgoing foot points use an older measurement convention and cannot certify double contact.",
+    "Whole-drawing changes remain discrete (maximum head change 14.37 world units at H266).",
+    "Only two central steps in the study; main game stairs, entry, exit and reversal unchanged."
+  ]
+}

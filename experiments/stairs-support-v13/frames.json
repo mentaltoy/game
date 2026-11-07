@@ -1,0 +1,2090 @@
+{
+  "status": "V13 supporting-forefoot registration used in the two-step study. Original image pixels and historic measurements preserved; free-foot landmarks remain on the older measurement convention.",
+  "atlas": "stair-up-v12-review-pair910.png",
+  "layout": {
+    "columns": 4,
+    "rows": 4,
+    "cellWidth": 500,
+    "cellHeight": 620
+  },
+  "referenceHeight": 500,
+  "batchCalibration": {
+    "A": {
+      "scale": 0.9367105263157894,
+      "medianRawHeadWidth": 76,
+      "file": "intermediates-A-candidate-01.png"
+    },
+    "B": {
+      "scale": 0.9555704697986577,
+      "medianRawHeadWidth": 74.5,
+      "file": "intermediates-B-candidate-01.png"
+    }
+  },
+  "unchangedKeyCells": [
+    0,
+    4,
+    8,
+    12
+  ],
+  "frames": [
+    {
+      "cell": 0,
+      "source": "contacts-candidate-01.png",
+      "sourceCrop": [
+        0,
+        0,
+        796,
+        987
+      ],
+      "rawCap": 59,
+      "rawRoot": 396.5,
+      "rawHeadWidth": 126,
+      "scale": 0.565,
+      "existingKey": true,
+      "id": "stair-up-v10-0",
+      "phase": 0,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 84,
+      "actualPackedFloor": 563,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        26,
+        50
+      ],
+      "feet": {
+        "R": {
+          "x": 275,
+          "y": 518,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 295,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 216,
+            "method": "Visual heel outline, excludes the occluding opposite shin. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 255.95499999999998,
+            "y": 518.385,
+            "uncertaintyX": 1.6949999999999998
+          },
+          "contactProfile": [
+            {
+              "x": 271,
+              "y": 518
+            },
+            {
+              "x": 272,
+              "y": 518
+            },
+            {
+              "x": 273,
+              "y": 518
+            },
+            {
+              "x": 274,
+              "y": 518
+            },
+            {
+              "x": 275,
+              "y": 518
+            },
+            {
+              "x": 276,
+              "y": 518
+            },
+            {
+              "x": 277,
+              "y": 518
+            },
+            {
+              "x": 278,
+              "y": 518
+            },
+            {
+              "x": 279,
+              "y": 518
+            }
+          ]
+        },
+        "L": {
+          "x": 200.86749999999998,
+          "y": 562.4549999999999,
+          "uncertaintyX": 0.8474999999999999
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle",
+      "supportRegistration": {
+        "side": "R",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 1,
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        0,
+        0,
+        460,
+        570
+      ],
+      "rawCap": 62,
+      "rawRoot": 220.5,
+      "rawFloor": 555,
+      "rawHeadWidth": 76,
+      "scale": 0.9367105263157894,
+      "id": "stair-up-v10-1",
+      "phase": 0.0625,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 545,
+      "actualPackedHeadWidth": 69,
+      "packingTranslation": [
+        43,
+        25
+      ],
+      "feet": {
+        "R": {
+          "x": 277,
+          "y": 509,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 297,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 221,
+            "method": "Visual heel outline, excludes the occluding opposite shin. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 264,
+            "y": 509,
+            "floor": 510,
+            "roi": [
+              230,
+              302,
+              493,
+              521
+            ],
+            "uncertaintyX": 2,
+            "uncertaintyY": 2,
+            "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+          },
+          "contactProfile": [
+            {
+              "x": 273,
+              "y": 509
+            },
+            {
+              "x": 274,
+              "y": 509
+            },
+            {
+              "x": 275,
+              "y": 509
+            },
+            {
+              "x": 276,
+              "y": 509
+            },
+            {
+              "x": 277,
+              "y": 509
+            },
+            {
+              "x": 278,
+              "y": 509
+            },
+            {
+              "x": 279,
+              "y": 509
+            },
+            {
+              "x": 280,
+              "y": 509
+            },
+            {
+              "x": 281,
+              "y": 509
+            }
+          ]
+        },
+        "L": {
+          "x": 203,
+          "y": 544,
+          "floor": 545,
+          "roi": [
+            160,
+            245,
+            530,
+            551
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle",
+      "supportRegistration": {
+        "side": "R",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 2,
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        460,
+        0,
+        920,
+        570
+      ],
+      "rawCap": 62,
+      "rawRoot": 219,
+      "rawFloor": 553,
+      "rawHeadWidth": 75,
+      "scale": 0.9367105263157894,
+      "id": "stair-up-v10-2",
+      "phase": 0.125,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 84,
+      "actualPackedFloor": 543,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        45,
+        25
+      ],
+      "feet": {
+        "R": {
+          "x": 268,
+          "y": 542,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 288,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 201,
+            "method": "Median lower-sole leftmost contour. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 254.5,
+            "y": 543,
+            "floor": 543,
+            "roi": [
+              220,
+              309,
+              530,
+              551
+            ],
+            "uncertaintyX": 2,
+            "uncertaintyY": 2,
+            "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+          },
+          "contactProfile": [
+            {
+              "x": 264,
+              "y": 543
+            },
+            {
+              "x": 265,
+              "y": 543
+            },
+            {
+              "x": 266,
+              "y": 543
+            },
+            {
+              "x": 267,
+              "y": 542
+            },
+            {
+              "x": 268,
+              "y": 542
+            },
+            {
+              "x": 269,
+              "y": 542
+            },
+            {
+              "x": 270,
+              "y": 542
+            },
+            {
+              "x": 271,
+              "y": 542
+            },
+            {
+              "x": 272,
+              "y": 542
+            }
+          ]
+        },
+        "L": {
+          "x": 194,
+          "y": 484,
+          "floor": 488,
+          "roi": [
+            162,
+            244,
+            465,
+            494
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle",
+      "supportRegistration": {
+        "side": "R",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 3,
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        920,
+        0,
+        1380,
+        570
+      ],
+      "rawCap": 62,
+      "rawRoot": 214.5,
+      "rawFloor": 553,
+      "rawHeadWidth": 76,
+      "scale": 0.9367105263157894,
+      "id": "stair-up-v10-3",
+      "phase": 0.1875,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 84,
+      "actualPackedFloor": 543,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        49,
+        25
+      ],
+      "feet": {
+        "R": {
+          "x": 257,
+          "y": 543,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 277,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 190,
+            "method": "Median lower-sole leftmost contour. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 251,
+            "y": 543,
+            "floor": 543,
+            "roi": [
+              224,
+              312,
+              530,
+              551
+            ],
+            "uncertaintyX": 2,
+            "uncertaintyY": 2,
+            "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+          },
+          "contactProfile": [
+            {
+              "x": 253,
+              "y": 543
+            },
+            {
+              "x": 254,
+              "y": 543
+            },
+            {
+              "x": 255,
+              "y": 543
+            },
+            {
+              "x": 256,
+              "y": 543
+            },
+            {
+              "x": 257,
+              "y": 543
+            },
+            {
+              "x": 258,
+              "y": 543
+            },
+            {
+              "x": 259,
+              "y": 543
+            },
+            {
+              "x": 260,
+              "y": 543
+            },
+            {
+              "x": 261,
+              "y": 543
+            }
+          ]
+        },
+        "L": {
+          "x": 208.5,
+          "y": 456,
+          "floor": 460,
+          "roi": [
+            175,
+            238,
+            430,
+            466
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle",
+      "supportRegistration": {
+        "side": "R",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 4,
+      "source": "passing-candidate-02.png",
+      "sourceCrop": [
+        0,
+        0,
+        796,
+        987
+      ],
+      "rawCap": 58,
+      "rawRoot": 396.5,
+      "rawHeadWidth": 126,
+      "scale": 0.565,
+      "existingKey": true,
+      "id": "stair-up-v10-4",
+      "phase": 0.25,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 554,
+      "actualPackedHeadWidth": 71,
+      "packingTranslation": [
+        26,
+        50
+      ],
+      "feet": {
+        "R": {
+          "x": 252,
+          "y": 553,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 272,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 192,
+            "method": "Median lower-sole leftmost contour. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 231.94249999999997,
+            "y": 553.98,
+            "uncertaintyX": 0.8474999999999999
+          },
+          "contactProfile": [
+            {
+              "x": 248,
+              "y": 554
+            },
+            {
+              "x": 249,
+              "y": 553
+            },
+            {
+              "x": 250,
+              "y": 553
+            },
+            {
+              "x": 251,
+              "y": 553
+            },
+            {
+              "x": 252,
+              "y": 553
+            },
+            {
+              "x": 253,
+              "y": 553
+            },
+            {
+              "x": 254,
+              "y": 553
+            },
+            {
+              "x": 255,
+              "y": 553
+            },
+            {
+              "x": 256,
+              "y": 553
+            }
+          ]
+        },
+        "L": {
+          "x": 222.61999999999998,
+          "y": 476.57499999999993,
+          "uncertaintyX": 4.52
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle",
+      "supportRegistration": {
+        "side": "R",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 5,
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        0,
+        570,
+        460,
+        1140
+      ],
+      "rawCap": 32,
+      "rawRoot": 221.5,
+      "rawFloor": 552,
+      "rawHeadWidth": 76,
+      "scale": 0.9367105263157894,
+      "id": "stair-up-v10-5",
+      "phase": 0.3125,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 570,
+      "actualPackedHeadWidth": 69,
+      "packingTranslation": [
+        43,
+        53
+      ],
+      "feet": {
+        "R": {
+          "x": 241,
+          "y": 570,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 261,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 174,
+            "method": "Median lower-sole leftmost contour. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 216,
+            "y": 569,
+            "floor": 570,
+            "roi": [
+              170,
+              260,
+              556,
+              577
+            ],
+            "uncertaintyX": 2,
+            "uncertaintyY": 2,
+            "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+          },
+          "contactProfile": [
+            {
+              "x": 237,
+              "y": 570
+            },
+            {
+              "x": 238,
+              "y": 570
+            },
+            {
+              "x": 239,
+              "y": 570
+            },
+            {
+              "x": 240,
+              "y": 570
+            },
+            {
+              "x": 241,
+              "y": 570
+            },
+            {
+              "x": 242,
+              "y": 569
+            },
+            {
+              "x": 243,
+              "y": 569
+            },
+            {
+              "x": 244,
+              "y": 569
+            },
+            {
+              "x": 245,
+              "y": 569
+            }
+          ]
+        },
+        "L": {
+          "x": 248.5,
+          "y": 483.5,
+          "floor": 487,
+          "roi": [
+            242,
+            310,
+            464,
+            489
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle",
+      "supportRegistration": {
+        "side": "R",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 6,
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        460,
+        570,
+        920,
+        1140
+      ],
+      "rawCap": 32,
+      "rawRoot": 219,
+      "rawFloor": 552,
+      "rawHeadWidth": 75,
+      "scale": 0.9367105263157894,
+      "id": "stair-up-v10-6",
+      "phase": 0.375,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 570,
+      "actualPackedHeadWidth": 69,
+      "packingTranslation": [
+        45,
+        53
+      ],
+      "feet": {
+        "R": {
+          "x": 241,
+          "y": 569,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 261,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 175,
+            "method": "Median lower-sole leftmost contour. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 218,
+            "y": 569,
+            "floor": 570,
+            "roi": [
+              170,
+              265,
+              556,
+              577
+            ],
+            "uncertaintyX": 2,
+            "uncertaintyY": 2,
+            "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+          },
+          "contactProfile": [
+            {
+              "x": 237,
+              "y": 569
+            },
+            {
+              "x": 238,
+              "y": 569
+            },
+            {
+              "x": 239,
+              "y": 569
+            },
+            {
+              "x": 240,
+              "y": 569
+            },
+            {
+              "x": 241,
+              "y": 569
+            },
+            {
+              "x": 242,
+              "y": 569
+            },
+            {
+              "x": 243,
+              "y": 569
+            },
+            {
+              "x": 244,
+              "y": 569
+            },
+            {
+              "x": 245,
+              "y": 569
+            }
+          ]
+        },
+        "L": {
+          "x": 282,
+          "y": 498,
+          "floor": 499,
+          "roi": [
+            246,
+            325,
+            485,
+            508
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle",
+      "supportRegistration": {
+        "side": "R",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 7,
+      "source": "intermediates-A-candidate-01.png",
+      "sourceCrop": [
+        920,
+        570,
+        1380,
+        1140
+      ],
+      "rawCap": 31,
+      "rawRoot": 214.5,
+      "rawFloor": 552,
+      "rawHeadWidth": 76,
+      "scale": 0.9367105263157894,
+      "id": "stair-up-v10-7",
+      "phase": 0.4375,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 571,
+      "actualPackedHeadWidth": 69,
+      "packingTranslation": [
+        49,
+        54
+      ],
+      "feet": {
+        "R": {
+          "x": 238,
+          "y": 571,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 258,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 171,
+            "method": "Median lower-sole leftmost contour. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 214.5,
+            "y": 570,
+            "floor": 571,
+            "roi": [
+              168,
+              260,
+              557,
+              578
+            ],
+            "uncertaintyX": 2,
+            "uncertaintyY": 2,
+            "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+          },
+          "contactProfile": [
+            {
+              "x": 234,
+              "y": 571
+            },
+            {
+              "x": 235,
+              "y": 571
+            },
+            {
+              "x": 236,
+              "y": 571
+            },
+            {
+              "x": 237,
+              "y": 571
+            },
+            {
+              "x": 238,
+              "y": 571
+            },
+            {
+              "x": 239,
+              "y": 571
+            },
+            {
+              "x": 240,
+              "y": 570
+            },
+            {
+              "x": 241,
+              "y": 570
+            },
+            {
+              "x": 242,
+              "y": 570
+            }
+          ]
+        },
+        "L": {
+          "x": 291,
+          "y": 514,
+          "floor": 515,
+          "roi": [
+            246,
+            333,
+            506,
+            530
+          ],
+          "uncertaintyX": 2,
+          "uncertaintyY": 2,
+          "method": "Median lower visible alpha-to-transparent outline. Occluded toe/heel regions are excluded; the point is the visible sole center, not a recovered anatomical landmark."
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle",
+      "supportRegistration": {
+        "side": "R",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 8,
+      "source": "contacts-candidate-01.png",
+      "sourceCrop": [
+        796,
+        0,
+        1592,
+        987
+      ],
+      "rawCap": 59,
+      "rawRoot": 397.5,
+      "rawHeadWidth": 126,
+      "scale": 0.565,
+      "existingKey": true,
+      "id": "stair-up-v10-8",
+      "phase": 0.5,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 84,
+      "actualPackedFloor": 563,
+      "actualPackedHeadWidth": 71,
+      "packingTranslation": [
+        25,
+        50
+      ],
+      "feet": {
+        "R": {
+          "x": 200.14999999999998,
+          "y": 562.4549999999999,
+          "uncertaintyX": 0.8474999999999999
+        },
+        "L": {
+          "x": 277,
+          "y": 518,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 297,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 216,
+            "method": "Visual heel outline, excludes the occluding opposite shin. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 256.085,
+            "y": 518.385,
+            "uncertaintyX": 2.26
+          },
+          "contactProfile": [
+            {
+              "x": 273,
+              "y": 518
+            },
+            {
+              "x": 274,
+              "y": 518
+            },
+            {
+              "x": 275,
+              "y": 518
+            },
+            {
+              "x": 276,
+              "y": 518
+            },
+            {
+              "x": 277,
+              "y": 518
+            },
+            {
+              "x": 278,
+              "y": 518
+            },
+            {
+              "x": 279,
+              "y": 518
+            },
+            {
+              "x": 280,
+              "y": 518
+            },
+            {
+              "x": 281,
+              "y": 518
+            }
+          ]
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle",
+      "supportRegistration": {
+        "side": "L",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 9,
+      "source": "exec-c418a413-41ce-49ea-9117-2db0db86f6ae.png",
+      "sourceCrop": [
+        0,
+        0,
+        797,
+        987
+      ],
+      "rawCap": 126,
+      "rawRoot": 402.5,
+      "rawFloor": 907,
+      "rawHeadWidth": 122,
+      "scale": 0.5983606557377049,
+      "id": "stair-up-v12-9",
+      "phase": 0.5625,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 579,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        9,
+        8
+      ],
+      "feet": {
+        "L": {
+          "x": 273,
+          "y": 503,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 293,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 213,
+            "method": "Visual heel outline, excludes the occluding opposite shin. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 267.19262295081967,
+            "y": 503.44262295081967,
+            "uncertaintyX": 14.061475409836065,
+            "uncertaintyY": 1.5,
+            "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe.",
+            "rawMeasurement": {
+              "x": 431.5,
+              "y": 828,
+              "lowestRangeX": [
+                427,
+                436
+              ],
+              "broaderRangeX": [
+                410,
+                457
+              ],
+              "roi": [
+                342,
+                765,
+                483,
+                839
+              ],
+              "touchesROIBottom": false,
+              "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe."
+            }
+          },
+          "contactProfile": [
+            {
+              "x": 269,
+              "y": 503
+            },
+            {
+              "x": 270,
+              "y": 503
+            },
+            {
+              "x": 271,
+              "y": 503
+            },
+            {
+              "x": 272,
+              "y": 503
+            },
+            {
+              "x": 273,
+              "y": 503
+            },
+            {
+              "x": 274,
+              "y": 503
+            },
+            {
+              "x": 275,
+              "y": 503
+            },
+            {
+              "x": 276,
+              "y": 503
+            },
+            {
+              "x": 277,
+              "y": 503
+            }
+          ]
+        },
+        "R": {
+          "x": 191.79918032786884,
+          "y": 550.7131147540983,
+          "uncertaintyX": 17.352459016393443,
+          "uncertaintyY": 1.5,
+          "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe.",
+          "rawMeasurement": {
+            "x": 305.5,
+            "y": 907,
+            "lowestRangeX": [
+              304,
+              307
+            ],
+            "broaderRangeX": [
+              281,
+              339
+            ],
+            "roi": [
+              207,
+              840,
+              360,
+              916
+            ],
+            "touchesROIBottom": false,
+            "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe."
+          }
+        }
+      },
+      "status": "Unaccepted V12 painting; only whole image scale/translation applied. No anatomy fitting.",
+      "existingKey": false,
+      "sourceSha256": "4c8515063e0cbe0425c0260df067d67f2274c6cb2b91ea871df4ec5a6fa00f11",
+      "supportRegistration": {
+        "side": "L",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 10,
+      "source": "exec-c418a413-41ce-49ea-9117-2db0db86f6ae.png",
+      "sourceCrop": [
+        797,
+        0,
+        1594,
+        987
+      ],
+      "rawCap": 126,
+      "rawRoot": 402.5,
+      "rawFloor": 860,
+      "rawHeadWidth": 122,
+      "scale": 0.5983606557377049,
+      "id": "stair-up-v12-10",
+      "phase": 0.625,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 556,
+      "actualPackedHeadWidth": 71,
+      "packingTranslation": [
+        9,
+        8
+      ],
+      "feet": {
+        "L": {
+          "x": 264,
+          "y": 521,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 284,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 197,
+            "method": "Median lower-sole leftmost contour. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 255.52459016393442,
+            "y": 521.9918032786885,
+            "uncertaintyX": 6.581967213114754,
+            "uncertaintyY": 1.5,
+            "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe.",
+            "rawMeasurement": {
+              "x": 412,
+              "y": 859,
+              "lowestRangeX": [
+                410,
+                414
+              ],
+              "broaderRangeX": [
+                410,
+                432
+              ],
+              "roi": [
+                410,
+                815,
+                470,
+                865
+              ],
+              "touchesROIBottom": false,
+              "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe."
+            }
+          },
+          "contactProfile": [
+            {
+              "x": 260,
+              "y": 521
+            },
+            {
+              "x": 261,
+              "y": 521
+            },
+            {
+              "x": 262,
+              "y": 521
+            },
+            {
+              "x": 263,
+              "y": 521
+            },
+            {
+              "x": 264,
+              "y": 521
+            },
+            {
+              "x": 265,
+              "y": 521
+            },
+            {
+              "x": 266,
+              "y": 520
+            },
+            {
+              "x": 267,
+              "y": 520
+            },
+            {
+              "x": 268,
+              "y": 519
+            }
+          ]
+        },
+        "R": {
+          "x": 240.5655737704918,
+          "y": 517.204918032787,
+          "uncertaintyX": 11.967213114754099,
+          "uncertaintyY": 1.5,
+          "method": "Occluded moving boot: visual toe estimate only; +/-10 raw X and +/-4 raw Y. Not an exact anatomical center or complete sole contour.",
+          "rawMeasurement": {
+            "x": 387,
+            "y": 851,
+            "lowestRangeX": [
+              377,
+              397
+            ],
+            "broaderRangeX": [
+              367,
+              407
+            ],
+            "roi": [
+              360,
+              825,
+              405,
+              860
+            ],
+            "touchesROIBottom": false,
+            "method": "Occluded moving boot: visual toe estimate only; +/-10 raw X and +/-4 raw Y. Not an exact anatomical center or complete sole contour."
+          }
+        }
+      },
+      "status": "Unaccepted V12 painting; only whole image scale/translation applied. No anatomy fitting.",
+      "existingKey": false,
+      "sourceSha256": "4c8515063e0cbe0425c0260df067d67f2274c6cb2b91ea871df4ec5a6fa00f11",
+      "supportRegistration": {
+        "side": "L",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 11,
+      "source": "exec-690a5b9b-b8ea-4057-b057-7b7ebb4410ce.png",
+      "sourceCrop": [
+        0,
+        0,
+        1126,
+        1397
+      ],
+      "rawCap": 184,
+      "rawRoot": 567.5,
+      "rawFloor": 1271,
+      "rawHeadWidth": 174,
+      "scale": 0.41954022988505746,
+      "id": "stair-up-v12-11",
+      "phase": 0.6875,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 574,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        12,
+        6
+      ],
+      "feet": {
+        "L": {
+          "x": 243,
+          "y": 538,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 263,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 179,
+            "method": "Median lower-sole leftmost contour. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 232.1653895274585,
+            "y": 539.235632183908,
+            "uncertaintyX": 29.57758620689655,
+            "uncertaintyY": 1.5,
+            "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe.",
+            "rawMeasurement": {
+              "x": 524.7777777777778,
+              "y": 1271,
+              "lowestRangeX": [
+                519,
+                529
+              ],
+              "broaderRangeX": [
+                423,
+                564
+              ],
+              "roi": [
+                392,
+                1180,
+                605,
+                1280
+              ],
+              "touchesROIBottom": false,
+              "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe."
+            }
+          },
+          "contactProfile": [
+            {
+              "x": 239,
+              "y": 538
+            },
+            {
+              "x": 240,
+              "y": 538
+            },
+            {
+              "x": 241,
+              "y": 538
+            },
+            {
+              "x": 242,
+              "y": 538
+            },
+            {
+              "x": 243,
+              "y": 538
+            },
+            {
+              "x": 244,
+              "y": 538
+            },
+            {
+              "x": 245,
+              "y": 538
+            },
+            {
+              "x": 246,
+              "y": 538
+            },
+            {
+              "x": 247,
+              "y": 538
+            }
+          ]
+        },
+        "R": {
+          "x": 244.42528735632183,
+          "y": 471.2701149425287,
+          "uncertaintyX": 4,
+          "uncertaintyY": 1.5,
+          "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe.",
+          "rawMeasurement": {
+            "x": 554,
+            "y": 1109,
+            "lowestRangeX": [
+              552,
+              556
+            ],
+            "broaderRangeX": [
+              552,
+              569
+            ],
+            "roi": [
+              552,
+              1020,
+              580,
+              1114
+            ],
+            "touchesROIBottom": false,
+            "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe."
+          }
+        }
+      },
+      "status": "Unaccepted V12 painting; only whole image scale/translation applied. No anatomy fitting.",
+      "existingKey": false,
+      "sourceSha256": "48d83f0e824d12ff726057fa4456c16a5defed4e7a123fbab46fea92ee765b80",
+      "supportRegistration": {
+        "side": "L",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 12,
+      "source": "passing-candidate-02.png",
+      "sourceCrop": [
+        796,
+        0,
+        1592,
+        987
+      ],
+      "rawCap": 58,
+      "rawRoot": 363.5,
+      "rawHeadWidth": 126,
+      "scale": 0.565,
+      "existingKey": true,
+      "id": "stair-up-v10-12",
+      "phase": 0.75,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 554,
+      "actualPackedHeadWidth": 71,
+      "packingTranslation": [
+        45,
+        50
+      ],
+      "feet": {
+        "R": {
+          "x": 236.53499999999997,
+          "y": 483.35499999999996,
+          "uncertaintyX": 1.13
+        },
+        "L": {
+          "x": 247,
+          "y": 553,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 267,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 186,
+            "method": "Median lower-sole leftmost contour. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 226.36499999999998,
+            "y": 553.415,
+            "uncertaintyX": 0.8474999999999999
+          },
+          "contactProfile": [
+            {
+              "x": 243,
+              "y": 554
+            },
+            {
+              "x": 244,
+              "y": 554
+            },
+            {
+              "x": 245,
+              "y": 553
+            },
+            {
+              "x": 246,
+              "y": 553
+            },
+            {
+              "x": 247,
+              "y": 553
+            },
+            {
+              "x": 248,
+              "y": 553
+            },
+            {
+              "x": 249,
+              "y": 553
+            },
+            {
+              "x": 250,
+              "y": 553
+            },
+            {
+              "x": 251,
+              "y": 553
+            }
+          ]
+        }
+      },
+      "status": "measured candidate; not accepted; source geometry may contradict coherent cycle",
+      "supportRegistration": {
+        "side": "L",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 13,
+      "source": "exec-d7c79c70-de36-440c-b722-7f0c70c71ae0.png",
+      "sourceCrop": [
+        0,
+        0,
+        650,
+        807
+      ],
+      "rawCap": 104,
+      "rawRoot": 328.5,
+      "rawFloor": 729,
+      "rawHeadWidth": 100,
+      "scale": 0.7398648648648648,
+      "id": "stair-up-v12-13",
+      "phase": 0.8125,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 577,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        7,
+        6
+      ],
+      "feet": {
+        "L": {
+          "x": 234,
+          "y": 545,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 254,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 169,
+            "method": "Median lower-sole leftmost contour. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 224.43148648648648,
+            "y": 545.3614864864865,
+            "uncertaintyX": 38.10304054054054,
+            "uncertaintyY": 1.5,
+            "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe.",
+            "rawMeasurement": {
+              "x": 293.88,
+              "y": 729,
+              "lowestRangeX": [
+                279,
+                309
+              ],
+              "broaderRangeX": [
+                224,
+                327
+              ],
+              "roi": [
+                210,
+                680,
+                340,
+                745
+              ],
+              "touchesROIBottom": false,
+              "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe."
+            }
+          },
+          "contactProfile": [
+            {
+              "x": 230,
+              "y": 545
+            },
+            {
+              "x": 231,
+              "y": 545
+            },
+            {
+              "x": 232,
+              "y": 545
+            },
+            {
+              "x": 233,
+              "y": 545
+            },
+            {
+              "x": 234,
+              "y": 545
+            },
+            {
+              "x": 235,
+              "y": 545
+            },
+            {
+              "x": 236,
+              "y": 545
+            },
+            {
+              "x": 237,
+              "y": 544
+            },
+            {
+              "x": 238,
+              "y": 544
+            }
+          ]
+        },
+        "R": {
+          "x": 292.4953547297297,
+          "y": 476.554054054054,
+          "uncertaintyX": 18.49662162162162,
+          "uncertaintyY": 1.5,
+          "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe.",
+          "rawMeasurement": {
+            "x": 385.875,
+            "y": 636,
+            "lowestRangeX": [
+              378,
+              390
+            ],
+            "broaderRangeX": [
+              360,
+              410
+            ],
+            "roi": [
+              340,
+              580,
+              417,
+              645
+            ],
+            "touchesROIBottom": false,
+            "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe."
+          }
+        }
+      },
+      "status": "Unaccepted V12 painting; only whole image scale/translation applied. No anatomy fitting.",
+      "existingKey": false,
+      "sourceSha256": "e4d225870783d8edde1c4ccdfc3b65879607882cea5b70f25c6be338cf042bf2",
+      "supportRegistration": {
+        "side": "L",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 14,
+      "source": "exec-d7c79c70-de36-440c-b722-7f0c70c71ae0.png",
+      "sourceCrop": [
+        650,
+        0,
+        1300,
+        807
+      ],
+      "rawCap": 104,
+      "rawRoot": 328.5,
+      "rawFloor": 729,
+      "rawHeadWidth": 98,
+      "scale": 0.7398648648648648,
+      "id": "stair-up-v12-14",
+      "phase": 0.875,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 579,
+      "actualPackedHeadWidth": 71,
+      "packingTranslation": [
+        7,
+        6
+      ],
+      "feet": {
+        "L": {
+          "x": 230,
+          "y": 545,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 250,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 165,
+            "method": "Median lower-sole leftmost contour. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 221.56081081081078,
+            "y": 545.3614864864865,
+            "uncertaintyX": 34.773648648648646,
+            "uncertaintyY": 1.5,
+            "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe.",
+            "rawMeasurement": {
+              "x": 290,
+              "y": 729,
+              "lowestRangeX": [
+                275,
+                304
+              ],
+              "broaderRangeX": [
+                226,
+                320
+              ],
+              "roi": [
+                210,
+                680,
+                340,
+                745
+              ],
+              "touchesROIBottom": false,
+              "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe."
+            }
+          },
+          "contactProfile": [
+            {
+              "x": 226,
+              "y": 545
+            },
+            {
+              "x": 227,
+              "y": 545
+            },
+            {
+              "x": 228,
+              "y": 545
+            },
+            {
+              "x": 229,
+              "y": 545
+            },
+            {
+              "x": 230,
+              "y": 545
+            },
+            {
+              "x": 231,
+              "y": 545
+            },
+            {
+              "x": 232,
+              "y": 545
+            },
+            {
+              "x": 233,
+              "y": 545
+            },
+            {
+              "x": 234,
+              "y": 544
+            }
+          ]
+        },
+        "R": {
+          "x": 302.4786628733997,
+          "y": 480.9932432432432,
+          "uncertaintyX": 20.716216216216214,
+          "uncertaintyY": 1.5,
+          "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe.",
+          "rawMeasurement": {
+            "x": 399.36842105263156,
+            "y": 642,
+            "lowestRangeX": [
+              389,
+              411
+            ],
+            "broaderRangeX": [
+              374,
+              430
+            ],
+            "roi": [
+              330,
+              590,
+              440,
+              650
+            ],
+            "touchesROIBottom": false,
+            "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe."
+          }
+        }
+      },
+      "status": "Unaccepted V12 painting; only whole image scale/translation applied. No anatomy fitting.",
+      "existingKey": false,
+      "sourceSha256": "e4d225870783d8edde1c4ccdfc3b65879607882cea5b70f25c6be338cf042bf2",
+      "supportRegistration": {
+        "side": "L",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    },
+    {
+      "cell": 15,
+      "source": "exec-d7c79c70-de36-440c-b722-7f0c70c71ae0.png",
+      "sourceCrop": [
+        1300,
+        0,
+        1950,
+        807
+      ],
+      "rawCap": 104,
+      "rawRoot": 327.5,
+      "rawFloor": 736,
+      "rawHeadWidth": 98,
+      "scale": 0.7398648648648648,
+      "id": "stair-up-v12-15",
+      "phase": 0.9375,
+      "crown": {
+        "x": 250,
+        "y": 83
+      },
+      "sourceWidth": 500,
+      "sourceHeight": 620,
+      "actualPackedCrown": 83,
+      "actualPackedFloor": 583,
+      "actualPackedHeadWidth": 70,
+      "packingTranslation": [
+        8,
+        6
+      ],
+      "feet": {
+        "L": {
+          "x": 223,
+          "y": 550,
+          "uncertaintyX": 1.5,
+          "uncertaintyY": 1,
+          "method": "Static whole-frame registration under the forefoot, 20 source px behind the visible toe contour. Toe X: median rightmost alpha>=192 pixel in the lower-sole band, old contactY-13..old contactY-2. Contact Y: median lower alpha>=192 boundary in x-4..x+4 at this same forefoot landmark. Original pixels unchanged.",
+          "landmark": "forefoot-20px-behind-toe",
+          "toe": {
+            "x": 243,
+            "method": "Median lower-sole rightmost contour"
+          },
+          "heel": {
+            "x": 158,
+            "method": "Median lower-sole leftmost contour. Annotation only, not used to register."
+          },
+          "previousMeasurement": {
+            "x": 215.902027027027,
+            "y": 550.5405405405405,
+            "uncertaintyX": 29.594594594594593,
+            "uncertaintyY": 1.5,
+            "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe.",
+            "rawMeasurement": {
+              "x": 281,
+              "y": 736,
+              "lowestRangeX": [
+                276,
+                286
+              ],
+              "broaderRangeX": [
+                228,
+                308
+              ],
+              "roi": [
+                200,
+                680,
+                340,
+                745
+              ],
+              "touchesROIBottom": false,
+              "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe."
+            }
+          },
+          "contactProfile": [
+            {
+              "x": 219,
+              "y": 550
+            },
+            {
+              "x": 220,
+              "y": 550
+            },
+            {
+              "x": 221,
+              "y": 549
+            },
+            {
+              "x": 222,
+              "y": 549
+            },
+            {
+              "x": 223,
+              "y": 550
+            },
+            {
+              "x": 224,
+              "y": 550
+            },
+            {
+              "x": 225,
+              "y": 550
+            },
+            {
+              "x": 226,
+              "y": 550
+            },
+            {
+              "x": 227,
+              "y": 549
+            }
+          ]
+        },
+        "R": {
+          "x": 264.19670608108106,
+          "y": 509.10810810810807,
+          "uncertaintyX": 37.733108108108105,
+          "uncertaintyY": 1.5,
+          "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe.",
+          "rawMeasurement": {
+            "x": 346.275,
+            "y": 680,
+            "lowestRangeX": [
+              310,
+              380
+            ],
+            "broaderRangeX": [
+              300,
+              402
+            ],
+            "roi": [
+              300,
+              630,
+              415,
+              688
+            ],
+            "touchesROIBottom": false,
+            "method": "Lowest opaque visible sole pixels, alpha>=192. X is a contact sample, not an anatomical ankle; far/occluded shoe may only expose the toe."
+          }
+        }
+      },
+      "status": "Unaccepted V12 painting; only whole image scale/translation applied. No anatomy fitting.",
+      "existingKey": false,
+      "sourceSha256": "e4d225870783d8edde1c4ccdfc3b65879607882cea5b70f25c6be338cf042bf2",
+      "supportRegistration": {
+        "side": "L",
+        "landmark": "forefoot-20px-behind-toe",
+        "sourceAnchorUnmodified": true
+      }
+    }
+  ],
+  "sourceHashes": {
+    "intermediates-A-candidate-01.png": "de16e8c706f1659ba32001c1220d28614567ebea35091be15d688991a52183fc",
+    "passing-candidate-02.png": "fe0c7bccecdf82da55449c592b3bfe1850e6c336824bb442b62dcde3372b5295",
+    "intermediates-B-candidate-01.png": "b48f6b2fc4ea79e7946929e41b1914388b3c7fbebf73fefd69d68663714074bf",
+    "contacts-candidate-01.png": "9fa2d0d33ef0459614a33fc16c7c6994a4a6d7c58cf25ba95f74b0ed8b05b774"
+  },
+  "replacementCells": [
+    11,
+    13,
+    14,
+    15,
+    9,
+    10
+  ],
+  "unchangedCells": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    12
+  ],
+  "headMeasurementCalibration": {
+    "alpha": 192,
+    "targetWidth": 73,
+    "keyWidths": [
+      72,
+      74,
+      72,
+      74
+    ],
+    "note": "Different measurable silhouette definition from previous nominal71.2. New per-table scale, never per-cell anatomy normalization."
+  },
+  "supportRegistration": {
+    "method": "All stance drawings registered to the same forefoot landmark; no image edit or transform.",
+    "toeOffsetSourcePixels": 20,
+    "globalTargetShiftXToKeepToe40Reference": 10.64,
+    "limitation": "Non-supporting foot metadata retain original measurement convention and must not be compared directly as the same physical landmark at transfer."
+  }
+}

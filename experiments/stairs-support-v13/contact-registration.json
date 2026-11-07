@@ -1,0 +1,386 @@
+[
+  {
+    "cell": 0,
+    "side": "R",
+    "old": {
+      "x": 255.95499999999998,
+      "y": 518.385
+    },
+    "toe": 295,
+    "heel": 216,
+    "length": 79,
+    "new": {
+      "x": 275,
+      "y": 518
+    },
+    "profileRange": {
+      "min": 518,
+      "max": 518
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -10.131940000000009,
+      "y": 0.20481999999999517
+    }
+  },
+  {
+    "cell": 1,
+    "side": "R",
+    "old": {
+      "x": 264,
+      "y": 509
+    },
+    "toe": 297,
+    "heel": 221,
+    "length": 76,
+    "new": {
+      "x": 277,
+      "y": 509
+    },
+    "profileRange": {
+      "min": 509,
+      "max": 509
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -6.916,
+      "y": 0
+    }
+  },
+  {
+    "cell": 2,
+    "side": "R",
+    "old": {
+      "x": 254.5,
+      "y": 543
+    },
+    "toe": 288,
+    "heel": 201,
+    "length": 87,
+    "new": {
+      "x": 268,
+      "y": 542
+    },
+    "profileRange": {
+      "min": 542,
+      "max": 543
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -7.182,
+      "y": 0.532
+    }
+  },
+  {
+    "cell": 3,
+    "side": "R",
+    "old": {
+      "x": 251,
+      "y": 543
+    },
+    "toe": 277,
+    "heel": 190,
+    "length": 87,
+    "new": {
+      "x": 257,
+      "y": 543
+    },
+    "profileRange": {
+      "min": 543,
+      "max": 543
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -3.192,
+      "y": 0
+    }
+  },
+  {
+    "cell": 4,
+    "side": "R",
+    "old": {
+      "x": 231.94249999999997,
+      "y": 553.98
+    },
+    "toe": 272,
+    "heel": 192,
+    "length": 80,
+    "new": {
+      "x": 252,
+      "y": 553
+    },
+    "profileRange": {
+      "min": 553,
+      "max": 554
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -10.670590000000018,
+      "y": 0.5213600000000097
+    }
+  },
+  {
+    "cell": 5,
+    "side": "R",
+    "old": {
+      "x": 216,
+      "y": 569
+    },
+    "toe": 261,
+    "heel": 174,
+    "length": 87,
+    "new": {
+      "x": 241,
+      "y": 570
+    },
+    "profileRange": {
+      "min": 569,
+      "max": 570
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -13.3,
+      "y": -0.532
+    }
+  },
+  {
+    "cell": 6,
+    "side": "R",
+    "old": {
+      "x": 218,
+      "y": 569
+    },
+    "toe": 261,
+    "heel": 175,
+    "length": 86,
+    "new": {
+      "x": 241,
+      "y": 569
+    },
+    "profileRange": {
+      "min": 569,
+      "max": 569
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -12.236,
+      "y": 0
+    }
+  },
+  {
+    "cell": 7,
+    "side": "R",
+    "old": {
+      "x": 214.5,
+      "y": 570
+    },
+    "toe": 258,
+    "heel": 171,
+    "length": 87,
+    "new": {
+      "x": 238,
+      "y": 571
+    },
+    "profileRange": {
+      "min": 570,
+      "max": 571
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -12.502,
+      "y": -0.532
+    }
+  },
+  {
+    "cell": 8,
+    "side": "L",
+    "old": {
+      "x": 256.085,
+      "y": 518.385
+    },
+    "toe": 297,
+    "heel": 216,
+    "length": 81,
+    "new": {
+      "x": 277,
+      "y": 518
+    },
+    "profileRange": {
+      "min": 518,
+      "max": 518
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -11.12678000000001,
+      "y": 0.20481999999999517
+    }
+  },
+  {
+    "cell": 9,
+    "side": "L",
+    "old": {
+      "x": 267.19262295081967,
+      "y": 503.44262295081967
+    },
+    "toe": 293,
+    "heel": 213,
+    "length": 80,
+    "new": {
+      "x": 273,
+      "y": 503
+    },
+    "profileRange": {
+      "min": 503,
+      "max": 503
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -3.0895245901639368,
+      "y": 0.2354754098360636
+    }
+  },
+  {
+    "cell": 10,
+    "side": "L",
+    "old": {
+      "x": 255.52459016393442,
+      "y": 521.9918032786885
+    },
+    "toe": 284,
+    "heel": 197,
+    "length": 87,
+    "new": {
+      "x": 264,
+      "y": 521
+    },
+    "profileRange": {
+      "min": 519,
+      "max": 521
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -4.508918032786889,
+      "y": 0.5276393442622862
+    }
+  },
+  {
+    "cell": 11,
+    "side": "L",
+    "old": {
+      "x": 232.1653895274585,
+      "y": 539.235632183908
+    },
+    "toe": 263,
+    "heel": 179,
+    "length": 84,
+    "new": {
+      "x": 243,
+      "y": 538
+    },
+    "profileRange": {
+      "min": 538,
+      "max": 538
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -5.7640127713920775,
+      "y": 0.6573563218390687
+    }
+  },
+  {
+    "cell": 12,
+    "side": "L",
+    "old": {
+      "x": 226.36499999999998,
+      "y": 553.415
+    },
+    "toe": 267,
+    "heel": 186,
+    "length": 81,
+    "new": {
+      "x": 247,
+      "y": 553
+    },
+    "profileRange": {
+      "min": 553,
+      "max": 554
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -10.97782000000001,
+      "y": 0.22077999999998066
+    }
+  },
+  {
+    "cell": 13,
+    "side": "L",
+    "old": {
+      "x": 224.43148648648648,
+      "y": 545.3614864864865
+    },
+    "toe": 254,
+    "heel": 169,
+    "length": 85,
+    "new": {
+      "x": 234,
+      "y": 545
+    },
+    "profileRange": {
+      "min": 544,
+      "max": 545
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -5.0904491891891945,
+      "y": 0.19231081081079449
+    }
+  },
+  {
+    "cell": 14,
+    "side": "L",
+    "old": {
+      "x": 221.56081081081078,
+      "y": 545.3614864864865
+    },
+    "toe": 250,
+    "heel": 165,
+    "length": 85,
+    "new": {
+      "x": 230,
+      "y": 545
+    },
+    "profileRange": {
+      "min": 544,
+      "max": 545
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -4.489648648648666,
+      "y": 0.19231081081079449
+    }
+  },
+  {
+    "cell": 15,
+    "side": "L",
+    "old": {
+      "x": 215.902027027027,
+      "y": 550.5405405405405
+    },
+    "toe": 243,
+    "heel": 158,
+    "length": 85,
+    "new": {
+      "x": 223,
+      "y": 550
+    },
+    "profileRange": {
+      "min": 549,
+      "max": 550
+    },
+    "targetShiftWorldX": 10.64,
+    "placementDeltaSameWorldAnchor": {
+      "x": -3.7761216216216344,
+      "y": 0.28756756756755614
+    }
+  }
+]

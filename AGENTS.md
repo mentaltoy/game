@@ -1,4 +1,4 @@
-# Direzione approvata da Nicola — V10 touch pubblicata, 7 novembre 2026
+# Direzione approvata da Nicola — V10 touch e provino V13, 7 novembre 2026
 
 ## Progetto e stile
 
@@ -78,3 +78,12 @@ La V10 touch è READY e il build supera 55 test. Verifica mobile locale Chrome a
 - Il provino conserva le quattro chiavi intere, corregge alcuni intermedi e registra i colori una volta al caricamento. Nessun rig, deformazione degli arti o dissolvenza temporale. Le immagini generate e i prompt restano tracciabili.
 - La continuità del corpo non certifica la precisione dei piedi. Il risultato è ancora da rifinire e non va descritto come salita pronta: consultare il report delle misure nel provino. Ingresso, pianerottolo e inversione non fanno parte di questa prova di due gradini.
 - Provino pubblico: https://isola-prototipo.vercel.app/stair-study/ . Deployment corrente `dpl_FFUKPjajAjC9AQ89yXq5YdaJNeKm`, READY; aggiunge otto file e preserva byte per byte i 61 file V10 touch. Il player pubblico è stato caricato e riprodotto senza errori console; il controllo geometrico degli appoggi resta fallito. Dettagli in `releases/stair-study-v12.json`.
+
+## Appoggio e geometria standard — riscontro V12
+
+- Nicola giudica molto bello il movimento del provino V12; la correzione richiesta è il piede portante che scivola. Conservare disegni e carattere del movimento.
+- Per tutte le scale del gioco usare la stessa alzata e la stessa pedata, dimensionate insieme al personaggio. Standard iniziale: pedata 30, alzata 21 a H266, 0,45 s per gradino. Costruire le scale sulla geometria del ciclo; non riadattare il passo a gradini arbitrari.
+- La revisione V13 del provino ancora ogni figura intera alla suola portante, con tempi fissi e cambio del piede portante sul contatto. L’immobilità dell’ancora non certifica da sola la continuità visiva delle scarpe né autorizza rig o deformazioni.
+- La discesa e il gioco completo restano quelli pubblicati V10 touch; la correzione viene valutata prima nei due gradini di `/stair-study/`.
+
+- Provino V13 online nello stesso percorso: deployment `dpl_ETAFCbcGWRjkRhV56CLQGJST5eQt`, READY, 59 test superati. Registrazione statica dello stesso punto sotto l’avampiede, venti pixel sorgente dietro il bordo della punta; immagini V12 intatte. La punta è stabile, ma sagoma dei talloni e cambi di disegno restano da giudicare visivamente. Dettagli in `releases/stair-support-v13.json`.
