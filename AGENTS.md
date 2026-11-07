@@ -64,3 +64,7 @@
 ## Trasferimento GitHub — 7 novembre 2026
 
 Nicola ha creato e indicato `https://github.com/mentaltoy/game`. L’ispezione ha trovato un repository vuoto e pubblico. Nicola ha poi autorizzato esplicitamente: «Va bene pubblico, carica tutto». Il salvataggio pubblico di codice, immagini, prompt, test e prove di questo progetto è quindi autorizzato. Conservare separati i file di configurazione locale e le catture private di studio della reference. Il nome `isola-prototipo` resta quello del progetto Vercel, non del repository GitHub.
+
+## Correzione mobile V10 touch — 7 novembre 2026
+
+Nicola ha chiarito che i comandi sinistra/destra sul telefono devono essere due metà invisibili dell’intera schermata, senza pulsanti direzionali visibili. Preservare i gesti su tutta `#experience`, inclusi margini e zone fuori dal canvas; usare l’altezza dinamica della viewport. Cammina e schermo intero conservano la loro funzione. Il CSS nasconde visivamente le frecce sui dispositivi touch, mantenendole accessibili. Movimento e immagini restano quelli V10.

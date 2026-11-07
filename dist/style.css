@@ -27,6 +27,7 @@ p { margin: 0; }
   width: 100%;
   height: 100%;
   height: 100svh;
+  height: 100dvh;
   margin: 0 auto;
   padding: max(18px, env(safe-area-inset-top)) max(26px, env(safe-area-inset-right)) max(14px, env(safe-area-inset-bottom)) max(26px, env(safe-area-inset-left));
   display: flex;
@@ -128,6 +129,21 @@ body.fullscreen .stage, body.is-fullscreen .stage, .experience:is(:fullscreen, :
   .fullscreen-button { position: absolute; top: max(12px, env(safe-area-inset-top)); right: max(14px, calc(env(safe-area-inset-right) + 10px)); width: 56px; height: 56px; margin: 0; pointer-events: auto; }
   .walk-button { position: absolute; left: max(8px, env(safe-area-inset-left)); bottom: max(20px, env(safe-area-inset-bottom)); width: 76px; min-width: 0; padding: 0 4px; pointer-events: auto; }
   .instructions { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+}
+@media (pointer: coarse) {
+  /* The entire viewport is the touch surface. Keep optional directional
+     actions available to screen readers without drawing buttons over it. */
+  .movement-controls {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    display: flex;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }

@@ -24,7 +24,7 @@ Aprire `http://127.0.0.1:8765` sullo stesso computer. Questo indirizzo non è ra
 
 - Tenere premuta la metà sinistra o destra della superficie di gioco per correre. Spostare il dito oltre il centro cambia direzione; con più dita prevale l'ultima appoggiata.
 - Attivare il pulsante **Cammina** per usare il passo lento approvato; premendolo di nuovo si torna alla corsa. Da tastiera, **Maiusc** attiva temporaneamente la camminata.
-- Restano disponibili frecce sinistra/destra, A/D e i pulsanti direzionali accessibili.
+- Da tastiera restano disponibili frecce sinistra/destra e A/D. Sul telefono le due metà dello schermo sono aree invisibili: nessun pulsante direzionale viene disegnato. I comandi direzionali restano accessibili ai lettori di schermo; Cammina e schermo intero restano visibili.
 - Il rilascio avvia l'arresto. Sulle scale il passo in corso raggiunge un appoggio prima della raccolta o dell'inversione.
 - Il pulsante schermo intero usa la Fullscreen API quando disponibile; altrimenti passa a un layout più essenziale. Il formato orizzontale offre più spazio alla scena.
 
